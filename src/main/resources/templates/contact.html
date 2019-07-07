@@ -1,0 +1,279 @@
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org" class="wf-roboto-n4-active wf-active"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="app-mobile-web-app-capable" content="yes">
+    <!--<meta name="keywords" content="旷世科技,旷世科技官网,旷世音箱,旷世官网,Questyle">-->
+    <!--<meta name="description" content="旷世科技（Questyle Audio )，专注于高科技与声音美学并重的无损音响系统级产品设计与制造。用于移动便携、车用、录音棚监听、家用和定制安装等多场景。产品包括：高性能无损音频播放器，电流模耳机放大器，解码器，5GHz多声道无线音响系统等。">-->
+    <title>垣象科技</title>
+    <!--css-->
+
+
+    <link rel="stylesheet" href="/js/bootstrap-3.3.7-dist/css/bootstrap.css" th:href="@{/css/bootstrap.css}">
+    <link href="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/style.css" th:href="@{/css/style.css}" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/news/news.css"  th:href="@{/css/news.css}">-->
+    <link rel="stylesheet" th:href="@{/css/lxks.css}" type="text/css" href="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/lxks/lxks.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin" media="all">
+</head>
+<body>
+
+<!--导航栏-->
+﻿<!--字体文件-->
+<!--head头部-->
+<style type="text/css">
+    .modal-dialog {
+        width: 200px;
+        margin: 30px auto;
+    }
+
+    /*@font-face {*/
+    /*font-family: 'iconfont';  !* project id 241409 *!*/
+    /*src: url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.eot');*/
+    /*src: url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.eot?#iefix') format('embedded-opentype'),*/
+    /*url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.woff') format('woff'),*/
+    /*url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.ttf') format('truetype'),*/
+    /*url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.svg#iconfont') format('svg');*/
+    /*}*/
+    .iconfont1{
+        font-family:"iconfont" !important;
+        font-size:30px;font-style:normal;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .iconfont1:hover{
+        text-decoration: none;
+        color: #333333;
+    }
+
+</style>
+<!--<link rel="shortcut icon" href="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/favicon.ico" th:href="@{/favicon.ico}">-->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid container-top">
+        <div class="row">
+            <div style="margin-left: 2%" class="col-md-12 col-sm-12 col-sm-offset-0  col-xs-12 col-xs-offset-0 padding-0">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed btn-white" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="c-icon">
+                                    <i class="fa fa-reorder"></i>
+                                </span>
+                    </button>
+                    <div class="navbar-brand page-scroll">
+                        <a href="/">
+                            <img class="logo_style" th:src="@{/images/logo/blacklogo.png}" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/logob.png" alt="" >
+                        </a>
+                    </div>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="col">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="nav nav-mynavdiv">
+                            <ul class="nav navbar-mynav">
+                                <li role="presentation" class="cur"><a href="/about">关于垣象</a></li>
+                                <li role="presentation" class="cur"><a href="/technology">核心技术</a></li>
+                                <li role="presentation" class="cur"><a href="/product">垣象产品</a></li>
+                                <!--<li role="presentation" class="cur"><a href="/newsevaluating">新闻与评测</a></li>-->
+                                <!--<li role="presentation" class="cur"><a href="/download">下载中心</a></li>-->
+                                <li role="presentation" class="cur"><a href="/contact">联系垣象</a></li>
+                                <!--<li role="presentation" class="cur"><a href="/category/jingxiao">试听与购买</a></li>-->
+                                <!--<li role="presentation" class="cur"><a href="/en">En</a></li>-->
+                                <!--
+                                <li role="presentation" class="cur"><a  href="/wp-login.php?action=register">VIP</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div style="height: 57px"></div>
+<!--悬浮微信-->
+<!--<div class="toolbar hidden-xs">-->
+    <!--<a class="toolbar-item toolbar-item-weixin" data-toggle="modal" data-target="#myModal">-->
+        <!--<span class="toolbar-layer"></span>-->
+    <!--</a>-->
+    <!--<a href="javascript:scroll(0,0)" class="toolbar-item toolbar-item-top"></a>-->
+<!--</div>-->
+<!--&lt;!&ndash;悬浮微信手机端&ndash;&gt;-->
+<!--<div class="toolbar hidden-md hidden-lg" style="margin-right: 5px;">-->
+    <!--<a class="iconfont1" data-toggle="modal" data-target="#myModal">-->
+        <!---->
+        <!--<span class="toolbar-layer"></span>-->
+    <!--</a>-->
+    <!--<a href="javascript:scroll(0,0)" style="display: block;margin-top: -10px;font-size: 32px" class="iconfont1"></a>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; 模态框（Modal） &ndash;&gt;-->
+<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
+    <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+            <!--<img class="img-responsive" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/weixin.jpg">-->
+        <!--</div>&lt;!&ndash; /.modal-content &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; /.modal-dialog &ndash;&gt;-->
+<!--</div>-->
+<!-- /.modal -->
+
+<script>
+    $(function() {
+        $('#myModal').modal({
+            keyboard: true
+        })
+    });
+</script>
+
+<script type="text/javascript">
+    $(function(){
+        $(window).scrollTop(0)
+    });
+    $(function(){
+        $('a').bind('focus', function(){
+            this.blur();
+        });
+    });
+</script>
+<script type="text/javascript">
+    WebFontConfig = {
+        google: { families: [ 'Roboto::latin' ] }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.font.im/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+</script>
+<!--联系旷世-->
+<div id="lxks">
+
+
+    <div id="lxksmid">
+        <h1>联系旷世</h1>
+        <h2>欢迎随时垂询。请选择最符合您要求的选项。</h2>
+    </div>
+
+    <div id="lxksbotr">
+        <img style="max-width: 300px" th:src="@{/images/kstp/img.png}" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/lxks/img.png">
+    </div>
+
+    <div id="lxksbotlift">
+        <h3>旷世科技· 中国总部</h3>
+        <h3>Questyle Audio Technology Co., Ltd</h3>
+        <p>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 址：中国广东省深圳市福田区车公庙泰然八路云松大厦13楼A<br>
+            总&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 机： +86-755-82835670<br>
+            传&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 真： +86-755-82842083<br>
+            邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 箱： info@questyleaudio.com<br>
+            <br></p>
+
+
+
+        <h3>营销部门：</h3>
+        <p>
+            国内销售部 | Domestic Sales Department<br>
+            座  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  机： +86-755-8837 7814/+86-8837 7624-8170<br>
+            国际销售部 | International Sales Department<br>
+            座 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   机：+86-755-8837&nbsp;7814<br><br>
+        </p>
+        <h3>客户服务中心 | Service Center</h3>
+        <p>售后电话： 4009-623-833<br>
+            邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 箱： info@questyleaudio.com<br><br></p>
+
+        <!--
+                <h3>Questyle North America Inc.</h3>
+                <p>Add&nbsp;&nbsp;&nbsp;&nbsp; ： 7848 West Sahara Ave. Las Vegas,&nbsp; NV 89117 , USA<br>
+        Tel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ： +1-702-751 9978<br>
+        Phone： +1-818-284-9678 <br>
+        Fax&nbsp;&nbsp;&nbsp;&nbsp; ： +1-818-697-9068 &nbsp;<br>
+        E-mail： usa@questyleaudio.com<br>
+        <br></p>
+        -->
+    </div>
+
+
+    <div id="lxkstop">
+        <h1>关注我们</h1>
+        <h2>密切关注我们在社交网站上的最新动态</h2>
+
+        <div id="topimg">
+            <div id="img1">
+                <img src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/lxks/weixin.png">
+                <p style="line-height: 0px">微信号</p>
+                <p>Questyleaudio</p>
+            </div>
+
+            <div id="img2">
+                <img src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/lxks/instagram.png">
+                <p style="line-height: 0px">Instagram</p>
+                <p>Questyleaudio</p>
+            </div>
+
+            <div id="img3">
+                <img src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/lxks/tweeter.png">
+                <p style="line-height: 0px">Twitter</p>
+                <p>Questyleaudio</p>
+            </div>
+
+            <div id="img4">
+                <img src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/lxks/facebook.png">
+                <p style="line-height: 0px">Facebook</p>
+                <p>Questyleaudio</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--底部导航-->
+﻿<!--footer-->
+<!--底部导航-->
+<div id="botnav">
+    <ul>
+        <li>产品系列
+            <ul><a href="/product/QPM">QPM</a></ul>
+            <ul><a href="/product/SHB2">SHB2</a></ul>
+            <ul><a href="/product/CMA-twelve">CMA Twelve</a></ul>
+        </li>
+
+        <li>新闻资讯
+            <ul><a href="/category/news">旷世新闻</a></ul>
+            <ul><a href="/category/pingce">产品评测</a></ul>
+        </li>
+
+        <li>关注旷世
+            <ul><a href="/about">关于旷世</a></ul>
+            <ul><a href="/contact">联系旷世</a></ul>
+            <ul><a href="/technology">旷世技术</a></ul>
+        </li>
+        <!--
+                <li>账户
+                    <ul>
+                        <a href="/wp-admin/profile.php">管理你的 Questyle ID</a>
+                    </ul>
+                    <ul>
+                        <a href="/wp-login.php">VIP登录</a>
+                    </ul>
+                    <ul>
+                        <a href="/wp-login.php?action=register">VIP注册</a>
+                    </ul>
+                </li>
+              -->
+
+        <li>技术支持
+            <ul><a href="/download#cpsc">产品手册</a></ul>
+            <ul><a href="/download">下载中心</a></ul>
+            <ul><a href="/category/jingxiao">试听与购买</a></ul>
+        </li>
+
+    </ul>
+</div>
+
+<!--底部-->
+<div id="footer2">
+    <div id="botl">All right reserved.2018 备案号：粤ICP备18119879号-1&nbsp;&nbsp;</div>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1273369531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1273369531%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1273369531"><a href="https://www.cnzz.com/stat/website.php?web_id=1273369531" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="https://icon.cnzz.com/img/pic.gif"></a></span><script src=" https://s13.cnzz.com/z_stat.php?id=1273369531&amp;show=pic" type="text/javascript"></script><script src="https://c.cnzz.com/core.php?web_id=1273369531&amp;show=pic&amp;t=z" charset="utf-8" type="text/javascript"></script>
+    <div id="botr">旷世科技  |  Questyle Audio  2018 </div>
+</div>
+
+</body></html>

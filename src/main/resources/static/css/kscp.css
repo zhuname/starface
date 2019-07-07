@@ -1,0 +1,231 @@
+#cplist .p1,.p2,.p3{
+  color: white;
+  position: relative;
+}
+.clear{clear:both;}
+#cplist .productlink {
+  color: #fff;
+  border: 1px solid #fff;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width:90px;
+  display:block;
+  margin:0 auto;
+  text-align: center;
+  
+}
+#cplist .productlink:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.tec {
+  color: #000;
+  border: 1px solid #000;
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width:80px;
+  margin: 0 auto;
+  display:block;
+  text-align: center;
+}
+.tec:hover {
+  color: #fff;
+  background-color: #666;
+  text-decoration: none;
+}
+#cplist .p1 .qp1r img{
+  margin-bottom: 5%;
+  width: 5%
+}
+.martop{
+  margin-top: 40px;
+}
+.cma400i{margin-top: 20px}
+.productwidth{
+  width: 76%
+}
+
+@media (max-width: 768px) {
+  #cplist .p2{
+  margin-top: 5%;
+  }
+  h2{font-size: 2rem;line-height: 0.5rem}
+  h3{font-size: 1.5rem;line-height: 0.5rem}
+  #cplist .p1 .txt{
+  font-size: 0.8rem;
+    position: absolute;
+    width: 66%;
+    z-index: 2;
+    top: 14%;
+    left: 55%;
+    float: right;
+  }
+
+  #cplist .p2 .txt{
+  font-size: 0.8rem;
+    position: absolute;
+    width: 66%;
+    z-index: 2;
+    top: 7%;
+    left: 0%;
+    float: right;
+  }
+
+  #cplist .p3 .txt{
+  font-size: 0.8rem;
+    position: absolute;
+    width: 66%;
+    z-index: 2;
+    top: 5%;
+    left: 55%;
+    float: right;
+  }
+
+  
+
+  .mar15{
+  margin-bottom: 30px;
+  margin-top: 10%;
+  width: auto;
+  height: 200px;
+  }
+  /*手机端*/
+  #kscpphone{
+    letter-spacing: 1px;
+  }
+  #kscpphone .clear{
+    clear: both;
+  }
+  #kscpphone p{
+    font-size: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    word-wrap:break-word;
+  }
+  #kscpphone h1{
+    font-size: 22px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 80px;
+  }
+  #kscpphone .h1left{
+    font-size: 22px;
+    text-align: left;
+    line-height: 30px;
+    margin-left: 15px;
+  }
+  #kscpphone h2{
+    font-size: 18px;
+    text-align: center;
+  }
+  #kscpphone .pcenter{
+    font-size: 12px;
+    text-align: center;
+  }
+  #kscpphone .pleft{
+    font-size: 12px;
+    text-align: left;
+  }
+  #kscpphone .martb{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #kscpphone a{
+    color: #000000;
+    display:table; 
+    border: 1px solid #000;
+    text-decoration: none;
+    margin:0 auto;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+  }
+  #kscpphone a:hover{
+    color: #fff;
+    background-color: #000;
+  }
+  #kscpphone .hr{
+    border-top: 1px solid #efefef;
+    height: 20px;
+    margin:0 15px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+
+
+}
+
+@media (min-width: 993px) {
+  h2{font-size: 4rem;font-weight: 300}
+  h3{font-size: 3rem;font-weight: 300}
+  #cplist .p0 .txt{
+    font-size: 1.5rem;
+      position: absolute;
+      width: 30%;
+      z-index: 2;
+      top: 19%;
+      left: 5%;
+      color: #fff;
+      float: right;
+    }
+
+  #cplist .p1 .txt{
+  font-size: 1.5rem;
+    position: absolute;
+    width: 30%;
+    z-index: 2;
+    top: 15%;
+    left: 65%;
+    float: right;
+  }
+
+  #cplist .p2 .txt{
+  font-size: 1.5rem;
+    position: absolute;
+    width: 40%;
+    z-index: 2;
+    top: 14%;
+    left: 5%;
+    float: right;
+  }
+  .wid60{width: 55%;float: left;margin-bottom: 30px;}
+  .wid20{width: 20%;float: left}
+
+  #cplist .p3 .txt{
+  font-size: 1.5rem;
+    position: absolute;
+    width: 40%;
+    z-index: 2;
+    top: 7%;
+    left: 65%;
+    float: right;
+  }
+
+  
+  .mar15{
+  margin-bottom: 30px;
+  }
+
+
+  
+}

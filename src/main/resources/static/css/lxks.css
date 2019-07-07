@@ -1,0 +1,158 @@
+#lxks {
+	margin: 0px;
+	float: left;
+	width: 66%;
+	padding-top: 5%;
+	padding-right: 17%;
+	padding-bottom: 8%;
+	padding-left: 17%;
+}
+#lxks #lxkstop {
+	padding-top: 2%;
+	padding-bottom: 5%;
+	float: left;
+	width: 100%;
+}
+#lxks #lxkstop  img{
+	margin: 0px;
+	padding: 0px;
+	width: 60%;
+	margin-bottom:20px;
+}
+#lxks h1  {
+	line-height: 3em;
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #666;
+	font-weight: 100;
+	font-size: 2.2em;
+	color: #333;
+}
+#lxks h2  {
+	font-size: 1.6em;
+	line-height: 2em;
+	color: #666;
+	margin: 0px;
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-weight: 100;
+	padding-top: 3%;
+	padding-right: 0px;
+	padding-bottom: 3%;
+	padding-left: 0px;
+}
+#lxks h3 {
+	line-height: 1.5em;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+	color: #333;
+}
+#lxks p {
+	color: #666;
+	font-size: 0.9em;
+	line-height: 2em;
+}
+
+#lxks #lxksmid {
+	margin: 0px;
+	float: left;
+	width: 100%;
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+
+
+#lxks #lxkstop #topimg {
+	margin: 0px;
+	float: left;
+	width: 100%;
+	padding-top: 3%;
+	padding-right: 0px;
+	padding-bottom: 3%;
+	padding-left: 0px;
+}
+
+#img1, #img2, #img3, #img4 {
+	margin: 0px;
+	padding: 2%;
+	width: 21%;
+	float: left;
+	text-align: center;
+}
+#lxks #lxksbotr {
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	width: 30%;
+}
+#lxks #lxksbotr img {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 100%;
+}
+
+
+#lxks #lxksbotlift {
+	margin: 0px;
+	float: left;
+	width: 68%;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 2%;
+}
+
+
+/*æŠ•å½±é€‚åº”*/
+@media screen and (max-width: 1069px){
+	#lxks {
+		margin: 0px;
+		float: left;
+		width: 96%;
+		padding-top: 5%;
+		padding-right: 2%;
+		padding-bottom: 8%;
+		padding-left: 2%;
+	}
+}
+
+@media screen and (max-width: 667px){
+	#lxks #lxksbotr img{
+		display: none;
+	}
+	
+	#img1, #img2, #img3, #img4 {
+		margin: 0px;
+		padding: 2%;
+		width: 46%;
+		float: left;
+		text-align: center;
+	}
+	#lxks #lxksbotlift {
+		margin: 0px;
+		float: left;
+		width: 96%;
+		padding-top: 0px;
+		padding-right: 2px;
+		padding-bottom: 0px;
+		padding-left: 2%;
+	}	
+	#lxks h1  {
+		font-size: 2em;
+	}
+	#lxks h3  {
+		font-size: 1.2em;
+	}
+	#lxks h2  {
+		font-size: 1.5em;
+	}
+}
+

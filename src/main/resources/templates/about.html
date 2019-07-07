@@ -1,0 +1,397 @@
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org" class="wf-roboto-n4-active wf-active"><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="app-mobile-web-app-capable" content="yes">
+    <title>垣象科技</title>
+    <!--css-->
+
+
+
+    <!--响应式框架-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
+
+
+
+
+    <!--底部样式-->
+    <link rel="stylesheet"  th:href="@{/css/footer.css}">
+
+    <!--默认样式-->
+    <link  th:href="@{/css/style.css}" rel="stylesheet">
+    <!--页面样式-->
+    <link href="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/about.css" th:href="@{/css/about.css}" rel="stylesheet">
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+    <script src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+</head>
+<body>
+
+<!--导航栏-->
+﻿<!--字体文件-->
+<!--head头部-->
+<!--<style type="text/css">-->
+    <!--.modal-dialog {-->
+        <!--width: 200px;-->
+        <!--margin: 30px auto;-->
+    <!--}-->
+
+    <!--/*@font-face {*/-->
+    <!--/*font-family: 'iconfont';  !* project id 241409 *!*/-->
+    <!--/*src: url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.eot');*/-->
+    <!--/*src: url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.eot?#iefix') format('embedded-opentype'),*/-->
+    <!--/*url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.woff') format('woff'),*/-->
+    <!--/*url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.ttf') format('truetype'),*/-->
+    <!--/*url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.svg#iconfont') format('svg');*/-->
+    <!--/*}*/-->
+    <!--.iconfont1{-->
+        <!--font-family:"iconfont" !important;-->
+        <!--font-size:30px;font-style:normal;-->
+        <!--color: black;-->
+        <!-- -webkit-font-smoothing: antialiased;-->
+        <!-- -webkit-text-stroke-width: 0.2px;-->
+        <!-- -moz-osx-font-smoothing: grayscale;-->
+    <!--}-->
+    <!--.iconfont1:hover{-->
+        <!--text-decoration: none;-->
+        <!--color: #333333;-->
+    <!--}-->
+
+<!--</style>-->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+
+
+
+    <div class="container-fluid container-top">
+        <div class="row">
+            <div style="margin-left: 2%" class="col-md-12 col-sm-12 col-sm-offset-0  col-xs-12 col-xs-offset-0 padding-0">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed btn-white" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="c-icon">
+                                    <i class="fa fa-reorder"></i>
+                                </span>
+                    </button>
+                    <div class="navbar-brand page-scroll">
+                        <a href="/">
+                            <img class="logo_style" th:src="@{/images/logo/blacklogo.png}" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/logob.png" alt="旷世科技" >
+                        </a>
+                    </div>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="col">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <div class="nav nav-mynavdiv">
+                            <ul class="nav navbar-mynav">
+                                <li role="presentation" class="cur"><a href="/about">关于垣象</a></li>
+                                <li role="presentation" class="cur"><a href="/technology">核心技术</a></li>
+                                <li role="presentation" class="cur"><a href="/product">垣象产品</a></li>
+                                <!--<li role="presentation" class="cur"><a href="/newsevaluating">新闻与评测</a></li>-->
+                                <!--<li role="presentation" class="cur"><a href="/download">下载中心</a></li>-->
+                                <li role="presentation" class="cur"><a href="/contact">联系垣象</a></li>
+                                <!--<li role="presentation" class="cur"><a href="/category/jingxiao">试听与购买</a></li>-->
+                                <!--<li role="presentation" class="cur"><a href="/en">En</a></li>-->
+                                <!--
+                                <li role="presentation" class="cur"><a  href="/wp-login.php?action=register">VIP</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div  class="banner_box">
+    <div  class="text">关于垣象</div>
+</div>
+<!--悬浮微信-->
+<!--<div class="toolbar hidden-xs">-->
+    <!--<a class="toolbar-item toolbar-item-weixin" data-toggle="modal" data-target="#myModal">-->
+        <!--<span class="toolbar-layer"></span>-->
+    <!--</a>-->
+    <!--<a href="javascript:scroll(0,0)" class="toolbar-item toolbar-item-top"></a>-->
+<!--</div>-->
+<!--&lt;!&ndash;悬浮微信手机端&ndash;&gt;-->
+<!--<div class="toolbar hidden-md hidden-lg" style="margin-right: 5px;">-->
+    <!--<a class="iconfont1" data-toggle="modal" data-target="#myModal">-->
+        <!---->
+        <!--<span class="toolbar-layer"></span>-->
+    <!--</a>-->
+    <!--<a href="javascript:scroll(0,0)" style="display: block;margin-top: -10px;font-size: 32px" class="iconfont1"></a>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; 模态框（Modal） &ndash;&gt;-->
+<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
+    <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+            <!--<img class="img-responsive" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/weixin.jpg">-->
+        <!--</div>&lt;!&ndash; /.modal-content &ndash;&gt;-->
+    <!--</div>&lt;!&ndash; /.modal-dialog &ndash;&gt;-->
+<!--</div>-->
+<!-- /.modal -->
+<script src="https://ajax.font.im/ajax/libs/webfont/1/webfont.js" type="text/javascript" async=""></script><script>
+    $(function() {
+        $('#myModal').modal({
+            keyboard: true
+        })
+    });
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(window).scrollTop(0)
+    });
+    $(function(){
+        $('a').bind('focus', function(){
+            this.blur();
+        });
+    });
+</script>
+<script type="text/javascript">
+    WebFontConfig = {
+        google: { families: [ 'Roboto::latin' ] }
+    };
+    (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+            '://ajax.font.im/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+    })();
+</script>
+<!--关于垣象-->
+<div  data-v-63ef68d9="" class="item_box core pad_t_80 pad_b_80">
+    <div data-v-63ef68d9="" class="tit_box mar_b_50">
+        <span data-v-63ef68d9="" class="line"></span>
+        <span data-v-63ef68d9="" class="tit_text">公司简介</span>
+        <span data-v-63ef68d9="" class="line"></span>
+    </div>
+
+    <div data-v-63ef68d9="" class="core_cont">
+        &nbsp; &nbsp; 杭州垣象科技有限公司是全球专业的智能软硬件解决方案提供商,具有十几年在机器视觉、人工智能、大规模网络服务、高性能数据库系统等方面的技术和完全自主知识产权
+        产品积累,同时依托庞大的资深研发团队与良好的政府、供应商、国内外知名企业、国内外知名院校等的合作关系,帮助政府和客户解决智能化相关的问题。
+    </div>
+
+
+    <div data-v-63ef68d9="" class="core_cont">
+        &nbsp; &nbsp;公司成立前已有不下30个涵盖知名国企、跨国公司、政府机构的成功案例,并与他们保
+        持密切的长期合作关系
+        公司目前在杭州现有员工50余名。在成立后不到两年时间里,已经与国内多家上市公司
+        达成合作关系,比如浙江省公安厅、华数、大华、网鱼网咖微贷网、维尔、正元智慧顺网科技等
+    </div>
+
+    <div data-v-63ef68d9="" class="core_cont">
+        &nbsp; &nbsp; 公司的理念:守大善之道,行君子之事。公司上下秉承“诚信做事,服务万众”的精神带着让人工智能服务于生活,让人类生活变得更便捷更美好的使命,砥砺前行,争取成为一家有社会责任感的百年科技企业。
+    </div>
+</div>
+
+    <div class="clear"></div>
+    <div class="p2">
+        <div class="col-md-7 col-md-offset-2">
+            <h2>产品设计哲学</h2>
+            <div class="hr30"></div>
+            <p>专业和简约是我们的核心设计理念，移动化、无线化、智能化是我们的技术方向。把技术问题丢给Questyle，用简单而洒脱的操作方式，摆脱环境限制，抛弃传统设备繁琐的调试和操作带来的烦恼，留给用户美妙的音乐时光，是我们期望的。凭借电流模放大和音频无损无线传输等多项全球专利技术，自2015年来，产品交付美国，日本，德国，英国等主要发达国家，取得积极市场反馈；并获得美国CES创新设计大奖，德国iF工业设计大奖，日本VGP生活方式大奖等超过20多项奖项和肯定。旷世2017年被认定为国家级高新技术企业，并入选胡润百富深圳最具投资潜质新星企业50强。<br><br>
+
+                在消费升级，全球技术迭代的趋势下，只有坚持初心，以全新的价值主张来驱动，才能确保旷世能够作为文化载体，为广大用户提供杰出的体验和独特的品牌价值。<br><br><br></p>
+        </div>
+        <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/product.jpg" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/product.jpg" style="">
+
+    </div>
+
+
+
+    <div class="test">
+        <div class="col-md-12">
+            <div class="col-md-6 pa10">
+                <div style="vertical-align:middle; display:table-cell;  ">
+                    <h2>声音和质量控制</h2>
+                    <div class="hr30"></div>
+                    <p class="leftp">在产品开发阶段，我们习惯用精密的测量、分析来控制声音。综合AP的几十项指标，总结了一些特殊的计量方法来捕捉常规仪器不可以完成的测量任务以达到预先的设计目标以及可否只靠耳朵校音来完成声音控制带来的人为主观和变数因素。在后期校音阶段，我们会花研发周期几倍的时间，反复聆听，以验证设计和测试的相关性和设计细节。为了检验某一参数或者确认某个设计细节，我们会反复聆听，目的是验证设计和测试的相关性。</p>
+                </div>
+            </div>
+            <div class="col-md-6" style="padding-left: 0px;padding-right: 0px">
+                <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/about_10.jpg" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/about_10.jpg" style="">
+            </div>
+        </div>
+
+        <div class="col-md-12">
+            <div class="col-md-6" style="padding-left: 0px;padding-right: 0px">
+                <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/about_13.jpg" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/about_13.jpg" style="">
+            </div>
+            <div class="col-md-6 pa10">
+                <div style="vertical-align:middle; display:table-cell;">
+                    <h2 class="rightp">严格的测试</h2>
+                    <div class="hr30" style="margin-left: 8%"></div>
+                    <p class="rightp">不过，最后的老化和测试我们只留给经验丰富的工程师完成。每台机器出厂前，都会严格测试30多项指标，并将关键的技术指标做成两份报告：一份报告随产品交给客户；另一份报告存好序列号归档在我们的专案柜里，方便以后查阅维护。当您购买旷世科技产品时，看到带着机器编号的唯一的测试数据就不奇怪了。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="clear"></div>
+    <div class="p3">
+        <div class="gy hidden-xs">
+            <img class="img-responsive" style="padding-right: 0px; padding-left: 0px;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/p3-1.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/p3-1.png">
+            <div class="txt col-md-1 leftline hidden-xs"></div>
+            <div class="txt col-md-5 col-md-offset-2 col-sm-6 col-xs-12">
+                <h2>战略合作伙伴</h2>
+                <p>为了保证旷世产品的工艺和品质水准， 旷世科技产品全部由战略合作伙伴富士康科技集团制造。</p>
+                <img style="width: 300px;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/foxconn.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/foxconn.png">
+            </div>
+        </div>
+
+
+        <div class="clear"></div>
+        <div class="gy2 hidden-xs">
+            <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/p3-3.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/p3-3.png" style="">
+            <div class="txt col-md-6 col-md-offset-5 col-sm-6 col-xs-12">
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="p5">
+
+        <div class="txt hidden-xs">
+            <h2>重要国际奖项</h2>
+            <p>旷世科技对声音的执着追求得到国际媒体的一致好评，已获得20多项国际奖项。</p>
+        </div>
+
+        <div class="lefthline hidden-md hidden-lg">
+            <h2>重要国际奖项</h2>
+            <p>旷世科技对声音的执着追求得到国际媒体的一致好评，已获得20多项国际奖项。
+            </p>
+        </div>
+        <img style="display: block; margin: 0px auto;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/p5.jpg" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/p5.jpg">
+
+
+    </div>
+
+
+    <div class="p6">
+        <div class="txt">
+            <h2>旷世 · 大事记</h2>
+        </div>
+        <img class="img-responsive" style="margin: 0px auto;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/history.jpg" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/history.jpg">
+    </div>
+</div>
+
+<!--手机端-->
+<div class="hidden-lg hidden-md" id="aboutphone">
+    <h1>关于旷世</h1>
+    <div class="hrt"></div>
+    <p class="pcenter">旷世科技有限公司（Questyle Audio），致力于声音美学和便捷体验并重的高科技无损音频系统的研究，并能够根据客户需求，提供对应的产品、系统级解决方案和关键组件。</p>
+    <div class="hrb"></div>
+    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about1.jpg" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about1.jpg" style="">
+
+    <h1>产品设计哲学</h1>
+    <div class="hrt"></div>
+    <p class="pcenter">专业和简约是我们的核心设计理念，移动化、无线化、智能化是我们的技术方向。把技术问题丢给Questyle，用简单而洒脱的操作方式，摆脱环境限制，抛弃传统设备繁琐的调试和操作带来的烦恼，留给用户美妙的音乐时光，是我们期望的。凭借电流模放大和音频无损无线传输等多项全球专利技术，自2015年来，产品交付美国，日本，德国，英国等主要发达国家，取得积极市场反馈；并获得美国CES创新设计大奖，德国iF工业设计大奖，日本VGP生活方式大奖等超过20多项奖项和肯定。旷世2017年被认定为国家级高新技术企业，并入选胡润百富深圳最具投资潜质新星企业50强。<br><br>
+
+        在消费升级，全球技术迭代的趋势下，只有坚持初心，以全新的价值主张来驱动，才能确保旷世能够作为文化载体，为广大用户提供杰出的体验和独特的品牌价值。</p>
+    <div class="hrb"></div>
+    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about2.jpg" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about2.jpg" style="">
+
+
+    <h1>声音和质量控制</h1>
+    <div class="hrt"></div>
+    <p class="pcenter">在产品开发阶段，我们习惯用精密的测量、分析来控制声音。综合AP的几十项指标，总结了一些特殊的计量方法来捕捉常规仪器不可以完成的测量任务，以达到预先的设计目标， 可否只靠耳朵校音来完成声音控制带来的人为主观和变数因素。在后期校音阶段，我们会花研发周期几倍的时间，反复聆听，以验证设计和测试的相关性和设计细节。为了检验某一参数或者确认某个设计细节，我们会反复聆听，目的是验证设计和测试的相关性。</p>
+    <div class="hrb"></div>
+    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about3.jpg" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about3.jpg" style="">
+
+
+    <h1>严格的测试</h1>
+    <div class="hrt"></div>
+    <p class="pcenter">不过，最后的老化和测试我们只留给经验丰富的工程师完成。每台机器出厂前，都会严格测试30多项指标，并将关键的技术指标做成两份报告：一份报告随产品交给客户；另一份报告存好序列号归档在我们的专案柜里，方便以后查阅维护。当您购买旷世科技产品时，看到带着机器编号的唯一的测试数据就不奇怪了。</p>
+    <div class="hrb"></div>
+    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about4.jpg" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about4.jpg" style="">
+
+    <h1 class="h1left" style="padding-bottom: 0px">战略合作伙伴</h1>
+    <p>为了保证旷世产品的工艺和品质水准， 旷世科技产品全部由战略合作伙伴富士康科技集团制造。</p>
+    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about5.jpg" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about5.jpg" style="">
+
+    <h1 class="h1right">重要国际奖项</h1>
+    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about6.jpg" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about6.jpg" style="">
+
+    <h1>旷世·大事记</h1>
+    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about7.jpg" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/phone/about7.jpg" style="">
+</div>
+
+﻿<!--footer-->
+<!--底部导航-->
+<div id="foot">
+    <div class="lf" style="width:280px;">
+        <p class="footer1"><a th:href="@{/index}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>
+        <!--<p class="footer2"><img src="../images/footer/footerFont.png" th:src="@{/images/2.png}" alt=""></p>-->
+    </div>
+    <div class="foot_left lf" style="margin-left:25px;  " >
+
+        <!--<ul class="nav navbar-mynav">-->
+        <p  class="foot=li"><a href="/about" style="font-size: 18px;">关于垣象</a></p>
+        <p  class="foot=li"><a href="/technology" style="font-size: 18px; ">核心技术</a></p>
+        <p  class="foot=li"><a href="/product" style="font-size: 18px; ">垣象产品</a></p>
+        <!--<li role="presentation" class="cur"><a href="/newsevaluating">新闻与评测</a></li>-->
+        <!--<li role="presentation" class="cur"><a href="/download">下载中心</a></li>-->
+        <p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系垣象</a></p>
+        <!--<li role="presentation" class="cur"><a href="/category/jingxiao">试听与购买</a></li>-->
+        <!--<li role="presentation" class="cur"><a href="/en">En</a></li>-->
+        <!--
+        <li role="presentation" class="cur"><a  href="/wp-login.php?action=register">VIP</a></li>-->
+        <!--</ul>-->
+        <!--<ul>-->
+        <!--<li><a href="#"><h3>买家帮助</h3></a></li>-->
+        <!--<li><a href="#">新手指南</a></li>-->
+        <!--<li><a href="#">服务保障</a></li>-->
+        <!--<li><a href="#">常见问题</a></li>-->
+        <!--</ul>-->
+        <!--<ul>-->
+        <!--<li><a href="#"><h3>商家帮助</h3></a></li>-->
+        <!--<li><a href="#">商家入驻</a></li>-->
+        <!--<li><a href="#">商家后台</a></li>-->
+        <!--</ul>-->
+        <!--<ul>-->
+        <!--<li><a href="#"><h3>关于我们</h3></a></li>-->
+        <!--<li><a href="#">关于达内</a></li>-->
+        <!--<li><a href="#">联系我们</a></li>-->
+        <!--<li>-->
+        <!--<img src="../images/footer/wechat.png" alt="">-->
+        <!--<img src="../images/footer/sinablog.png" alt="">-->
+        <!--</li>-->
+        <!--</ul>-->
+    </div>
+    <!--<div class="service">-->
+    <!--<p>学子商城客户端</p>-->
+    <!--<img src="../images/footer/ios.png" class="lf">-->
+    <!--<img src="../images/footer/android.png" alt="" class="lf">-->
+    <!--</div>-->
+    <!--<div class="download">-->
+    <!--<img src="../images/footer/erweima.png">-->
+    <!--</div>-->
+    <!-- 页面底部-备案号 #footer -->
+    <div class="record">
+        ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
+    </div>
+</div>
+
+
+
+<!--图片延迟加载-->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+    if($(window).width() < 768){
+        $("#gyks").empty();
+    }
+    $("img").lazyload({threshold :80});
+</script></body></html>
+</body>
+</html>
