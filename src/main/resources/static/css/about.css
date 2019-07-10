@@ -376,3 +376,14 @@
   width: 1100px;
   text-align: justify;
 }
+
+
+.gyst-1{
+  margin-left: 10%;
+  margin-right: 15%;
+  padding: 1.6rem 0;font-size: 18px;line-height: 1.78;color: #111111;display: flex;align-items: center;
+  justify-content: space-between;}
+.gyst-1>.img{width: 44.262%;}
+.gyst-1>.text{width: 39%;}
+.gyst-1>.text>h1{
+  line-height: 1.6;margin: 0 0 1.2rem;}
