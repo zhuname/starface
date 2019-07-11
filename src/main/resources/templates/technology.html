@@ -4,49 +4,28 @@
     <meta name="app-mobile-web-app-capable" content="yes">
     <title>垣象科技</title>
     <!--css-->
-    <link rel="stylesheet" href="/js/bootstrap-3.3.7-dist/css/bootstrap.css" th:href="@{/css/bootstrap.css}">
-    <link href="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/style.css" th:href="@{/css/style.css}" rel="stylesheet">
-    <link href="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/ksjs.css" th:href="@{/css/ksjs.css}" rel="stylesheet">
+    <!--响应式框架-->
 
-    <!--<link rel="stylesheet" type="text/css" href="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/news/news.css"  th:href="@{/css/news.css}">-->
-    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin" th:href="@{/css/css}" media="all">-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet"  th:href="@{/css/footer.css}">
+
+    <!--默认样式-->
+    <link  th:href="@{/css/style.css}" rel="stylesheet">
+    <link href="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/ksjs.css" th:href="@{/css/public.css}" rel="stylesheet">
+    <!--图片和滚屏样式-->
+    <link rel="stylesheet" href="css/index.css" th:href="@{/css/xingkong/index.css}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin" th:href="@{/css/erji.css}" media="all">
+    <link rel="stylesheet" href="/css/swiper.min.css" th:href="@{/css/swiper.min.css}">
 
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
     <script src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+
+
 </head>
+
 <body>
 
-<!--导航栏-->
-﻿<!--字体文件-->
-<!--head头部-->
-<style type="text/css">
-    .modal-dialog {
-        width: 200px;
-        margin: 30px auto;
-    }
 
-    /*@font-face {*/
-    /*font-family: 'iconfont';  !* project id 241409 *!*/
-    /*src: url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.eot');*/
-    /*src: url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.eot?#iefix') format('embedded-opentype'),*/
-    /*url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.woff') format('woff'),*/
-    /*url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.ttf') format('truetype'),*/
-    /*url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.svg#iconfont') format('svg');*/
-    /*}*/
-    .iconfont1{
-        font-family:"iconfont" !important;
-        font-size:30px;font-style:normal;
-        color: black;
-        -webkit-font-smoothing: antialiased;
-        -webkit-text-stroke-width: 0.2px;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    .iconfont1:hover{
-        text-decoration: none;
-        color: #333333;
-    }
-
-</style>
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid container-top">
         <div class="row">
@@ -64,7 +43,6 @@
                         </a>
                     </div>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="col">
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <div class="nav nav-mynavdiv">
@@ -72,13 +50,7 @@
                                 <li role="presentation" class="cur"><a href="/about">关于垣象</a></li>
                                 <li role="presentation" class="cur"><a href="/technology">核心技术</a></li>
                                 <li role="presentation" class="cur"><a href="/product">垣象产品</a></li>
-                                <!--<li role="presentation" class="cur"><a href="/newsevaluating">新闻与评测</a></li>-->
-                                <!--<li role="presentation" class="cur"><a href="/download">下载中心</a></li>-->
                                 <li role="presentation" class="cur"><a href="/contact">联系垣象</a></li>
-                                <!--<li role="presentation" class="cur"><a href="/category/jingxiao">试听与购买</a></li>-->
-                                <!--<li role="presentation" class="cur"><a href="/en">En</a></li>-->
-                                <!--
-                                <li role="presentation" class="cur"><a  href="/wp-login.php?action=register">VIP</a></li>-->
                             </ul>
                         </div>
                     </div>
@@ -87,447 +59,317 @@
         </div>
     </div>
 </nav>
-<div style="height: 57px"></div>
-<!--悬浮微信-->
-<div class="toolbar hidden-xs">
-    <a class="toolbar-item toolbar-item-weixin" data-toggle="modal" data-target="#myModal">
-        <span class="toolbar-layer"></span>
-    </a>
-    <a href="javascript:scroll(0,0)" class="toolbar-item toolbar-item-top"></a>
-</div>
-<!--悬浮微信手机端-->
-<div class="toolbar hidden-md hidden-lg" style="margin-right: 5px;">
-    <a class="iconfont1" data-toggle="modal" data-target="#myModal">
-        
-        <span class="toolbar-layer"></span>
-    </a>
-    <a href="javascript:scroll(0,0)" style="display: block;margin-top: -10px;font-size: 32px" class="iconfont1"></a>
+
+<!--banner-->
+<section class="nr-banner a-background" style="background-image: url(/images/yxkj/hxjs-banner.jpg);">
+    <div class="width-1220">
+        <h1 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">核心技术</h1>
+        <p class="wow fadeInUpa" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUpa;">原创技术体系为根基，以深度学习平台为核心“大脑”，快速打通 AI 在各个垂直场景中的应用</p>
+    </div>
+</section>
+
+<!--二级导航-->
+<section id="nrnav-box" class="" style="top: 0px;">
+    <div class="hxjs-nav" id="product">
+        <div class="hxjs-nav1" style="position: relative;">
+            <div class="hxjs-nav2"><span style="padding-right: .2rem;">核心技术</span>
+                <span class="mui-icon mui-icon-arrowdown"></span>
+            </div>
+            <div class="hxjs-nav3" style="">
+                <div class="box_Arrow"></div>
+                <a href="/Technology/face.html#product" class="hover">人脸与属性分析技术</a>
+                <a href="/Technology/ocr.html#product">通用与专业图像识别</a>
+                <a href="/Technology/video.html#product">海量视频理解与挖掘</a>
+                <a href="/Technology/photo.html#product">图像视频处理增强</a>
+                <a href="/Technology/3d.html#product">SLAM 与 3D 视觉</a>
+                <a href="/Technology/contrl.html#product">机器人控制与传感</a>
+                <a href="/Technology/autodrive.html#product">自动驾驶</a>
+                <a href="/Technology/study.html#product">深度学习平台</a>
+                <a href="/Technology/medical.html#product">医学图像分析</a>
+            </div>
+        </div>
+        <p>人脸与属性分析技术 </p>
+    </div>
+</section>
+
+<!--第二个banner-->
+<section class="hxjs-banner m-center">
+    <p class="wow fadeInUpa delay-2 width-1220" style="visibility: visible; animation-name: fadeInUpa;"><i class="sensetime sensetime-renlianyurentifenxijishu"></i>人脸与属性分析技术</p>
+    <div class="width-1220 Technology_banner  a-background" style="background-image: url(/images/yxkj/Technology_face.jpg);"></div>
+</section>
+
+
+<!--内容-->
+<section>
+    <div class="width-100 hxjs-menu">
+        <h1 class="hxjs-title1 width-1220">技术能力</h1>
+    </div>
+
+    <div class="width-1220 hxjs-xg-1">
+        <!--标题-->
+        <div class="hxjs-menu-box" id="hxjsMenu">
+            <div class="hxjs-menu-item active">人脸检测跟踪</div>
+            <div class="hxjs-menu-item">人脸关键点定位</div>
+            <div class="hxjs-menu-item">人脸身份验证</div>
+            <div class="hxjs-menu-item">人脸属性</div>
+            <div class="hxjs-menu-item">人脸聚类</div>
+            <div class="hxjs-menu-item">真人检测</div>
+            <div class="hxjs-menu-item">人像美颜</div>
+            <div class="hxjs-menu-item">人体关键点</div>
+        </div>
+
+        <div class="hxjs-con-box swiper-container-horizontal swiper-container-autoheight swiper-container-fade" id="hxjsCon">
+            <div class="swiper-wrapper" style="height: 759px;">
+                <div class="swiper-slide hxjs-con-item swiper-slide-active" style="width: 820px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
+                    <div class="hxjs-con-left width-50">
+                        <div>
+                            <h2 class="wo delay-5">人脸检测跟踪</h2>
+                            <p class="wo delay-7">对任意常见场景，可以在嵌入式设备、移动设备和个人电脑上实现毫秒级的人脸检测。该技术可适应侧脸、遮挡、模糊、暗光、逆光、表情变化、平面内 360° 旋转等各种实际环境，支持彩色、灰度、近红外等各种图像视频类型。</p>
+                        </div>
+                    </div>
+                    <div class="width-50 a-background" style="background-image: url(/images/yxkj/rljc.png);"></div>
+                </div>
+                <div class="swiper-slide hxjs-con-item swiper-slide-next" style="width: 820px; opacity: 0; transform: translate3d(-820px, 0px, 0px);">
+                    <div class="hxjs-con-left width-50">
+                        <div>
+                            <h2 class="wo delay-5">人脸关键点定位</h2>
+                            <p class="wo delay-7">毫秒级别眼、口、鼻轮廓等人脸 21、106、240 个关键点定位，支持不同精度的人脸关键点定位，该技术可适应大角度侧脸、大表情变化、遮挡、模糊、明暗变化等各种实际环境。</p>
+                        </div>
+                    </div>
+                    <div class="width-50 a-background" style="background-image: url(../images/Technology_face2.jpg);"></div>
+                </div>
+                <div class="swiper-slide hxjs-con-item" style="width: 820px; opacity: 0; transform: translate3d(-1640px, 0px, 0px);">
+                    <div class="hxjs-con-left width-50">
+                        <div>
+                            <h2 class="wo delay-5">人脸身份验证</h2>
+                            <p class="wo delay-7">判断两张照片是否为同一人，在百万分之一的误识别下，准确率超过99%。</p>
+                        </div>
+                    </div>
+                    <div class="width-50 a-background" style="background-image: url(../images/Technology_face3.jpg);"></div>
+                </div>
+                <div class="swiper-slide hxjs-con-item" style="width: 820px; opacity: 0; transform: translate3d(-2460px, 0px, 0px);">
+                    <div class="hxjs-con-left width-50">
+                        <div>
+                            <h2 class="wo delay-5">人脸属性</h2>
+                            <p class="wo delay-7">准确识别 10 多种人脸属性类别，例如性别、年龄、种族、表情、胡须、面部动作状态等。可以用于广告定向投放或顾客信息分析，让你秒懂客户心。</p>
+                        </div>
+                    </div>
+                    <div class="width-50 a-background" style="background-image: url(../images/Technology_face4.jpg);"></div>
+                </div>
+                <div class="swiper-slide hxjs-con-item" style="width: 820px; opacity: 0; transform: translate3d(-3280px, 0px, 0px);">
+                    <div class="hxjs-con-left width-50">
+                        <div>
+                            <h2 class="wo delay-5">人脸聚类</h2>
+                            <p class="wo delay-7">支持数十万人的人脸快速聚类，可用于基于人脸的智能相册以及基于合影的社交网络分析。让照片管理更直观，社交关系更明晰。</p>
+                        </div>
+                    </div>
+                    <div class="width-50 a-background" style="background-image: url(../images/Technology_face5.jpg);"></div>
+                </div>
+                <div class="swiper-slide hxjs-con-item" style="width: 820px; opacity: 0; transform: translate3d(-4100px, 0px, 0px);">
+                    <div class="hxjs-con-left width-50">
+                        <div>
+                            <h2 class="wo delay-5">真人检测</h2>
+                            <p class="wo delay-7">检测摄像头前用户是否为真人操作，配合人脸身份认证，为金融等高安全性要求的严肃应用场景提供真人身份验证。能有效分辨高清照片、PS 、三维模型、换脸等仿冒欺诈。我们针对不同场景需求提供定制化的解决方案。</p>
+                        </div>
+                    </div>
+                    <div class="width-50 a-background" style="background-image: url(../images/Technology_face6.jpg);"></div>
+                </div>
+
+                <div class="swiper-slide hxjs-con-item" style="width: 820px; opacity: 0; transform: translate3d(-4920px, 0px, 0px);">
+                    <div class="hxjs-con-left width-50">
+                        <div>
+                            <h2 class="wo delay-5">人像美颜</h2>
+                            <p class="wo delay-7">基于智能人脸检测定位技术，打造移动端美颜、美妆效果解决方案，让移动互联网娱乐时代有“美”可依。</p>
+                        </div>
+                    </div>
+                    <div class="width-50 a-background" style="background-image: url(../images/Technology_face8.jpg);"></div>
+                </div>
+                <div class="swiper-slide hxjs-con-item" style="width: 820px; opacity: 0; transform: translate3d(-5740px, 0px, 0px);">
+                    <div class="hxjs-con-left width-50">
+                        <div>
+                            <h2 class="wo delay-5">人体关键点</h2>
+                            <p class="wo delay-7">率先支持移动端 14 点人体关键点定位，通过 RGB 图像输入超实时给出人体头、肩、腰、腿等位置，可适用于各种大幅度人体动作。</p>
+                        </div>
+                    </div>
+                    <div class="width-50 a-background" style="background-image: url(../images/Technology_face9.jpg);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var hxjsCon = new Swiper('#hxjsCon', {
+            autoHeight: true, //高度随内容变化
+            effect : 'fade',
+            onSlideChangeStart: function(swiper){
+                $('#hxjsMenu').find('.hxjs-menu-item').removeClass('active');
+                $('#hxjsMenu').find('.hxjs-menu-item').eq(swiper.activeIndex).addClass('active');
+            },
+            onSlideChangeEnd: function(swiper){
+                $('#hxjsCon').find('.swiper-slide').find('.wo').removeClass('zhixing');
+                $('#hxjsCon').find('.swiper-slide').eq(swiper.activeIndex).find('.wo').addClass('zhixing');
+            },
+        });
+        $('#hxjsMenu').find('.hxjs-menu-item').each(function(i){
+            $(this).click(function(){
+                $('#hxjsMenu').find('.hxjs-menu-item').removeClass('active');
+                $(this).addClass('active');
+                hxjsCon.slideTo(i, 500, true);
+            })
+        });
+    </script>
+
+
+</section>
+
+
+<div   style="width:100%; background:#f0f0f0 !important;padding-bottom: 35px;">
+    <div id="foot" >
+        <div class="lf" style="width:280px;">
+            <p class="footer1"><a th:href="@{/}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>
+        </div>
+        <div class="foot_left lf" style="margin-left:25px;  " >
+
+            <p  class="foot=li"><a href="/about" style="font-size: 18px;">关于垣象</a></p>
+            <p  class="foot=li"><a href="/technology" style="font-size: 18px; ">核心技术</a></p>
+            <p  class="foot=li"><a href="/product" style="font-size: 18px; ">垣象产品</a></p>
+            <p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系垣象</a></p>
+        </div>
+        <div class="record">
+            ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
+        </div>
+    </div>
+
 </div>
 
-<!-- 模态框（Modal） -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <img class="img-responsive" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/weixin.jpg">
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div>
-<!-- /.modal -->
-<script src="https://ajax.font.im/ajax/libs/webfont/1/webfont.js" type="text/javascript" async=""></script><script>
-    $(function() {
-        $('#myModal').modal({
-            keyboard: true
-        })
-    });
-</script>
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/js/bootstrap.min.js"></script>
+
 <script type="text/javascript">
-    $(function(){
-        $(window).scrollTop(0)
-    });
-    $(function(){
-        $('a').bind('focus', function(){
-            this.blur();
+    var is_weixin = (function(){return navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1})();
+    if(is_weixin){
+        $(function(){
+            document.getElementById('logolink').onclick = function(ev){
+                ev.preventDefault();
+                $(".wxopen").show();
+            }
+
+            $(".wxopen,.wxopen>img").click(function(){
+                $(".wxopen").hide();
+            });
+        });
+    }else{
+        $(function(){
+            return false;
+        });
+    }
+
+    $(document).ready(function() {
+        $("#wxbox").hover(function(){
+            $(this).addClass("footer-6_hover");
+            $(this).children(".wxbox").show();
+        },function(){
+            $(this).removeClass("footer-6_hover");
+            $(this).children(".wxbox").hide();
+        });
+        $("#wxbox2").hover(function(){
+            $(this).addClass("footer-6_hover");
+            $(this).children(".wxbox").show();
+        },function(){
+            $(this).removeClass("footer-6_hover");
+            $(this).children(".wxbox").hide();
         });
     });
-</script>
-<script type="text/javascript">
-    WebFontConfig = {
-        google: { families: [ 'Roboto::latin' ] }
-    };
+
+
+    var _hmt = _hmt || [];
     (function() {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-            '://ajax.font.im/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?95e1c7f2af12086fc92e0742665b8268";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+
+
+    //2019-6-11增加百度代码
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?8ebb5ff06a2c44c46939dec8d61388ed";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
     })();
 </script>
 
-<!--调用电流膜技术-->
-<div class="piece hidden-xs">
-    <div class="toptitle">
-        <h1>核心专利技术</h1>
-        <div class="efefhr"></div>
-    </div>
-    <div class="ptop">
-        <img style="max-width: 219px;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/tr001.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/tr001.png">
-        <h2>电流模音频放大技术</h2>
-        <h3>Current Mode Amplification</h3>
-        <h4>全球PCT专利号：US 9,614,483 B2</h4>
-    </div>
-    <div class="pmid">
-        <br>
-        <p>
-            电流模放大是电流模式音频放大器的简称，是旷世区别于传统放大器的专利音频技术。作为音响系统“发动机”的放大器，基于全分立、特殊拓扑结构的电流模放大器可以做到近似录音现场的聆听体验，让听众真正被打动。同时，在电流模技术的支持下，即使用户使用的是已有的耳机或音箱，并不是专属配合的设计，也会得到比一般设备好得多的效果。<br><br>
-
-            电流模音频放大器使用三极管作为放大器件，全分立架构。它的输入和输出为电压模式，可以与传统电路接口。核心放大部分在电流域处理，恒定为纯A类工作状态。它的放大电路结构与传统电压模放大器(差分输入级，共射电压放大级等)结构完全不同，影响速度和带宽的晶体管级间电容工作在阻抗很低的节点上，不但彻底消除瞬态互调失真（TIMD），而且可以轻松获得更高带宽（满功率状态下500kHz带宽），更低失真的高性能放大（实现0.0002%的失真技术性能）。可以用于任何功率等级（10mW-2000W)和任意尺寸(数平方厘米-专业用途放大器尺寸）。
-        </p>
-        <img class="hidden-xs" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/001.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/001.png" style="">
-    </div>
-
-    <h3>电流模放大如何工作？<br><br></h3>
-    <p>主要由电压控制电流源VCCS，电流模放大单元A(i)，I/V变换级，输出缓冲器（OPT）和负反馈几部分组成。在电子学中，电压和电流都是同时存在的。只是在电流模放大部分，为了获得高性能，信号被电流主宰了而已，输入和输出都是传统的电压型的，这样的设计可以方便兼容更多的讯源和负载。考虑到High-end市场用户强烈的个性，这样的设计可以有更高的系统开放度。</p>
-    <img data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/002.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/002.png" style="">
-    <div style="width: 800px;margin:0 auto;text-align: center"><p>由图示模型可见，输入信号首先进入VCCS（电压控制电流源）。VCCS将输入电压变为电流，送入电流增益级Ai进行电流模放大，再由I/V变换器变为电压后通过输出级（OPT）驱动负载。<br><br><br></p></div>
-
-    <p>整个系统为了保证系统的稳定性，引入了负反馈。由于整个负反馈网络的阻抗只有几百欧姆，加上放大器的高速性能，反馈环路处理速度大约是传统电压模放大器的100倍，所以常规负反馈放大器带来的TIMD等一系列问题都不存在。<br><br><br></p>
-
-    <div class="efefhr"></div>
-
-    <!--纯A类偏压控制-->
-    <div class="purea">
-        <div class="ptop">
-            <img style="max-width: 219px;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/BIAS.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/BIAS.png">
-            <h2>纯A类偏压控制</h2>
-            <h3>Pure Class A BIAS Control</h3>
-        </div>
-
-        <div class="pmid">
-
-            <p>
-                为了保证电流模放大器以高性能模式达到专业的聆听体验，旷世科技的纯A类偏压控制系统保证了电流模放大器在不同负载的状况下都以严格纯A类方式工作。<br><br>
-                旷世科技纯A类偏压控制系统是在旷世专利级电流模放大器基础上，根据用户的设定，通过完全隔离的电路，使用处理器控制并调节和检测电流模放大器输出级的偏压，确保输出级工作在纯A类状态，匹配耳机实现美妙的系统体验。比传统的A类，自动偏压A类等等技术更直接彻底、无负作用，也没有讯号延迟的问题。它能驾驭不同规格耳机或扬声器，轻松释放全部实力。</p>
-
-            <img data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/A.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/A.png" style="">
-
-            <p><br><br>QP2R是全球使用偏压控制系统的便携音频设备之一。在QP2R的机身侧面，标准偏压时有橙色灯光从微孔中射出。设定为高偏置时，变为红色灯光，输出偏压加大，输出静态电流翻倍，THD+N和输出阻抗降到更低：犹如玩超跑的时候将汽车设定为“RACE模式（竞技模式,&nbsp;或称Sport Plus或Sport Response&nbsp;模式）”，在发动机高转速，急速换挡配合强大抓地力，给你直抵地心的征服感无法言喻的满足感。
-            </p>
-
-            <img data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/QP2R.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/QP2R.png" style="">
-
-            <div class="efefhr"></div>
-        </div>
-    </div>
-
-    <div class="clear"></div>
-
-    <!--5Ghz-->
-    <div class="purea">
-        <a name="5Ghz" id="5Ghz"></a>
-        <div class="ptop">
-            <img style="max-width: 179px;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/tr002.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/tr002.png">
-            <h2>5GHz无线音频系统</h2>
-            <h3>5GHz High-end Wireless Audio System </h3>
-            <h4>全球PCT专利号：US 9,544,685,B2<br>
-                已通过美国、欧盟电磁兼容测试
-            </h4>
-        </div>
-        <div class="pmid">
-
-            <p>如果要将高性能的音频体验延伸至家庭的每一个角落或搭载到汽车上，就需要使用区别以往的无线传输技术。High-end 5GHz无线音响系统，源于Questyle。它是一套罕见的兼顾稳定性和高音质的多声道无损无线音频系统。<br><br></p>
-        </div>
-        <div class="dashhr clear"></div>
-
-
-        <div style="margin-top: 40px;">
-            <div class="left">
-                <img data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/hometheater1.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/hometheater1.png" style="">
-                <p>
-                    美国权威影音 ”Home Theater” 将唯一的五星级评价的无线音响系统授予旷世5GHz无线音响系统。
-                </p>
-            </div>
-
-            <div class="right">
-                <img data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/hometheater2.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/hometheater2.png" style="">
-                <p>
-                    2017年美国洛杉矶音响展上，旷世科技的5GHz无线音响系统，被组委会评选为 “Best Sound” of show awards（最佳音质奖项）。
-                </p>
-            </div>
-        </div>
-
-        <div class="dashhr clear"></div>
-        <p>
-            <br><br><br>如果希望将美妙的聆听体验延伸至家庭或者汽车中，使用通用的蓝牙技术传输高清音频不但距离太短，而且有压缩会损失音质；使用WiFi技术又太容易受环境影响，造成卡断和不稳定。另外这些无线技术也有同步困难的问题。工程师不得不把立体声和多声道的终端扬声器设计在一起，但是这样无法还原现场的空间感和方位感，气氛大打折扣。<br><br><br>
-
-
-            旷世科技不希望美妙的体验被束缚，针对高性能音频开发了与众不同的5GHz的无线系统。这个独特的技术工作在比较高的RF频率，使用独立的协议栈，不依赖路由器，从本质上解决了传统技术容易受到干扰，不稳定的问题。同时，高码流可以轻松传输无损音频，还支持让人惊讶的8声道同步传输，可以把不同通道的扬声器终端放在合理的位置，并通过了欧盟CE及美国FCC电磁兼容认证，实现了理想的音频无线连接延伸体验。 <br><br><br>
-        </p>
-        <div class="efefhr clear"></div>
-    </div>
 
 
 
-    <div class="clear"></div>
-
-
-    <!--IIR数字滤波器-->
-    <div class="purea">
-        <a name="iir" id="iir"></a>
-        <div class="ptop">
-            <img data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/trno.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/trno.png" style="">
-            <h2>IIR数字滤波数字信号处理技术</h2>
-            <h3>Digital Signal Processing: IIR Digital Filter</h3>
-            <h4>中国国家专利局专利号：201520212711.5</h4>
-        </div>
-        <div class="pmid">
-            <p>
-                为了呈现真实的泛音结构，旷世科技的IIR数字滤波信号处理技术可以彻底消除脉冲波的预振铃。<br><br>
-                世界上大多数数字音频系统都是使用FIR（有限脉冲响应）数字滤波器。使用FIR数字滤波器产生的脉冲波预振铃不但非常容易被测试到，而且还很容易被人耳听到，它破坏了音乐本身的连贯和自然。旷世科技先进的IIR数字滤波器数字信号处理技术，完全消除了脉冲波的预振铃，呈现自然的空气流动，接近真实的泛音结构。</p>
-            <img class="hidden-xs" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/006.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/006.png" style="">
-            <img class="hidden-md hidden-sm hidden-lg col-xs-12" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/006-1.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" style="">
-            <img class="hidden-md hidden-sm hidden-lg col-xs-12" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/006-2.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" style="">
-        </div>
-        <div class="efefhr clear"></div>
-
-
-    </div>
-
-
-    <!--True DSD解码技术-->
-    <div class="purea">
-        <a name="dsd" id="dsd"></a>
-        <div class="ptop">
-            <img style="max-width: 179px;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/tr003.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/tr003.png">
-            <h2>True DSD解码技术</h2>
-            <h3>True Direct Stream Digital</h3>
-            <h4>中国国家专利局专利号：201520211941.X</h4>
-        </div>
-        <div class="pmid">
-            <p>为了原汁原味地还原DSD音频数据的体验，旷世科技的真DSD（True DSD）专利技术在处理DSD信号时不经过任何PCM转码，保证了彻头彻尾的DSD处理，它和传统的DoP，Native DSD有本质不同。<br><br>
-                当系统处理DSD数据时，系统硬件模式立即改变，切换到True DSD硬件通道处理数据。在这种情况下，所有的数字滤波器选择失效，所有数字音量控制失效，严格遵循SACD回放的流程处理。</p>
-            <img data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/005.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/005.png" style="">
-        </div>
-        <div class="efefhr clear"></div>
-    </div>
-
-
-
-
-
-    <!--3X时钟异步架构-->
-    <div class="purea">
-        <a name="x3" id="x3"></a>
-        <div class="ptop">
-            <img data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/trno.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/trno.png" style="">
-            <h2>3x时钟异步架构</h2>
-            <h3>3x Clock USB Asynchronous Transmission</h3>
-            <h4>中国国家专利局专利号：201520211445.4</h4>
-        </div>
-        <div class="pmid">
-            <p>为了保证在无损数字音频系统回放时的高性能，避免数据信号的时基抖动，旷世科技的3x时钟异步架构使用3时钟结合异步FIFO数字逻辑硬件控制和算法，避免传统做法引起的时基误差（Jitter)，保证了数字音频文件在回放的时候的基本素质。<br><br>
-                3x时钟异步架构，第一枚时钟负责系统，第二枚时钟来驱动44.1K及44.1K倍数的采样信号， 第三枚时钟用来驱动48K及48K倍数的采样信号和DSD信号。
-            </p>
-            <img data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/007.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/007.png" style="">
-        </div>
-        <div class="efefhr clear"></div>
-    </div>
-
-
-    <!--双时钟整倍升频设计-->
-    <div class="purea">
-        <a name="time2" id="time2"></a>
-        <div class="ptop">
-            <img data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/trno.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/trno.png" style="">
-            <h2>双时钟整倍升频设计</h2>
-            <h3>Dual Clock Integral Upsampling</h3>
-            <h4>中国国家专利局专利编号: ZL201520211445.4</h4>
-        </div>
-        <div class="pmid">
-            <p>
-                为了克服传统升频电路的诸多不足，双时钟整倍升频设计用2个低相位噪声时钟源，自动判断当前采样率，整倍升频，消除引入误差。<br><br>
-                大多数升频设计，不管信号采样率是多少，全部升频到192K处理。而非整倍数重采样转换时，数据运算会引入误差和失真，劣化音质。双时钟整倍升频则与之不同，内部有2个低相位噪声时钟源，处理器自动判断当前采样率，并按照整倍数选择升频，消除属于引入误差，提高音质。</p>
-            <img data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/008.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/008.png" style="">
-        </div>
-        <div class="efefhr clear"></div>
-    </div>
-
-    <div class="margin2 clear"></div>
+<!--返回顶部按钮-->
+<div class="to-top" id="to-top" style="display: block;">
+    <div class="m-center"><img src="/images/jt-5.png"></div>
 </div>
 
+<script>
+    $(function(){
+        //二级导航下拉
+        $('.hxjs-nav1').click(function(){
+            event.stopPropagation();
+            if($(this).hasClass('active')){
+                $(this).find('.hxjs-nav3').slideUp();
+                $(this).removeClass('active')
+            }else{
+                $(this).find('.hxjs-nav3').slideDown()
+                $(this).addClass('active')
+            }
+        });
+        $('body').on('click',function(){
+            $('.hxjs-nav1').removeClass('active');
+            $('.hxjs-nav1').find('.hxjs-nav3').slideUp();
+        })
+        //固定下拉菜单
+        var headerHeight= $('header').outerHeight();//获得header高度外部高度
 
-<!--手机版-->
-<div id="ksjsphone" class="hidden-lg hidden-md">
-    <h1>核心专利技术<br><br></h1>
-    <h2>电流模音频放大技术</h2>
+        var nrnavHeight = $('#nrnav-box').outerHeight();//获得nrnav-boxr高度外部高度
+        var nrnavTop = $('#nrnav-box').offset().top;//获得nrnav-boxr高度上部高度
+        $(window).scroll(function(){
+            if($(window).scrollTop()> nrnavTop){
+                $('header').addClass("headeractive")
+            } else {
+                $('header').removeClass('headeractive');
+            }
+            if($(window).scrollTop()>nrnavTop){
+                $('#nrnav-box').addClass('hxjs-nav_active');
+                $('#nrnav-box').css('top',0)
+            }else{
+                $('#nrnav-box').removeClass('hxjs-nav_active');
+                $('#nrnav-box').css('top',0)
+            };
+        })
+        //
+    })
+</script>
 
-    <h3>Current Mode Amplification</h3>
-    <p class="pcenter">全球PCT专利号：US 9,614,483 B2</p>
-
-
-    <img class="img-responsive" style="width: 40%; margin: 0px auto;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs1.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs1.png">
-
-    <div class="hrphone"></div>
-
-    <p class="pcenter">
-        电流模放大是电流模式音频放大器的简称，是旷世区别于传统放大器的专利音频技术。作为音响系统“发动机”的放大器，基于全分立、特殊拓扑结构的电流模放大器可以做到极其近似录音现场的聆听体验，让听众真正被打动。同时，在电流模技术的支持下，即使用户使用的是已有的耳机或音箱，并不是专属配合的设计，也会得到比一般设备好得多的效果。<br><br>
-
-        电流模音频放大器使用三极管作为放大器件，全分立架构。它的输入和输出为电压模式，可以与传统电路接口。核心放大部分在电流域处理，恒定为纯A类工作状态。它的放大电路结构与传统电压模放大器（差分输入级，共射电压放大级等）结构完全不同，影响速度和带宽的晶体管级间电容工作在阻抗很低的节点上，不但彻底消除瞬态互调失真（TIMD），而且可以轻松获得高带宽（满功率状态下500kHz带宽），低失真的高性能放大（实现0.0002%的失真技术性能）。可以用于任何功率等级（10mW-2000W）和任意尺寸（数平方厘米-专业用途放大器尺寸）。
-
-    </p>
-    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs2.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs2.png" style="">
-
-    <h2>电流模放大如何工作？</h2>
-    <p class="pcenter">
-        主要由电压控制电流源VCCS，电流模放大单元A(i)，I/V变换级，输出缓冲器（OPT）和负反馈几部分组成。在电子学中，电压和电流都是同时存在的。只是在电流模放大部分，为了获得高性能，信号被电流主宰了而已，输入和输出都是传统的电压型的，这样的设计可以方便兼容更多的讯源和负载。考虑到High-end市场用户强烈的个性，这样的设计可以有更高的系统开放度。
-    </p>
-
-    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs3.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs3.png" style="">
-
-    <p class="pcenter">
-        由图示模型可见，输入信号首先进入VCCS（电压控制电流源）。VCCS将输入电压变为电流，送入电流增益级Ai进行电流模放大，再由I/V变换器变为电压后通过输出级（OPT）驱动负载。<br><br>
-        整个系统为了保证系统的稳定性，引入了负反馈。由于整个负反馈网络的阻抗只有几百欧姆，加上放大器的高速性能，反馈环路处理速度大约是传统电压模放大器的100倍，所以常规负反馈放大器带来的TIMD等一系列问题都不存在。
-    </p>
-
-
-    <h2><br><br><br>纯A类偏压控制</h2>
-    <h3>Pure Class A BIAS Control</h3>
-    <img class="img-responsive" style="width: 40%; margin: 0px auto;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs6.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs6.png">
-    <div class="hrphone"></div>
-    <p class="pcenter">
-        为了保证电流模放大器以高性能模式达到专业的聆听体验，旷世科技的纯A类偏压控制系统保证了电流模放大器在不同负载的状况下都以严格纯A类方式工作。<br><br>
-
-        旷世科技纯A类偏压控制系统是在旷世专利级电流模放大器基础上，根据用户的设定，通过完全隔离的电路，使用处理器控制并调节和检测电流模放大器输出级的偏压，确保输出级工作在纯A类状态，匹配耳机实现美妙的系统体验。比传统的A类，自动偏压A类等等技术更直接彻底、无负作用，也没有讯号延迟的问题。它能驾驭不同规格耳机或扬声器，
-        轻松释放全部实力。
-    </p>
-    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs7.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs7.png" style="">
-    <p class="pcenter">
-        QP2R是全球使用偏压控制系统的便携音频设备之一。在QP2R的机身侧面，标准偏压时有橙色灯光从微孔中射出。设定为高偏置时，变为红色灯光，输出偏压加大，输出静态电流翻倍，THD+N和输出阻抗降到更低：犹如把玩超跑时候将汽车设定为“RACE模式（竞技模式,&nbsp;或称Sport Plus或Sport Response&nbsp;模式）”，在发动机高转速，急速换挡配合强大抓地力，给你直抵地心的征服感无法言喻的满足感。
-    </p>
-    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs8.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs8.png" style="">
+<script>
+    //二级分类向上滚动
+    var _hash_a = location.hash.substring(1);
+    go_hash(_hash_a);
 
 
-    <h2><br><br><br>5GHz无线音频系统</h2>
-    <h3>5GHz High-end Wireless Audio System</h3>
-    <p class="pcenter">
-        全球PCT专利号：US 9,544,685,B2<br>
-        已通过美国、欧盟电磁兼容测试
-    </p>
-    <img class="img-responsive" style="width: 40%; margin: 0px auto;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs4.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs4.png">
-    <div class="hrphone"></div>
-    <p class="pcenter">
-        如果要将高性能的音频体验延伸至家庭的每一个角落或搭载到汽车上，就需要使用区别以往的无线传输技术。High-end 5GHz无线音响系统，源于Questyle。它是一套罕见的兼顾稳定性和高音质的多声道无损无线音频系统。
-    </p>
-    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs5.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs5.png" style="">
-    <p class="pcenter">
-        如果希望将美妙的聆听体验延伸至家庭或者汽车中，使用通用的蓝牙技术传输高清音频不但距离太短，而且有压缩会损失音质；使用WiFi技术又太容易受环境影响，造成卡断和不稳定。另外这些无线技术也有同步困难的问题。工程师不得不把立体声和多声道的终端扬声器设计在一起，但是这样无法还原现场的空间感和方位感，气氛大打折扣。<br><br>
-
-        旷世科技不希望美妙的体验被束缚，针对高性能音频开发了与众不同的5GHz的无线系统。这个技术工作在比较高的RF频率，使用独立的协议栈，不依赖路由器，从本质上解决了传统技术容易受到干扰，不稳定的问题。同时，高码流可以轻松传输无损音频，还支持让人惊讶的8声道同步传输，可以把不同通道的扬声器终端放在合理的位置，并通过了欧盟CE及美国FCC电磁兼容认证，实现了理想的音频无线连接延伸体验。
-    </p>
-
-
-
-
-    <h2><br><br><br>IIR数字滤波数字信号处理技术</h2>
-    <h3>Digital Signal Processing: IIR Figital Filter </h3>
-    <p class="pcenter">
-        中国国家专利局专利号：201520212711.5
-    </p>
-    <div class="hrphone"></div>
-    <p class="pcenter">
-        为了呈现真实的泛音结构，旷世科技的IIR数字滤波信号处理技术可以彻底消除脉冲波的预振铃。<br><br>
-        世界上超过99%的数字音频系统都是使用FIR（有限脉冲响应）数字滤波器。使用FIR数字滤波器产生的脉冲波预振铃不但非常容易被测试到，而且还很容易被人耳听到，它破坏了音乐本身的连贯和自然。旷世科技先进的IIR数字滤波器数字信号处理技术，完全消除了脉冲波的预振铃，呈现自然的空气流动，接近真实的泛音结构。
-    </p>
-    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs11.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs11.png" style="">
-
-
-
-
-    <h2><br><br><br>True DSD解码技术</h2>
-    <h3>True Direct Stream Digital</h3>
-    <p class="pcenter">
-        中国国家专利局专利号：201520211941.X
-    </p>
-    <img class="img-responsive" style="width: 40%; margin: 0px auto;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs9.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs9.png">
-    <div class="hrphone"></div>
-    <p class="pcenter">
-        为了原汁原味地还原DSD音频数据的体验，旷世科技的真DSD（True DSD）专利技术在处理DSD信号时不经过任何PCM转码，保证了彻头彻尾的DSD处理，它和传统的DoP，Native DSD有本质不同。<br><br>
-        当系统处理DSD数据时，硬件模式立即改变，切换到True DSD硬件通道处理数据。在这种情况下，所有的数字滤波器选择失效，所有数字音量控制失效，严格遵循SACD回放的流程处理。
-
-    </p>
-    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs10.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs10.png" style="">
-
-
-
-
-    <h2><br><br><br>3x 时钟异步架构</h2>
-    <h3>3x Clock USB Asynchronous Transmission</h3>
-    <p class="pcenter">
-        中国国家专利局专利号：201520211445.4
-    </p>
-    <div class="hrphone"></div>
-    <p class="pcenter">
-        为了保证在无损数字音频系统回放时的性能，避免数据信号的时基抖动，旷世科技的3x时钟异步架构使用3时钟结合异步FIFO数字逻辑硬件控制和算法，避免传统做法引起的时基误差（Jitter)，保证了数字音频文件在回放的时候的基本素质。<br><br>
-        3x时钟异步架构，第一枚时钟负责系统，第二枚时钟来驱动44.1K及44.1K倍数的采样信号，第三枚时钟用来驱动48K及48K倍数的采样信号和DSD信号。
-    </p>
-    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs12.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs12.png" style="">
-
-
-    <h2><br><br><br>双时钟整倍升频设计</h2>
-    <h3>Dual Clock Integral Upsampling</h3>
-    <p class="pcenter">
-        中国国家专利局专利号: ZL201520211445.4
-    </p>
-    <div class="hrphone"></div>
-    <p class="pcenter">
-        为了克服传统升频电路的诸多不足，双时钟整倍升频设计用2个超低相位噪声时钟源，自动判断当前采样率，整倍升频，消除引入误差。<br><br>
-        大多数升频设计，不管信号采样率是多少，全部升频到192k处理。而非整倍数重采样转换时，数据运算会引入误差和失真，劣化音质。双时钟整倍升频则与之不同，内部有2个超低相位噪声时钟源，处理器自动判断当前采样率，并按照整倍数选择升频，消除属于引入误差，提高音质。
-    </p>
-    <img class="img-responsive" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs13.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/ksjs/phone/ksjs13.png" style="">
-
-</div>
-
-﻿<!--footer-->
-<!--底部导航-->
-<div id="botnav">
-    <ul>
-        <li>产品系列
-            <ul><a href="/product/QPM">QPM</a></ul>
-            <ul><a href="/product/SHB2">SHB2</a></ul>
-            <ul><a href="/product/CMA-twelve">CMA Twelve</a></ul>
-        </li>
-
-        <li>新闻资讯
-            <ul><a href="/category/news">旷世新闻</a></ul>
-            <ul><a href="/category/pingce">产品评测</a></ul>
-        </li>
-
-        <li>关注旷世
-            <ul><a href="/about">关于旷世</a></ul>
-            <ul><a href="/contact">联系旷世</a></ul>
-            <ul><a href="/technology">旷世技术</a></ul>
-        </li>
-        <!--
-                <li>账户
-                    <ul>
-                        <a href="/wp-admin/profile.php">管理你的 Questyle ID</a>
-                    </ul>
-                    <ul>
-                        <a href="/wp-login.php">VIP登录</a>
-                    </ul>
-                    <ul>
-                        <a href="/wp-login.php?action=register">VIP注册</a>
-                    </ul>
-                </li>
-              -->
-
-        <li>技术支持
-            <ul><a href="/download#cpsc">产品手册</a></ul>
-            <ul><a href="/download">下载中心</a></ul>
-            <ul><a href="/category/jingxiao">试听与购买</a></ul>
-        </li>
-
-    </ul>
-</div>
-
-<!--底部-->
-<div id="footer2">
-    <div id="botl">All right reserved.2018 备案号：粤ICP备18119879号-1&nbsp;&nbsp;</div>
-    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1273369531'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1273369531%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1273369531"><a href="https://www.cnzz.com/stat/website.php?web_id=1273369531" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="https://icon.cnzz.com/img/pic.gif"></a></span><script src=" https://s13.cnzz.com/z_stat.php?id=1273369531&amp;show=pic" type="text/javascript"></script><script src="https://c.cnzz.com/core.php?web_id=1273369531&amp;show=pic&amp;t=z" charset="utf-8" type="text/javascript"></script>
-    <div id="botr">旷世科技  |  Questyle Audio  2018 </div>
-</div>
-
-
-
-<!--图片延迟加载-->
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
-<script type="text/javascript" charset="utf-8">
-    if($(window).width() < 768){
-        $(".piece").empty();
+    function go_hash(_hash) {
+        //console.log(_hash);
+        var headerHeight = $('header').outerHeight();
+        var nrnavHeight = $('.nr-banner').outerHeight();
+        if (_hash == "product") {
+            roll = nrnavHeight;
+            $('html , body').animate({
+                scrollTop: roll
+            }, 0.01);
+        }
     }
-    $("img").lazyload({threshold :80});
-</script></body></html></html>
+</script>
+
+
+</body></html>
+
+
+
+
+</html>

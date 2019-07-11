@@ -5,13 +5,8 @@
     <title>垣象科技</title>
     <!--css-->
 
-
-
     <!--响应式框架-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
-
-
-
 
     <!--底部样式-->
     <link rel="stylesheet"  th:href="@{/css/footer.css}">
@@ -21,46 +16,13 @@
     <!--页面样式-->
     <link href="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/about.css" th:href="@{/css/about.css}" rel="stylesheet">
 
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" th:src="@{/js/xingkong/jquery.min.js}"></script>
     <script src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
 </head>
-<body>
+<body style="background:#f0f0f0 !important;padding-bottom: 35px;">
 
-<!--导航栏-->
-﻿<!--字体文件-->
-<!--head头部-->
-<!--<style type="text/css">-->
-    <!--.modal-dialog {-->
-        <!--width: 200px;-->
-        <!--margin: 30px auto;-->
-    <!--}-->
 
-    <!--/*@font-face {*/-->
-    <!--/*font-family: 'iconfont';  !* project id 241409 *!*/-->
-    <!--/*src: url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.eot');*/-->
-    <!--/*src: url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.eot?#iefix') format('embedded-opentype'),*/-->
-    <!--/*url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.woff') format('woff'),*/-->
-    <!--/*url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.ttf') format('truetype'),*/-->
-    <!--/*url('//at.alicdn.com/t/font_241409_k93962uu3x2sm7vi.svg#iconfont') format('svg');*/-->
-    <!--/*}*/-->
-    <!--.iconfont1{-->
-        <!--font-family:"iconfont" !important;-->
-        <!--font-size:30px;font-style:normal;-->
-        <!--color: black;-->
-        <!-- -webkit-font-smoothing: antialiased;-->
-        <!-- -webkit-text-stroke-width: 0.2px;-->
-        <!-- -moz-osx-font-smoothing: grayscale;-->
-    <!--}-->
-    <!--.iconfont1:hover{-->
-        <!--text-decoration: none;-->
-        <!--color: #333333;-->
-    <!--}-->
-
-<!--</style>-->
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-
-
-
     <div class="container-fluid container-top">
         <div class="row">
             <div style="margin-left: 2%" class="col-md-12 col-sm-12 col-sm-offset-0  col-xs-12 col-xs-offset-0 padding-0">
@@ -73,11 +35,10 @@
                     </button>
                     <div class="navbar-brand page-scroll">
                         <a href="/">
-                            <img class="logo_style" th:src="@{/images/logo/blacklogo.png}" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/logob.png" alt="旷世科技" >
+                            <img class="logo_style" th:src="@{/images/logo/blacklogo.png}" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/logob.png" alt="垣象科技" >
                         </a>
                     </div>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="col">
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <div class="nav nav-mynavdiv">
@@ -85,13 +46,7 @@
                                 <li role="presentation" class="cur"><a href="/about">关于垣象</a></li>
                                 <li role="presentation" class="cur"><a href="/technology">核心技术</a></li>
                                 <li role="presentation" class="cur"><a href="/product">垣象产品</a></li>
-                                <!--<li role="presentation" class="cur"><a href="/newsevaluating">新闻与评测</a></li>-->
-                                <!--<li role="presentation" class="cur"><a href="/download">下载中心</a></li>-->
                                 <li role="presentation" class="cur"><a href="/contact">联系垣象</a></li>
-                                <!--<li role="presentation" class="cur"><a href="/category/jingxiao">试听与购买</a></li>-->
-                                <!--<li role="presentation" class="cur"><a href="/en">En</a></li>-->
-                                <!--
-                                <li role="presentation" class="cur"><a  href="/wp-login.php?action=register">VIP</a></li>-->
                             </ul>
                         </div>
                     </div>
@@ -104,40 +59,6 @@
 <div  class="banner_box">
     <div  class="text">关于垣象</div>
 </div>
-<!--悬浮微信-->
-<!--<div class="toolbar hidden-xs">-->
-    <!--<a class="toolbar-item toolbar-item-weixin" data-toggle="modal" data-target="#myModal">-->
-        <!--<span class="toolbar-layer"></span>-->
-    <!--</a>-->
-    <!--<a href="javascript:scroll(0,0)" class="toolbar-item toolbar-item-top"></a>-->
-<!--</div>-->
-<!--&lt;!&ndash;悬浮微信手机端&ndash;&gt;-->
-<!--<div class="toolbar hidden-md hidden-lg" style="margin-right: 5px;">-->
-    <!--<a class="iconfont1" data-toggle="modal" data-target="#myModal">-->
-        <!---->
-        <!--<span class="toolbar-layer"></span>-->
-    <!--</a>-->
-    <!--<a href="javascript:scroll(0,0)" style="display: block;margin-top: -10px;font-size: 32px" class="iconfont1"></a>-->
-<!--</div>-->
-
-<!--&lt;!&ndash; 模态框（Modal） &ndash;&gt;-->
-<!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
-    <!--<div class="modal-dialog">-->
-        <!--<div class="modal-content">-->
-            <!--<img class="img-responsive" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/weixin.jpg">-->
-        <!--</div>&lt;!&ndash; /.modal-content &ndash;&gt;-->
-    <!--</div>&lt;!&ndash; /.modal-dialog &ndash;&gt;-->
-<!--</div>-->
-<!-- /.modal -->
-<script src="https://ajax.font.im/ajax/libs/webfont/1/webfont.js" type="text/javascript" async=""></script><script>
-    $(function() {
-        $('#myModal').modal({
-            keyboard: true
-        })
-    });
-</script>
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/js/bootstrap.min.js"></script>
 <script type="text/javascript">
     $(function(){
         $(window).scrollTop(0)
@@ -192,7 +113,7 @@
 
 
 <div  data-v-63ef68d9="" class="item_box core pad_t_80 pad_b_80">
-<div class="gyst-1 width-1220">
+<div class="gyst-1">
     <div class="img wow fadeIn" style="visibility: visible; animation-name: fadeIn;"><img src="images/gyst-img1.jpg" th:src="@{/images/yxkj/gyst-img1.jpg}"></div>
     <div class="text">
         <h1 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">坚持原创，<br>让 AI 引领人类进步</h1>
@@ -206,44 +127,59 @@
 
 
     <!--<div class="p3">-->
-        <div class="gy hidden-xs">
+        <!--<div class="gy hidden-xs">-->
             <!--<img class="img-responsive" style="padding-right: 0px; padding-left: 0px;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/p3-1.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/p3-1.png">-->
             <!--<div class="txt col-md-1 leftline hidden-xs"></div>-->
-            <div class="txt col-md-5 col-md-offset-2 col-sm-6 col-xs-12" style="width: 60%;text-align: center;">
-                <h2>战略合作伙伴</h2>
+            <!--<div class="txt col-md-5 col-md-offset-2 col-sm-6 col-xs-12" style="width: 60%;text-align: center;">-->
+                <!--<h2>战略合作伙伴</h2>-->
                 <!--<p>为了保证旷世产品的工艺和品质水准， 旷世科技产品全部由战略合作伙伴富士康科技集团制造。</p>-->
                 <!--<img style="width: 300px;" data-original="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/foxconn.png" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/about/foxconn.png">-->
-                <div class="index-20">
-                    <div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
+
+                <div class="width-1220 ">
+
+                    <div class="index-20">
+                        <div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
+                            <div class="img-box">
+                                <div class="m-center"><img src="/images/hblogo1.jpg" th:src="@{/images/logo/zyzh.png}"></div>
+                            </div>
+                        </div><div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
                         <div class="img-box">
-                            <div class="m-center"><img src="/images/hblogo1.jpg" th:src="@{/images/logo/logo.png}"></div>
+                            <div class="m-center"><img src="/images/hblogo3.jpg" th:src="@{/images/logo/wdw.png}" ></div>
+                        </div>
+                    </div>
+                        <div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
+                        <div class="img-box">
+                            <div class="m-center"><img src="/upfile/201905/5cf0e73c66d50.jpg"  th:src="@{/images/logo/hblogo1.jpg}"></div>
                         </div>
                     </div><div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
-                    <div class="img-box">
-                        <div class="m-center"><img src="/images/hblogo3.jpg" th:src="@{/images/logo/logo.png}" ></div>
+                        <div class="img-box">
+                            <div class="m-center"><img src="/images/hblogo6.jpg" th:src="@{/images/logo/hblogo1.jpg}"></div>
+                        </div>
+                    </div><div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
+                        <div class="img-box">
+                            <div class="m-center"><img src="/images/hblogo8.jpg" th:src="@{/images/logo/hblogo1.jpg}"></div>
+                        </div>
                     </div>
-                </div><div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
-                    <div class="img-box">
-                        <div class="m-center"><img src="/upfile/201905/5cf0e73c66d50.jpg"  th:src="@{/images/logo.logo.png}"></div>
+                        <div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
+                            <div class="img-box">
+                                <div class="m-center"><img src="/images/hblogo2.jpg" th:src="@{/images/logo/hblogo1.jpg}"></div>
+                            </div>
+                        </div>
                     </div>
-                </div><div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
-                    <div class="img-box">
-                        <div class="m-center"><img src="/images/hblogo6.jpg" th:src="@{/images/logo/logo.png}"></div>
-                    </div>
-                </div><div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
-                    <div class="img-box">
-                        <div class="m-center"><img src="/images/hblogo8.jpg" th:src="@{/images/logo/logo.png}"></div>
-                    </div>
-                </div><div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
-                    <div class="img-box">
-                        <div class="m-center"><img src="/images/hblogo2.jpg" th:src="@{/images/logo/logo.png}"></div>
-                    </div>
-                </div>		</div>
 
-            </div>
+                    <div class="index-22">
+                        <h1 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">合作伙伴及客户</h1>
+                        <p class="wow fadeInUpa" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUpa;">700+ 战略合作伙伴及客户</p>
+                        <!--<a href="/cooperation.html" class="btn-ljgd btn-ljgd4 wow fadeInUpa" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUpa;">了解更多<span></span></a>-->
+                    </div>
+
+                </div>
+            <!--</div>-->
 
 
-        </div>
+
+
+        <!--</div>-->
     <!--</div>-->
 
 
@@ -252,7 +188,7 @@
 <!--底部导航-->
 <div id="foot">
     <div class="lf" style="width:280px;">
-        <p class="footer1"><a th:href="@{/index}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>
+        <p class="footer1"><a th:href="@{/}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>
     </div>
     <div class="foot_left lf" style="margin-left:25px;  " >
 
@@ -269,8 +205,8 @@
 
 
 <!--图片延迟加载-->
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+<!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>-->
+<!--<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>-->
 <!--<script type="text/javascript" charset="utf-8">-->
     <!--if($(window).width() < 768){-->
         <!--$("#gyks").empty();-->
