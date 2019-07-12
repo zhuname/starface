@@ -380,8 +380,8 @@
 
 
 .gyst-1{
-  margin-left: 5%;
-  /*margin-right: 15%;*/
+  margin-left: 10%;
+  margin-right: 10%;
   padding: 1.6rem 0;font-size: 18px;line-height: 1.78;color: #111111;display: flex;align-items: center;
   justify-content: space-between;}
 .gyst-1>.img{width: 30%;height:35%;}

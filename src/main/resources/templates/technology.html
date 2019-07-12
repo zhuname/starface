@@ -16,9 +16,13 @@
     <link rel="stylesheet" href="css/index.css" th:href="@{/css/xingkong/index.css}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin" th:href="@{/css/erji.css}" media="all">
     <link rel="stylesheet" href="/css/swiper.min.css" th:href="@{/css/swiper.min.css}">
+    <link rel="stylesheet" href="/css/swiper.min.css" th:href="@{/css/about.css}">
 
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" th:src="@{/js/jquery-3.1.1.min.js}"></script>
     <script src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+    <script  th:src="@{/js/swiper.min.js}"></script>
+
 
 
 </head>
@@ -68,36 +72,53 @@
     </div>
 </section>
 
-<!--二级导航-->
-<section id="nrnav-box" class="" style="top: 0px;">
-    <div class="hxjs-nav" id="product">
-        <div class="hxjs-nav1" style="position: relative;">
-            <div class="hxjs-nav2"><span style="padding-right: .2rem;">核心技术</span>
-                <span class="mui-icon mui-icon-arrowdown"></span>
-            </div>
-            <div class="hxjs-nav3" style="">
-                <div class="box_Arrow"></div>
-                <a href="/Technology/face.html#product" class="hover">人脸与属性分析技术</a>
-                <a href="/Technology/ocr.html#product">通用与专业图像识别</a>
-                <a href="/Technology/video.html#product">海量视频理解与挖掘</a>
-                <a href="/Technology/photo.html#product">图像视频处理增强</a>
-                <a href="/Technology/3d.html#product">SLAM 与 3D 视觉</a>
-                <a href="/Technology/contrl.html#product">机器人控制与传感</a>
-                <a href="/Technology/autodrive.html#product">自动驾驶</a>
-                <a href="/Technology/study.html#product">深度学习平台</a>
-                <a href="/Technology/medical.html#product">医学图像分析</a>
-            </div>
-        </div>
-        <p>人脸与属性分析技术 </p>
+
+
+<div data-v-330f6879="" class="item_box algorithm pad_t_80 pad_b_80">
+    <div data-v-330f6879="" class="tit_box ">
+        <span data-v-330f6879="" class="line"></span>
+        <span data-v-330f6879="" class="tit_text">人工智能引擎</span>
+        <span data-v-330f6879="" class="line"></span>
     </div>
-</section>
+    <div data-v-330f6879="" class="bg_box">
+        <img data-v-330f6879="" src="/static/img/hxjs_1@3x.jpg" th:src="@{/images/yxkj/middle.png}" alt="" class="bg_img">
+    </div>
+</div>
 
-<!--第二个banner-->
-<section class="hxjs-banner m-center">
-    <p class="wow fadeInUpa delay-2 width-1220" style="visibility: visible; animation-name: fadeInUpa;"><i class="sensetime sensetime-renlianyurentifenxijishu"></i>人脸与属性分析技术</p>
-    <div class="width-1220 Technology_banner  a-background" style="background-image: url(/images/yxkj/Technology_face.jpg);"></div>
-</section>
+<div data-v-330f6879="" class="item_box algorithm pad_t_80 pad_b_80">
+    <div data-v-330f6879="" class="tit_box ">
+        <span data-v-330f6879="" class="line"></span>
+        <span data-v-330f6879="" class="tit_text">技术亮点</span>
+        <span data-v-330f6879="" class="line"></span>
+    </div>
+    <div data-v-330f6879="" class="bg_box">
+        <img data-v-330f6879="" src="/static/img/hxjs_1@3x.jpg" th:src="@{/images/yxkj/middle2.png}" alt="" class="bg_img">
+    </div>
+</div>
 
+
+<div data-v-330f6879="" class="item_box algorithm pad_t_80 pad_b_80">
+    <div data-v-330f6879="" class="tit_box ">
+        <span data-v-330f6879="" class="line"></span>
+        <span data-v-330f6879="" class="tit_text">应用场景</span>
+        <span data-v-330f6879="" class="line"></span>
+    </div>
+    <div data-v-330f6879="" class="bg_box">
+        <img data-v-330f6879="" src="/static/img/hxjs_1@3x.jpg" th:src="@{/images/yxkj/middle1.png}" alt="" class="bg_img">
+    </div>
+</div>
+
+
+<div data-v-330f6879="" class="item_box algorithm pad_t_80 pad_b_80">
+    <div data-v-330f6879="" class="tit_box ">
+        <span data-v-330f6879="" class="line"></span>
+        <span data-v-330f6879="" class="tit_text">应用场景</span>
+        <span data-v-330f6879="" class="line"></span>
+    </div>
+    <div data-v-330f6879="" class="bg_box">
+        <img data-v-330f6879="" src="/static/img/hxjs_1@3x.jpg" th:src="@{/images/yxkj/middle1.png}" alt="" class="bg_img">
+    </div>
+</div>
 
 <!--内容-->
 <section>
@@ -108,8 +129,8 @@
     <div class="width-1220 hxjs-xg-1">
         <!--标题-->
         <div class="hxjs-menu-box" id="hxjsMenu">
-            <div class="hxjs-menu-item active">人脸检测跟踪</div>
-            <div class="hxjs-menu-item">人脸关键点定位</div>
+            <div class="hxjs-menu-item active">静态人脸识别</div>
+            <div class="hxjs-menu-item">静态人脸识别高并发</div>
             <div class="hxjs-menu-item">人脸身份验证</div>
             <div class="hxjs-menu-item">人脸属性</div>
             <div class="hxjs-menu-item">人脸聚类</div>
@@ -123,20 +144,20 @@
                 <div class="swiper-slide hxjs-con-item swiper-slide-active" style="width: 820px; opacity: 1; transform: translate3d(0px, 0px, 0px);">
                     <div class="hxjs-con-left width-50">
                         <div>
-                            <h2 class="wo delay-5">人脸检测跟踪</h2>
-                            <p class="wo delay-7">对任意常见场景，可以在嵌入式设备、移动设备和个人电脑上实现毫秒级的人脸检测。该技术可适应侧脸、遮挡、模糊、暗光、逆光、表情变化、平面内 360° 旋转等各种实际环境，支持彩色、灰度、近红外等各种图像视频类型。</p>
+                            <h2 class="wo delay-5">静态人脸识别</h2>
+                            <!--<p class="wo delay-7">对任意常见场景，可以在嵌入式设备、移动设备和个人电脑上实现毫秒级的人脸检测。该技术可适应侧脸、遮挡、模糊、暗光、逆光、表情变化、平面内 360° 旋转等各种实际环境，支持彩色、灰度、近红外等各种图像视频类型。</p>-->
                         </div>
                     </div>
-                    <div class="width-50 a-background" style="background-image: url(/images/yxkj/rljc.png);"></div>
+                    <div class="width-50 a-background" style="background-image: url(/images/yxkj/technology_jtrlsb1.png);"></div>
                 </div>
                 <div class="swiper-slide hxjs-con-item swiper-slide-next" style="width: 820px; opacity: 0; transform: translate3d(-820px, 0px, 0px);">
                     <div class="hxjs-con-left width-50">
                         <div>
-                            <h2 class="wo delay-5">人脸关键点定位</h2>
+                            <h2 class="wo delay-5">静态人脸识别高并发</h2>
                             <p class="wo delay-7">毫秒级别眼、口、鼻轮廓等人脸 21、106、240 个关键点定位，支持不同精度的人脸关键点定位，该技术可适应大角度侧脸、大表情变化、遮挡、模糊、明暗变化等各种实际环境。</p>
                         </div>
                     </div>
-                    <div class="width-50 a-background" style="background-image: url(../images/Technology_face2.jpg);"></div>
+                    <div class="width-50 a-background" style="background-image: url(/images/yxkj/technology_jtrlsb2.png);"></div>
                 </div>
                 <div class="swiper-slide hxjs-con-item" style="width: 820px; opacity: 0; transform: translate3d(-1640px, 0px, 0px);">
                     <div class="hxjs-con-left width-50">
@@ -197,7 +218,7 @@
         </div>
     </div>
 
-    <script>
+    <script  >
         var hxjsCon = new Swiper('#hxjsCon', {
             autoHeight: true, //高度随内容变化
             effect : 'fade',
@@ -218,8 +239,6 @@
             })
         });
     </script>
-
-
 </section>
 
 
