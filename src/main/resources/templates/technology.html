@@ -17,8 +17,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin" th:href="@{/css/erji.css}" media="all">
     <link rel="stylesheet" href="/css/swiper.min.css" th:href="@{/css/swiper.min.css}">
     <link rel="stylesheet" href="/css/swiper.min.css" th:href="@{/css/about.css}">
-
-
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" th:src="@{/js/jquery-3.1.1.min.js}"></script>
     <script src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
     <script  th:src="@{/js/swiper.min.js}"></script>
@@ -32,7 +30,6 @@
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid container-top">
-        <div class="row">
             <div style="margin-left: 2%" class="col-md-12 col-sm-12 col-sm-offset-0  col-xs-12 col-xs-offset-0 padding-0">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -53,8 +50,8 @@
                             <ul class="nav navbar-mynav">
                                 <li role="presentation" class="cur"><a href="/about">关于垣象</a></li>
                                 <li role="presentation" class="cur"><a href="/technology">核心技术</a></li>
-                                <li role="presentation" class="cur"><a href="/product">垣象产品</a></li>
-                                <li role="presentation" class="cur"><a href="/contact">解决方案</a></li>
+                                <li role="presentation" class="cur"><a href="/product">解决方案</a></li>
+                                <li role="presentation" class="cur"><a href="/contact">联系我们</a></li>
                             </ul>
                         </div>
                     </div>
@@ -81,7 +78,20 @@
         <span data-v-330f6879="" class="line"></span>
     </div>
     <div data-v-330f6879="" class="bg_box">
-        <img data-v-330f6879="" src="/static/img/hxjs_1@3x.jpg" th:src="@{/images/yxkj/middle.png}" alt="" class="bg_img">
+        <img data-v-330f6879="" src="/static/img/hxjs_1@3x.jpg" th:src="@{/images/yxkj/middle_one.png}" alt="" class="bg_img">
+    </div>
+</div>
+
+
+
+<div data-v-330f6879="" class="item_box algorithm pad_t_80 pad_b_80">
+    <div data-v-330f6879="" class="tit_box ">
+        <span data-v-330f6879="" class="line"></span>
+        <span data-v-330f6879="" class="tit_text">技术实力</span>
+        <span data-v-330f6879="" class="line"></span>
+    </div>
+    <div data-v-330f6879="" class="bg_box">
+        <img data-v-330f6879="" src="/static/img/hxjs_1@3x.jpg" th:src="@{/images/yxkj/middle_two.png}" alt="" class="bg_img">
     </div>
 </div>
 
@@ -104,7 +114,7 @@
         <span data-v-330f6879="" class="line"></span>
     </div>
     <div data-v-330f6879="" class="bg_box">
-        <img data-v-330f6879="" src="/static/img/hxjs_1@3x.jpg" th:src="@{/images/yxkj/middle1.png}" alt="" class="bg_img">
+        <img data-v-330f6879="" src="/static/img/hxjs_1@3x.jpg" th:src="@{/images/yxkj/middle_four.png}" alt="" class="bg_img">
     </div>
 </div>
 
@@ -121,10 +131,10 @@
             <div class="hxjs-menu-item">静态人脸识别高并发</div>
             <div class="hxjs-menu-item">行人检测</div>
             <div class="hxjs-menu-item">目标属性</div>
-            <div class="hxjs-menu-item">人脸聚类</div>
-            <div class="hxjs-menu-item">真人检测</div>
-            <div class="hxjs-menu-item">人像美颜</div>
-            <div class="hxjs-menu-item">人体关键点</div>
+            <div class="hxjs-menu-item">目标识别跟踪</div>
+            <div class="hxjs-menu-item">车牌识别</div>
+            <div class="hxjs-menu-item">文字识别</div>
+            <div class="hxjs-menu-item">菜品识别</div>
         </div>
 
         <div class="hxjs-con-box swiper-container-horizontal swiper-container-autoheight swiper-container-fade" id="hxjsCon">
@@ -168,39 +178,39 @@
                 <div class="swiper-slide hxjs-con-item" style="width: 820px; opacity: 0; transform: translate3d(-3280px, 0px, 0px);">
                     <div class="hxjs-con-left width-50">
                         <div>
-                            <h2 class="wo delay-5">人脸聚类</h2>
-                            <p class="wo delay-7">支持数十万人的人脸快速聚类，可用于基于人脸的智能相册以及基于合影的社交网络分析。让照片管理更直观，社交关系更明晰。</p>
+                            <h2 class="wo delay-5">目标识别跟踪</h2>
+                            <p class="wo delay-7">借助一个普通的监控摄像头，我们就可以实现对行人、车辆等的多目标实时跟踪分析，<br/>记录行动轨迹，判断行动方向等。<br/>光线、清晰度不再是问题，我们可通过服装、背影等进行识别</p>
                         </div>
                     </div>
-                    <div class="width-50 a-background" style="background-image: url(../images/Technology_face5.jpg);"></div>
+                    <div class="width-50 a-background" style="background-image: url(/images/yxkj/technology_musb.png);"></div>
                 </div>
                 <div class="swiper-slide hxjs-con-item" style="width: 820px; opacity: 0; transform: translate3d(-4100px, 0px, 0px);">
                     <div class="hxjs-con-left width-50">
                         <div>
-                            <h2 class="wo delay-5">真人检测</h2>
-                            <p class="wo delay-7">检测摄像头前用户是否为真人操作，配合人脸身份认证，为金融等高安全性要求的严肃应用场景提供真人身份验证。能有效分辨高清照片、PS 、三维模型、换脸等仿冒欺诈。我们针对不同场景需求提供定制化的解决方案。</p>
+                            <h2 class="wo delay-5">车牌识别</h2>
+                            <p class="wo delay-7">OCR 识别引擎</p>
                         </div>
                     </div>
-                    <div class="width-50 a-background" style="background-image: url(../images/Technology_face6.jpg);"></div>
+                    <div class="width-50 a-background" style="background-image: url(/images/yxkj/technology_cpsb1.png);"></div>
                 </div>
 
                 <div class="swiper-slide hxjs-con-item" style="width: 820px; opacity: 0; transform: translate3d(-4920px, 0px, 0px);">
                     <div class="hxjs-con-left width-50">
                         <div>
-                            <h2 class="wo delay-5">人像美颜</h2>
-                            <p class="wo delay-7">基于智能人脸检测定位技术，打造移动端美颜、美妆效果解决方案，让移动互联网娱乐时代有“美”可依。</p>
+                            <h2 class="wo delay-5">文字识别</h2>
+                            <!--<p class="wo delay-7">基于智能人脸检测定位技术，打造移动端美颜、美妆效果解决方案，让移动互联网娱乐时代有“美”可依。</p>-->
                         </div>
                     </div>
-                    <div class="width-50 a-background" style="background-image: url(../images/Technology_face8.jpg);"></div>
+                    <div class="width-50 a-background" style="background-image: url(/images/yxkj/technology_wzsb.png);"></div>
                 </div>
                 <div class="swiper-slide hxjs-con-item" style="width: 820px; opacity: 0; transform: translate3d(-5740px, 0px, 0px);">
                     <div class="hxjs-con-left width-50">
                         <div>
-                            <h2 class="wo delay-5">人体关键点</h2>
-                            <p class="wo delay-7">率先支持移动端 14 点人体关键点定位，通过 RGB 图像输入超实时给出人体头、肩、腰、腿等位置，可适用于各种大幅度人体动作。</p>
+                            <h2 class="wo delay-5">菜品识别</h2>
+                            <!--<p class="wo delay-7">率先支持移动端 14 点人体关键点定位，通过 RGB 图像输入超实时给出人体头、肩、腰、腿等位置，可适用于各种大幅度人体动作。</p>-->
                         </div>
                     </div>
-                    <div class="width-50 a-background" style="background-image: url(../images/Technology_face9.jpg);"></div>
+                    <div class="width-50 a-background" style="background-image: url(/images/yxkj/technology_cp.png);"></div>
                 </div>
             </div>
         </div>
@@ -229,7 +239,7 @@
     </script>
 </section>
 
-
+<!--页面底部-->
 <div   style="width:100%; background:#f0f0f0 !important;padding-bottom: 35px;">
     <div id="foot" >
         <div class="lf" style="width:280px;">
@@ -239,8 +249,8 @@
 
             <p  class="foot=li"><a href="/about" style="font-size: 18px;">关于垣象</a></p>
             <p  class="foot=li"><a href="/technology" style="font-size: 18px; ">核心技术</a></p>
-            <p  class="foot=li"><a href="/product" style="font-size: 18px; ">垣象产品</a></p>
-            <p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系垣象</a></p>
+            <p  class="foot=li"><a href="/product" style="font-size: 18px; ">解决方案</a></p>
+            <p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系我们</a></p>
         </div>
         <div class="record">
             ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
@@ -310,9 +320,9 @@
 
 
 <!--返回顶部按钮-->
-<div class="to-top" id="to-top" style="display: block;">
-    <div class="m-center"><img src="/images/jt-5.png"></div>
-</div>
+<!--<div class="to-top" id="to-top" style="display: block;">-->
+    <!--<div class="m-center"><img src="/images/jt-5.png"></div>-->
+<!--</div>-->
 
 <script>
     $(function(){
