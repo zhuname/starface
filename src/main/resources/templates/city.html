@@ -1,0 +1,371 @@
+<html  xmlns:th="http://www.thymeleaf.org" style="font-size: 50px;">
+<head>
+    <!--<style class="vjs-styles-defaults">-->
+    <!--.video-js {-->
+    <!--width: 300px;-->
+    <!--height: 150px;-->
+    <!--}-->
+
+    <!--.vjs-fluid {-->
+    <!--padding-top: 56.25%-->
+    <!--}-->
+    <!--</style>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="app-mobile-web-app-capable" content="yes">
+    <title>垣象科技</title>
+    <!--响应式框架-->
+    <!--css-->
+    <!--响应式框架-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet"  th:href="@{/css/footer.css}">
+    <!--默认样式-->
+    <link rel="stylesheet" th:href="@{/css/style.css}" >
+    <!--图片和滚屏样式-->
+    <link rel="stylesheet"  th:href="@{/css/erji.css}" media="all">
+    <!--<link rel="stylesheet"  th:href="@{/css/iconfont.css}" media="all">-->
+
+    <link rel="stylesheet" th:href="@{/css/about.css}">
+    <link rel="stylesheet"  th:href="@{/css/swiper.min.css}">
+    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{/css/public.css}">
+
+    <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
+    <script  th:src="@{/js/bootstrap.min.js}"></script>
+    <script  th:src="@{/js/swiper.min.js}"></script>
+</head>
+<body>
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid container-top">
+        <div style="margin-left: 2%" class="col-md-12 col-sm-12 col-sm-offset-0  col-xs-12 col-xs-offset-0 padding-0">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed btn-white" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="c-icon">
+                                    <i class="fa fa-reorder"></i>
+                                </span>
+                </button>
+                <div class="navbar-brand page-scroll">
+                    <a href="/">
+                        <img class="logo_style" th:src="@{/images/logo/blacklogo.png}" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/logob.png" alt="旷世科技" >
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="nav nav-mynavdiv">
+                        <ul class="nav navbar-mynav">
+                            <li role="presentation" class="cur"><a href="/about">关于垣象</a></li>
+                            <li role="presentation" class="cur"><a href="/technology">核心技术</a></li>
+                            <li role="presentation" class="cur">
+                                <a id="nav_a"  href="">解决方案
+                                    <div id="menu-box" class="menu-box menu-box-1">
+                                        <div class="menu-9">
+                                            <div class="menu-10">
+                                                <a href="/security">安防领域</a>
+                                                <a href="/banking">金融领域</a>
+                                                <a href="/city">城市管理</a>
+                                                <a href="/selling">销售领域</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <script>
+                                $(document).ready(function(){
+                                    $('#nav_a').hover(function() {
+                                        $("#menu-box").css('display', 'block');
+                                    }, function() {
+                                        $("#menu-box").css('display', 'none');
+                                    });
+
+                                    $('#menu-box').hover(function() {
+                                        $("#menu-box").css('display', 'block');
+                                    }, function() {
+                                        $("#menu-box").css('display', 'none');
+                                    });
+
+                                })
+                            </script>
+                            <li role="presentation" class="cur"><a href="/contact">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+<!--banner-->
+<section class="nr-banner a-background" style="background-image: url(/images/yxkj/security/yxal-banner.jpg);">
+    <div class="width-1220">
+        <h1 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">客户案例</h1>
+        <p class="wow fadeInUpa" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUpa;">
+            专业的合作伙伴与客户，遍及安防、城市管理、金融、销售等多个领域</p>
+    </div>
+</section>
+
+<!--二级页面导航-->
+<section class="border-bottom nrnav-box" style="overflow: visible; top: 0px;" id="nrnav-box">
+    <div class="width-1220 nr-nav">
+        <!--<div class="nr-nav-left">智慧交通</div>-->
+        <div class="nr-crumbs">
+            <div class="khal-nr-nav" style="font-size:18px;">
+                <span style="color: #707070;font-size: 18px;">客户案例</span>
+                <span style="color:black;display: inline-block ;margin-left: 5px;margin-right:5px;" class="fa fa-angle-down"></span>
+                <span>城市管理</span>
+
+                <!--下拉菜单-->
+                <div class="hxjs-nav3 khal-nr-nav-box" style="">
+                    <div class="box_Arrow"></div>
+                    <a class="khal-nav-menu " href="/security">安防领域</a>
+                    <a class="khal-nav-menu" href="/banking">金融领域</span></a>
+                    <a class="khal-nav-menu"  style="color: #e72427" href="/city">城市管理</a>
+                    <a class="khal-nav-menu" href="selling">销售领域</a>
+
+                </div>
+            </div>
+            <!--<div class="clearfix"></div>-->
+        </div>
+    </div>
+    <script>
+        //二级导航下拉
+        $(function(){
+            //一级
+            $('.khal-nr-nav').click(function(){
+                event.stopPropagation();
+                if($(this).hasClass('active')){
+                    $('.hxjs-nav3').slideUp();
+                    $(this).removeClass('active')
+                }else{
+                    $('.hxjs-nav3').slideDown()
+                    $(this).addClass('active')
+                }
+            });
+            //二级
+            $('.khal-nr-nav-box>.khal-nav-menu').click(function(){
+                event.stopPropagation();
+                if($(this).hasClass('active')){
+                    $(this).next('.khal-nr-nav-box2').slideUp();
+                    $(this).removeClass('active')
+                }else{
+                    $(this).next('.khal-nr-nav-box2').slideDown()
+                    $(this).addClass('active')
+                }
+            })
+            //点击空白处菜单收回
+            $('body').on('click',function(){
+                $('.khal-nr-nav').removeClass('active');
+                $('.hxjs-nav3').slideUp();
+            })
+
+        })
+    </script>
+</section>
+
+
+<div  class=""  >
+    <div style="float:left;">
+
+        <img style= " width:250px;height: 250px;margin-left:35%;margin-top: 60px;"  src="/images/yxkj/security/four.png" alt="">
+        <div  class="tit" style="width:250px; text-align:center;margin-left: 35%;font-size:18px; ">挂式虹膜识别仪</div>
+    </div>
+
+    <div style="float:right;margin-right:18%;margin-top: 90px;">
+        <div  class="tit" style="margin-bottom:30px;font-size:18px;text-align: center; ">与各级监狱看守所落地应用虹膜采集、识别</div>
+        <img style="width:200px;height: 180px;"  src="/images/yxkj/security/one.png" alt="">
+        <img style="width:200px;height: 180px;"  src="/images/yxkj/security/two.png" alt="">
+        <img style="width:200px;height: 180px;"  src="/images/yxkj/security/three.png" alt="">
+
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+
+
+<div style=" border-top:1px solid #e9e9e9; border-bottom:0px; margin-top: 5%;"  class="item_box core pad_t_80 pad_b_80">
+
+    <div data-v-63ef68d9="" class="tit_box mar_b_50" style="margin-top:30px;">
+        <span data-v-63ef68d9="" class="line"></span>
+        <span data-v-63ef68d9="" class="tit_text" style="font-size:18px;"> 识别动态人脸，实现高精度 1:N 人脸查找</span>
+        <span data-v-63ef68d9="" class="line"></span>
+    </div>
+
+
+    <div style=" width: 300px;height:300px;background-color: aliceblue;" >
+        <video  style="width:100%;height:100%;"controls preload="auto">
+            <source th:src="@{/images/yxkj/mp4/hello.mp4}" type="video/mp4">
+        </video>
+    </div>
+
+</div>
+
+
+<div id="nrnav-box-height" style="height: 0px;"></div>
+
+
+<!--&lt;!&ndash;内容&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;二级导航固定&ndash;&gt;-->
+<script>
+    $(function(){
+        var headerHeight= $('header').outerHeight();
+        var nrnavHeight = $('#nrnav-box').outerHeight();
+        var nrnavTop = $('#nrnav-box').offset().top;
+
+
+        $(window).scroll(function(){
+            if($(window).scrollTop()>nrnavTop-headerHeight){
+                $('header').addClass("headeractive")
+                $('#nrnav-box').addClass('active');
+                $('#nrnav-box').css('top',0)
+                $('#nrnav-box-height').height(nrnavHeight);
+            }else{
+                $('header').removeClass('headeractive');
+                $('#nrnav-box').removeClass('active');
+                $('#nrnav-box').css('top',0)
+                $('#nrnav-box-height').height(0);
+            };
+        })
+
+    })
+</script>
+
+
+
+
+<!--&lt;!&ndash;footer&ndash;&gt;-->
+<!--<footer class="bg-252526">-->
+<!--<div class="width-1220 footer-1">-->
+<!--<p class="footer-3">商业合作：<span>400 900 5986</span><i> ( 周一到周五 9:00-18:00 )</i>-->
+<!--<span class="pull-right">business@sensetime.com</span>-->
+<!--</p>-->
+<!--<div class="footer-2">-->
+<!--<a href="/logo.zip" id="logolink">商汤LOGO</a>-->
+<!--<a href="/learning.html">学术合作</a>-->
+<!--<a href="/cooperation.html">合作伙伴</a>-->
+<!--<a href="/statement.html">法律声明</a>-->
+<!--<a href="/clause.html">使用条款</a>-->
+<!--<a href="/en" class="visible-xs-inline">ENGLISH</a>-->
+<!--</div>-->
+<!--<div class="footer-4">-->
+<!--<div class="footer-logo"><img src="/images/footer-logo.png"></div>-->
+<!--<a class="footer-6" id="wxbox2">-->
+<!--<img src="/images/footer-wx.png">-->
+<!--<div class="wxbox" style="display:none;">-->
+<!--<img src="/images/erwm.png" alt="">-->
+<!--</div>-->
+<!--</a>-->
+<!--<a class="footer-6 " id="wxbox"><img src="/images/footer-weibo.png">-->
+<!--<div class="wxbox" style="display:none;">-->
+<!--<img src="/images/erwm1.png" alt="">-->
+<!--</div>-->
+<!--</a>-->
+
+<!--<a href="https://www.linkedin.com/company/sensetime-group-limited/" class="footer-5" target="_blank" style="margin-right: 0;">-->
+<!--<img src="/images/footer-linkedin.png">-->
+<!--</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="width-1220 footer-ba">-->
+<!--<p>-->
+<!--<span>京 ICP 备 15000892 号-1 京 ICP 备 15000892 号-2</span>-->
+<!--<span class="hidden-xs">|</span>-->
+<!--<span class="footer-ba1">京公网安备 11010802026791 号</span>-->
+<!--<span>© 2014-2019  SenseTime. All Rights Reserved. 北京市商汤科技开发有限公司</span>-->
+<!--</p>-->
+<!--</div>-->
+<!--</footer>-->
+
+
+
+
+<!--<script type="text/javascript">-->
+<!--var is_weixin = (function(){return navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1})();-->
+<!--if(is_weixin){-->
+<!--$(function(){-->
+<!--document.getElementById('logolink').onclick = function(ev){-->
+<!--ev.preventDefault();-->
+<!--$(".wxopen").show();-->
+<!--}-->
+
+<!--$(".wxopen,.wxopen>img").click(function(){-->
+<!--$(".wxopen").hide();-->
+<!--});-->
+<!--});-->
+<!--}else{-->
+<!--$(function(){-->
+<!--return false;-->
+<!--});-->
+<!--}-->
+
+<!--$(document).ready(function() {-->
+<!--$("#wxbox").hover(function(){-->
+<!--$(this).addClass("footer-6_hover");-->
+<!--$(this).children(".wxbox").show();-->
+<!--},function(){-->
+<!--$(this).removeClass("footer-6_hover");-->
+<!--$(this).children(".wxbox").hide();-->
+<!--});-->
+<!--$("#wxbox2").hover(function(){-->
+<!--$(this).addClass("footer-6_hover");-->
+<!--$(this).children(".wxbox").show();-->
+<!--},function(){-->
+<!--$(this).removeClass("footer-6_hover");-->
+<!--$(this).children(".wxbox").hide();-->
+<!--});-->
+<!--});-->
+
+
+<!--var _hmt = _hmt || [];-->
+<!--(function() {-->
+<!--var hm = document.createElement("script");-->
+<!--hm.src = "https://hm.baidu.com/hm.js?95e1c7f2af12086fc92e0742665b8268";-->
+<!--var s = document.getElementsByTagName("script")[0];-->
+<!--s.parentNode.insertBefore(hm, s);-->
+<!--})();-->
+
+
+<!--//2019-6-11增加百度代码-->
+<!--var _hmt = _hmt || [];-->
+<!--(function() {-->
+<!--var hm = document.createElement("script");-->
+<!--hm.src = "https://hm.baidu.com/hm.js?8ebb5ff06a2c44c46939dec8d61388ed";-->
+<!--var s = document.getElementsByTagName("script")[0];-->
+<!--s.parentNode.insertBefore(hm, s);-->
+<!--})();-->
+<!--</script>-->
+
+
+
+
+<!--&lt;!&ndash;返回顶部按钮&ndash;&gt;-->
+<!--<div class="to-top" id="to-top" style="display: none;">-->
+<!--<div class="m-center"><img src="/images/jt-5.png"></div>-->
+<!--</div>-->
+<div   style="width:100%; background:#f0f0f0 !important;padding-bottom: 35px;">
+    <div id="foot" >
+        <div class="lf" style="width:280px;">
+            <p class="footer1"><a th:href="@{/}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>
+        </div>
+        <div class="foot_left lf" style="margin-left:25px;  " >
+
+            <p  class="foot=li"><a href="/about" style="font-size: 18px;">关于垣象</a></p>
+            <p  class="foot=li"><a href="/technology" style="font-size: 18px; ">核心技术</a></p>
+            <p  class="foot=li"><a href="/product" style="font-size: 18px; ">解决方案</a></p>
+            <p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系我们</a></p>
+        </div>
+        <div class="record">
+            ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
+        </div>
+    </div>
+
+</div>
+
+
+</body></html>

@@ -72,6 +72,10 @@ h1,h2,h3,h4,h5{
 
 .nav>li >a{padding:0 35px;color:#fff;font-size:18px;}
 
+
+.nav>li>a:hover .menu-box{
+  display: block;
+}
 .nav>li>a:hover{font-weight:bold;color:black}
 .nav_right{position:absolute;top:4px;right:-60px;}
 .bg-primary {

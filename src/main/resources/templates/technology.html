@@ -3,31 +3,30 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="app-mobile-web-app-capable" content="yes">
     <title>垣象科技</title>
+    <!--响应式框架-->
     <!--css-->
     <!--响应式框架-->
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
+    <!--<link rel="stylesheet" th:href="@{/css/animation.css}">-->
     <link rel="stylesheet"  th:href="@{/css/footer.css}">
-
     <!--默认样式-->
-    <link  th:href="@{/css/style.css}" rel="stylesheet">
-    <link href="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/ksjs.css" th:href="@{/css/public.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}" >
     <!--图片和滚屏样式-->
-    <link rel="stylesheet" href="css/index.css" th:href="@{/css/xingkong/index.css}">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin" th:href="@{/css/erji.css}" media="all">
-    <link rel="stylesheet" href="/css/swiper.min.css" th:href="@{/css/swiper.min.css}">
-    <link rel="stylesheet" href="/css/swiper.min.css" th:href="@{/css/about.css}">
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" th:src="@{/js/jquery-3.1.1.min.js}"></script>
-    <script src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/js/bootstrap.min.js" th:src="@{/js/bootstrap.min.js}"></script>
+    <link rel="stylesheet"  th:href="@{/css/erji.css}" media="all">
+    <link rel="stylesheet"  th:href="@{/css/swiper.min.css}">
+    <link rel="stylesheet" th:href="@{/css/about.css}">
+    <link rel="stylesheet" th:href="@{/css/public.css}">
+
+
+    <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
+    <script  th:src="@{/js/bootstrap.min.js}"></script>
     <script  th:src="@{/js/swiper.min.js}"></script>
-
-
-
 </head>
 
 <body>
 
-
+<!--头部-->
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid container-top">
             <div style="margin-left: 2%" class="col-md-12 col-sm-12 col-sm-offset-0  col-xs-12 col-xs-offset-0 padding-0">
@@ -40,7 +39,7 @@
                     </button>
                     <div class="navbar-brand page-scroll">
                         <a href="/">
-                            <img class="logo_style" th:src="@{/images/logo/blacklogo.png}" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/logob.png" alt="旷世科技" >
+                            <img class="logo_style" th:src="@{/images/logo/blacklogo.png}" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/logob.png" alt="垣象科技" >
                         </a>
                     </div>
                 </div>
@@ -50,7 +49,37 @@
                             <ul class="nav navbar-mynav">
                                 <li role="presentation" class="cur"><a href="/about">关于垣象</a></li>
                                 <li role="presentation" class="cur"><a href="/technology">核心技术</a></li>
-                                <li role="presentation" class="cur"><a href="/product">解决方案</a></li>
+                                <li role="presentation" class="cur">
+                                    <a id="nav_a"  href="">解决方案
+                                        <div id="menu-box" class="menu-box menu-box-1">
+                                            <div class="menu-9">
+                                                <div class="menu-10">
+                                                    <a href="/security">安防领域</a>
+                                                    <a href="/banking" >金融领域</a>
+                                                    <a href="/city">城市管理</a>
+                                                    <a href="/selling">销售领域</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <script>
+                                    $(document).ready(function(){
+                                        $('#nav_a').hover(function() {
+                                            $("#menu-box").css('display', 'block');
+                                        }, function() {
+                                            $("#menu-box").css('display', 'none');
+                                        });
+
+                                        $('#menu-box').hover(function() {
+                                            $("#menu-box").css('display', 'block');
+                                        }, function() {
+                                            $("#menu-box").css('display', 'none');
+                                        });
+
+                                    })
+                                </script>
                                 <li role="presentation" class="cur"><a href="/contact">联系我们</a></li>
                             </ul>
                         </div>
@@ -58,7 +87,6 @@
                 </div>
             </div>
         </div>
-    </div>
 </nav>
 
 <!--banner-->
@@ -240,7 +268,7 @@
 </section>
 
 <!--页面底部-->
-<div   style="width:100%; background:#f0f0f0 !important;padding-bottom: 35px;">
+<div    style="width:100%; margin-top: 10px; background:#f0f0f0 !important;padding-bottom: 35px;">
     <div id="foot" >
         <div class="lf" style="width:280px;">
             <p class="footer1"><a th:href="@{/}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>

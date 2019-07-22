@@ -1,0 +1,227 @@
+<html  xmlns:th="http://www.thymeleaf.org" style="font-size: 50px;">
+<head>
+    <!--<style class="vjs-styles-defaults">-->
+    <!--.video-js {-->
+    <!--width: 300px;-->
+    <!--height: 150px;-->
+    <!--}-->
+
+    <!--.vjs-fluid {-->
+    <!--padding-top: 56.25%-->
+    <!--}-->
+    <!--</style>-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="app-mobile-web-app-capable" content="yes">
+    <title>垣象科技</title>
+    <!--响应式框架-->
+    <!--css-->
+    <!--响应式框架-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet"  th:href="@{/css/footer.css}">
+    <!--默认样式-->
+    <link rel="stylesheet" th:href="@{/css/style.css}" >
+    <!--图片和滚屏样式-->
+
+    <!--<link rel="stylesheet"  th:href="@{/css/iconfont.css}" media="all">-->
+
+    <link rel="stylesheet" th:href="@{/css/about.css}">
+    <link rel="stylesheet"  th:href="@{/css/swiper.min.css}">
+    <link rel="stylesheet"  th:href="@{/css/erji.css}" media="all">
+    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{/css/public.css}">
+
+    <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
+    <script  th:src="@{/js/bootstrap.min.js}"></script>
+    <script  th:src="@{/js/swiper.min.js}"></script>
+</head>
+<body>
+
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid container-top">
+        <div style="margin-left: 2%" class="col-md-12 col-sm-12 col-sm-offset-0  col-xs-12 col-xs-offset-0 padding-0">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed btn-white" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="c-icon">
+                                    <i class="fa fa-reorder"></i>
+                                </span>
+                </button>
+                <div class="navbar-brand page-scroll">
+                    <a href="/">
+                        <img class="logo_style" th:src="@{/images/logo/blacklogo.png}" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/logob.png" alt="旷世科技" >
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="nav nav-mynavdiv">
+                        <ul class="nav navbar-mynav">
+                            <li role="presentation" class="cur"><a href="/about">关于垣象</a></li>
+                            <li role="presentation" class="cur"><a href="/technology">核心技术</a></li>
+                            <li role="presentation" class="cur">
+                                <a id="nav_a"  href="">解决方案
+                                    <div id="menu-box" class="menu-box menu-box-1">
+                                        <div class="menu-9">
+                                            <div class="menu-10">
+                                                <a href="/security">安防领域</a>
+                                                <a href="/banking">金融领域</a>
+                                                <a href="/city">城市管理</a>
+                                                <a href="/selling">销售领域</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <script>
+                                $(document).ready(function(){
+                                    $('#nav_a').hover(function() {
+                                        $("#menu-box").css('display', 'block');
+                                    }, function() {
+                                        $("#menu-box").css('display', 'none');
+                                    });
+
+                                    $('#menu-box').hover(function() {
+                                        $("#menu-box").css('display', 'block');
+                                    }, function() {
+                                        $("#menu-box").css('display', 'none');
+                                    });
+
+                                })
+                            </script>
+                            <li role="presentation" class="cur"><a href="/contact">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+<!--banner-->
+<section class="nr-banner a-background" style="background-image: url(/images/yxkj/security/yxal-banner.jpg);">
+    <div class="width-1220">
+        <h1 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">客户案例</h1>
+        <p class="wow fadeInUpa" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUpa;">
+            专业的合作伙伴与客户，遍及安防、城市管理、金融、销售等多个领域</p>
+    </div>
+</section>
+
+<!--二级页面导航-->
+<section class="border-bottom nrnav-box" style="overflow: visible; top: 0px;" id="nrnav-box">
+    <div class="width-1220 nr-nav">
+        <!--<div class="nr-nav-left">智慧交通</div>-->
+        <div class="nr-crumbs">
+            <div class="khal-nr-nav" style="font-size:18px;">
+                <span style="color: #707070;font-size: 18px;">客户案例</span>
+                <span style="color:black;display: inline-block ;margin-left: 5px;margin-right:5px;" class="fa fa-angle-down"></span>
+                <span>金融领域</span>
+
+                <!--下拉菜单-->
+                <div class="hxjs-nav3 khal-nr-nav-box" style="">
+                    <div class="box_Arrow"></div>
+                    <a class="khal-nav-menu " href="/security" >安防领域</a>
+                    <a class="khal-nav-menu" style="color: #e72427" href="/banking">金融领域</span></a>
+                    <a class="khal-nav-menu" href="/city">城市管理</a>
+                    <a class="khal-nav-menu" href="selling">销售领域</a>
+
+                </div>
+            </div>
+            <!--<div class="clearfix"></div>-->
+        </div>
+    </div>
+    <script>
+        //二级导航下拉
+        $(function(){
+            //一级
+            $('.khal-nr-nav').click(function(){
+                event.stopPropagation();
+                if($(this).hasClass('active')){
+                    $('.hxjs-nav3').slideUp();
+                    $(this).removeClass('active')
+                }else{
+                    $('.hxjs-nav3').slideDown()
+                    $(this).addClass('active')
+                }
+            });
+            //二级
+            $('.khal-nr-nav-box>.khal-nav-menu').click(function(){
+                event.stopPropagation();
+                if($(this).hasClass('active')){
+                    $(this).next('.khal-nr-nav-box2').slideUp();
+                    $(this).removeClass('active')
+                }else{
+                    $(this).next('.khal-nr-nav-box2').slideDown()
+                    $(this).addClass('active')
+                }
+            })
+            //点击空白处菜单收回
+            $('body').on('click',function(){
+                $('.khal-nr-nav').removeClass('active');
+                $('.hxjs-nav3').slideUp();
+            })
+
+        })
+    </script>
+</section>
+
+
+<section>
+    <div class="width-1220 cp-4">
+        <div class="cp-6 khal-1 swiper-container-horizontal" id="khal-menubox">
+            <div class="swiper-wrapper">
+                <div class="cp-addname hover swiper-slide active swiper-slide-active" style="width: 236px;">
+                    <a class="cp-5 m-center khal-menu ">
+                        <div><img src="/upfile/201810/5bd55aac839f9.jpg" th:src="@{/images/logo/wdw2.jpg}"></div>
+                    </a>
+                    <!--<p>中移在线服务有限公司</p>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="nr-banner a-background" style=" margin-top:0px;height:800px;background-image: url(/images/yxkj/wdw.jpg);">
+    <div class="width-1220">
+        <h1 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">微贷网</h1>
+        <p class="wow fadeInUpa" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUpa;">
+            微贷网成立于2011年7月8日，立足车贷业务基础上，为有投融资需求的中小微企业与个人用户提供一站式金融服务，满足多样化的实体经济金融需求
+        </p>
+    </div>
+</section>
+
+
+
+<div  style="width:100%;">
+    <div style="float:left; margin-left:30%;margin-top:100px;font-size:18px;  width:100px;">与微贷网等头部企业合作，利用人证比对实现快速放贷业务。
+    </div>
+
+    <div style="width:500px;height: 400px;margin-left:50%;"><img th:src="@{/images/yxkj/wdw2.png}"></div>
+</div>
+
+
+
+<div   style="width:100%; background:#f0f0f0 !important;padding-bottom: 35px;">
+    <div id="foot" >
+        <div class="lf" style="width:280px;">
+            <p class="footer1"><a th:href="@{/}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>
+        </div>
+        <div class="foot_left lf" style="margin-left:25px;  " >
+
+            <p  class="foot=li"><a href="/about" style="font-size: 18px;">关于垣象</a></p>
+            <p  class="foot=li"><a href="/technology" style="font-size: 18px; ">核心技术</a></p>
+            <p  class="foot=li"><a href="/product" style="font-size: 18px; ">解决方案</a></p>
+            <p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系我们</a></p>
+        </div>
+        <div class="record">
+            ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
+        </div>
+    </div>
+
+</div>
+
+
+</body></html>

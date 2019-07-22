@@ -26,12 +26,17 @@
     <link  th:href="@{/css/style.css}" rel="stylesheet">
     <!--banner大图基础样式-->
     <link rel="stylesheet" href="css/slick.css" th:href="@{/css/xingkong/slick.css}">
+    <link rel="stylesheet" th:href="@{/css/public.css}">
+    <link rel="stylesheet" th:href="@{/css/footer.css}">
+
+
 
     <!--页面滚动基础样式-->
     <link rel="stylesheet" href="css/jquery.fullPage.css" th:href="@{/css/xingkong/jquery.fullPage.css}" />
     <!--图片和滚屏样式-->
     <link rel="stylesheet" href="css/index.css" th:href="@{/css/xingkong/index.css}">
 
+    <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
 </head>
 <body>
 
@@ -42,42 +47,67 @@
 <!--<link rel="shortcut icon" href="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/favicon.ico" th:href="@{/favicon.ico}">-->
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid container-top">
-        <div class="row">
-            <div style="margin-left: 2%" class="col-md-12 col-sm-12 col-sm-offset-0  col-xs-12 col-xs-offset-0 padding-0">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed btn-white" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <div style="margin-left: 2%" class="col-md-12 col-sm-12 col-sm-offset-0  col-xs-12 col-xs-offset-0 padding-0">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed btn-white" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                                 <span class="c-icon">
                                     <i class="fa fa-reorder"></i>
                                 </span>
-                    </button>
-                    <div class="navbar-brand page-scroll">
-                        <a href="/">
-                            <img class="logo_style" th:src="@{/images/logo/blacklogo.png}" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/logob.png" alt="" >
-                        </a>
-                    </div>
+                </button>
+                <div class="navbar-brand page-scroll">
+                    <a href="/">
+                        <img class="logo_style" th:src="@{/images/logo/blacklogo.png}" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/logob.png" alt="旷世科技" >
+                    </a>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="col">
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <div class="nav nav-mynavdiv">
-                            <ul class="nav navbar-mynav">
-                                <li role="presentation" class="cur"><a href="/about">关于垣象</a></li>
-                                <li role="presentation" class="cur"><a href="/technology">核心技术</a></li>
-                                <li role="presentation" class="cur"><a href="/product">解决方案</a></li>
-                                <li role="presentation" class="cur"><a href="/contact">联系我们</a></li>
-                                <!--<li role="presentation" class="cur"><a href="/category/jingxiao">试听与购买</a></li>-->
-                                <!--<li role="presentation" class="cur"><a href="/en">En</a></li>-->
-                                <!--
-                                <li role="presentation" class="cur"><a  href="/wp-login.php?action=register">VIP</a></li>-->
-                            </ul>
-                        </div>
+            </div>
+            <div class="col">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="nav nav-mynavdiv">
+                        <ul class="nav navbar-mynav">
+                            <li role="presentation" class="cur"><a href="/about">关于垣象</a></li>
+                            <li role="presentation" class="cur"><a href="/technology">核心技术</a></li>
+                            <li role="presentation" class="cur">
+                                <a id="nav_a"  href="">解决方案
+                                    <div id="menu-box" class="menu-box menu-box-1">
+                                        <div class="menu-9">
+                                            <div class="menu-10">
+                                                <a href="/security">安防领域</a>
+                                                <a href="/banking" >金融领域</a>
+                                                <a href="/city">城市管理</a>
+                                                <a href="/selling">销售领域</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <script>
+                                $(document).ready(function(){
+                                    $('#nav_a').hover(function() {
+                                        $("#menu-box").css('display', 'block');
+                                    }, function() {
+                                        $("#menu-box").css('display', 'none');
+                                    });
+
+                                    $('#menu-box').hover(function() {
+                                        $("#menu-box").css('display', 'block');
+                                    }, function() {
+                                        $("#menu-box").css('display', 'none');
+                                    });
+
+                                })
+                            </script>
+                            <li role="presentation" class="cur"><a href="/contact">联系我们</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </nav>
+
+
 <div id="index_main" class="index_main">
     <div class="section section1">
         <div class="index_banner">
@@ -152,30 +182,32 @@
             </div>
         </div>
     </div>
+</div>
 
 <!--页面底部-->
-    <!--<div   style="width:100%; background:#f0f0f0 !important;padding-bottom: 35px;">-->
-        <!--<div id="foot" >-->
-            <!--<div class="lf" style="width:280px;">-->
-                <!--<p class="footer1"><a th:href="@{/}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>-->
-            <!--</div>-->
-            <!--<div class="foot_left lf" style="margin-left:25px;  " >-->
+    <div   style="width:100%; background:#f0f0f0 !important;padding-bottom: 35px;">
+        <div id="foot" >
+            <div class="lf" style="width:280px;">
+                <p class="footer1"><a th:href="@{/}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>
+            </div>
+            <div class="foot_left lf" style="margin-left:25px;  " >
 
-                <!--<p  class="foot=li"><a href="/about" style="font-size: 18px;">关于垣象</a></p>-->
-                <!--<p  class="foot=li"><a href="/technology" style="font-size: 18px; ">核心技术</a></p>-->
-                <!--<p  class="foot=li"><a href="/product" style="font-size: 18px; ">垣象产品</a></p>-->
-                <!--<p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系垣象</a></p>-->
-            <!--</div>-->
-            <!--<div class="record">-->
-                <!--©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx-->
-            <!--</div>-->
-        <!--</div>-->
+                <p  class="foot=li"><a href="/about" style="font-size: 18px;">关于垣象</a></p>
+                <p  class="foot=li"><a href="/technology" style="font-size: 18px; ">核心技术</a></p>
+                <p  class="foot=li"><a href="/product" style="font-size: 18px; ">解决方案</a></p>
+                <p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系我们</a></p>
+            </div>
+            <div class="record">
+                ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
+            </div>
+        </div>
+    </div>
 
-    <!--</div>-->
-    <script src="js/jquery.min.js" th:src="@{/js/xingkong/jquery.min.js}"></script>
-    <script src="js/jquery.fullPage.min.js" th:src="@{/js/xingkong/jquery.fullPage.min.js}" ></script>
+
+    <!--<script src="js/jquery.min.js" th:src="@{/js/xingkong/jquery.min.js}"></script>-->
+    <!--<script src="js/jquery.fullPage.min.js" th:src="@{/js/xingkong/jquery.fullPage.min.js}" ></script>-->
     <script src="js/index_slick.js" th:src="@{/js/xingkong/index_slick.js}" ></script>
-    <script src="js/index.js" th:src="@{/js/xingkong/index.js}"></script>>
+    <script src="js/index.js" th:src="@{/js/xingkong/index.js}"></script>
 
 
 
