@@ -99,12 +99,12 @@
 </nav>
 
 
-
 <!--banner-->
 <section class="nr-banner a-background" style="background-image: url(/images/yxkj/security/yxal-banner.jpg);">
     <div class="width-1220">
-        <h1 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">客户案例</h1>
-        <p class="wow fadeInUpa" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUpa;">专业的合作伙伴与客户，遍及安防、城市管理、金融、销售等多个领域</p>
+        <h1 class="wow fadeInUpa" style="animation: anim 2s;">客户案例</h1>
+        <p class="wow fadeInUpa" data-wow-delay=".2s" style="animation: anim 2s;">
+            专业的合作伙伴与客户，遍及安防、城市管理、金融、销售等多个领域</p>
     </div>
 </section>
 
@@ -125,10 +125,8 @@
                     <a class="khal-nav-menu" href="/banking">金融领域</span></a>
                     <a class="khal-nav-menu" href="/city">城市管理</a>
                     <a class="khal-nav-menu" style="color: #e72427" href="/selling">销售领域</a>
-
                 </div>
             </div>
-            <!--<div class="clearfix"></div>-->
         </div>
     </div>
     <script>
@@ -167,178 +165,89 @@
 </section>
 
 
-<div  class=""  >
-    <div style="float:left;">
 
-        <img style= " width:250px;height: 250px;margin-left:35%;margin-top: 60px;"  src="/images/yxkj/security/four.png" alt="">
-        <div  class="tit" style="width:250px; text-align:center;margin-left: 35%;font-size:18px; ">挂式虹膜识别仪</div>
+
+<section>
+    <div class="width-1220 cp-4">
+        <div class="cp-6 khal-1 swiper-container-horizontal" id="khal-menubox">
+            <div class="swiper-wrapper">
+                <div class="cp-addname hover swiper-slide active swiper-slide-active" style="width: 236px;">
+                    <a class="cp-5 m-center khal-menu ">
+                        <div><img src="/upfile/201810/5bd55aac839f9.jpg" th:src="@{/images/logo/smalllogo.jpg}"></div>
+                    </a>
+                    <p style="color:black;">垣象科技有限公司</p>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
 
-    <div style="float:right;margin-right:18%;margin-top: 90px;">
-        <div  class="tit" style="margin-bottom:30px;font-size:18px;text-align: center; ">与各级监狱看守所落地应用虹膜采集、识别</div>
-        <img style="width:200px;height: 180px;"  src="/images/yxkj/security/one.png" alt="">
-        <img style="width:200px;height: 180px;"  src="/images/yxkj/security/two.png" alt="">
-        <img style="width:200px;height: 180px;"  src="/images/yxkj/security/three.png" alt="">
-
-    </div>
-    <div class="clearfix"></div>
-</div>
+<section class="nr-banner a-background" style="height:600px;margin-top: 0px; background-image: url(/images/yxkj/yxkj.png);">
+</section>
 
 
+<section>
+    <div class="width-1220 cp-4">
+            <div class="width-1220 khal-7">
+                <div class="khal-5">
+                    <div class="text">
+                        <h2 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;"></h2>
+                        <p class="wow fadeInUpa delay-2" style="visibility: visible; animation-name: fadeInUpa;">垣象科技自主研发菜品识别系统,解决当下快餐、饭堂吃饭排队，人工结算慢、容易出错的问题。解放收银员，减少客户开支；未来从食品原材料抓起，解决食品健康问题，为人类健康提供多一层保障</p>
+                    </div>
+                    <div class="img">
+                        <video  style="width:100%;height:100%;"controls preload="auto">
+                          <source th:src="@{/images/yxkj/mp4/hello.mp4}" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<div style=" border-top:1px solid #e9e9e9; border-bottom:0px; margin-top: 5%;"  class="item_box core pad_t_80 pad_b_80">
+    <script>
+        var hxjsMenu = new Swiper('#khal-menubox', {
+            slideToClickedSlide:true,//设置为true则点击slide会过渡到这个slide。
+            prevButton:'.swiper-button-prev',
+            nextButton:'.swiper-button-next',
+            slidesPerView : 5,
+            slidesPerGroup :5,
+            //slidesPerView : 3,
+            //slidesPerGroup : 3,
+            breakpoints: {
+                //当宽度小于等于768
+                768: {
+                    slidesPerView: 4,
+                    slidesPerGroup :4,
+                    freeMode : true,
+                }
+            },
+        });
+        var hxjsCon = new Swiper('#khal', {
+            pagination : '.hxjs-page',
+            paginationType : 'fraction',
+            prevButton:'.hxjs-prev',
+            nextButton:'.hxjs-next',
+            autoHeight: true, //高度随内容变化
+            onSlideChangeStart: function(swiper){
+                hxjsMenu.slideTo(swiper.activeIndex, 500, false);
+                $('#khal-menubox').find('.swiper-slide').removeClass('hover');
+                $('#khal-menubox').find('.swiper-slide').eq(swiper.activeIndex).addClass('hover');
 
-    <div data-v-63ef68d9="" class="tit_box mar_b_50" style="margin-top:30px;">
-        <span data-v-63ef68d9="" class="line"></span>
-        <span data-v-63ef68d9="" class="tit_text" style="font-size:18px;"> 识别动态人脸，实现高精度 1:N 人脸查找</span>
-        <span data-v-63ef68d9="" class="line"></span>
-    </div>
-
-
-    <div style=" width: 300px;height:300px;background-color: aliceblue;" >
-        <video  style="width:100%;height:100%;"controls preload="auto">
-            <source th:src="@{/images/yxkj/mp4/hello.mp4}" type="video/mp4">
-        </video>
-    </div>
-
-</div>
-
-
-<div id="nrnav-box-height" style="height: 0px;"></div>
-
-
-<!--&lt;!&ndash;内容&ndash;&gt;-->
-
-
-<!--&lt;!&ndash;二级导航固定&ndash;&gt;-->
-<script>
-    $(function(){
-        var headerHeight= $('header').outerHeight();
-        var nrnavHeight = $('#nrnav-box').outerHeight();
-        var nrnavTop = $('#nrnav-box').offset().top;
-
-
-        $(window).scroll(function(){
-            if($(window).scrollTop()>nrnavTop-headerHeight){
-                $('header').addClass("headeractive")
-                $('#nrnav-box').addClass('active');
-                $('#nrnav-box').css('top',0)
-                $('#nrnav-box-height').height(nrnavHeight);
-            }else{
-                $('header').removeClass('headeractive');
-                $('#nrnav-box').removeClass('active');
-                $('#nrnav-box').css('top',0)
-                $('#nrnav-box-height').height(0);
-            };
-        })
-
-    })
-</script>
-
-
-
-
-<!--&lt;!&ndash;footer&ndash;&gt;-->
-<!--<footer class="bg-252526">-->
-<!--<div class="width-1220 footer-1">-->
-<!--<p class="footer-3">商业合作：<span>400 900 5986</span><i> ( 周一到周五 9:00-18:00 )</i>-->
-<!--<span class="pull-right">business@sensetime.com</span>-->
-<!--</p>-->
-<!--<div class="footer-2">-->
-<!--<a href="/logo.zip" id="logolink">商汤LOGO</a>-->
-<!--<a href="/learning.html">学术合作</a>-->
-<!--<a href="/cooperation.html">合作伙伴</a>-->
-<!--<a href="/statement.html">法律声明</a>-->
-<!--<a href="/clause.html">使用条款</a>-->
-<!--<a href="/en" class="visible-xs-inline">ENGLISH</a>-->
-<!--</div>-->
-<!--<div class="footer-4">-->
-<!--<div class="footer-logo"><img src="/images/footer-logo.png"></div>-->
-<!--<a class="footer-6" id="wxbox2">-->
-<!--<img src="/images/footer-wx.png">-->
-<!--<div class="wxbox" style="display:none;">-->
-<!--<img src="/images/erwm.png" alt="">-->
-<!--</div>-->
-<!--</a>-->
-<!--<a class="footer-6 " id="wxbox"><img src="/images/footer-weibo.png">-->
-<!--<div class="wxbox" style="display:none;">-->
-<!--<img src="/images/erwm1.png" alt="">-->
-<!--</div>-->
-<!--</a>-->
-
-<!--<a href="https://www.linkedin.com/company/sensetime-group-limited/" class="footer-5" target="_blank" style="margin-right: 0;">-->
-<!--<img src="/images/footer-linkedin.png">-->
-<!--</a>-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="width-1220 footer-ba">-->
-<!--<p>-->
-<!--<span>京 ICP 备 15000892 号-1 京 ICP 备 15000892 号-2</span>-->
-<!--<span class="hidden-xs">|</span>-->
-<!--<span class="footer-ba1">京公网安备 11010802026791 号</span>-->
-<!--<span>© 2014-2019  SenseTime. All Rights Reserved. 北京市商汤科技开发有限公司</span>-->
-<!--</p>-->
-<!--</div>-->
-<!--</footer>-->
-
-
-
-
-<!--<script type="text/javascript">-->
-<!--var is_weixin = (function(){return navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1})();-->
-<!--if(is_weixin){-->
-<!--$(function(){-->
-<!--document.getElementById('logolink').onclick = function(ev){-->
-<!--ev.preventDefault();-->
-<!--$(".wxopen").show();-->
-<!--}-->
-
-<!--$(".wxopen,.wxopen>img").click(function(){-->
-<!--$(".wxopen").hide();-->
-<!--});-->
-<!--});-->
-<!--}else{-->
-<!--$(function(){-->
-<!--return false;-->
-<!--});-->
-<!--}-->
-
-<!--$(document).ready(function() {-->
-<!--$("#wxbox").hover(function(){-->
-<!--$(this).addClass("footer-6_hover");-->
-<!--$(this).children(".wxbox").show();-->
-<!--},function(){-->
-<!--$(this).removeClass("footer-6_hover");-->
-<!--$(this).children(".wxbox").hide();-->
-<!--});-->
-<!--$("#wxbox2").hover(function(){-->
-<!--$(this).addClass("footer-6_hover");-->
-<!--$(this).children(".wxbox").show();-->
-<!--},function(){-->
-<!--$(this).removeClass("footer-6_hover");-->
-<!--$(this).children(".wxbox").hide();-->
-<!--});-->
-<!--});-->
-
-
-<!--var _hmt = _hmt || [];-->
-<!--(function() {-->
-<!--var hm = document.createElement("script");-->
-<!--hm.src = "https://hm.baidu.com/hm.js?95e1c7f2af12086fc92e0742665b8268";-->
-<!--var s = document.getElementsByTagName("script")[0];-->
-<!--s.parentNode.insertBefore(hm, s);-->
-<!--})();-->
-
-
-<!--//2019-6-11增加百度代码-->
-<!--var _hmt = _hmt || [];-->
-<!--(function() {-->
-<!--var hm = document.createElement("script");-->
-<!--hm.src = "https://hm.baidu.com/hm.js?8ebb5ff06a2c44c46939dec8d61388ed";-->
-<!--var s = document.getElementsByTagName("script")[0];-->
-<!--s.parentNode.insertBefore(hm, s);-->
-<!--})();-->
-<!--</script>-->
+            },
+            onSlideChangeEnd: function(swiper){
+                $('#khal').find('.swiper-slide').find('.wo').removeClass('zhixing');
+                $('#khal').find('.swiper-slide').eq(swiper.activeIndex).find('.wo').addClass('zhixing');
+            },
+        });
+        $('#khal-menubox').find('.swiper-slide').each(function(i){
+            $(this).click(function(){
+                $('#khal-menubox').find('.swiper-slide').removeClass('hover');
+                $(this).addClass('hover');
+                hxjsMenu.slideTo(i, 500, true);
+                hxjsCon.slideTo(i, 500, true);
+            })
+        });
+    </script>
+</section>
 
 
 
@@ -363,8 +272,8 @@
             ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
         </div>
     </div>
-
 </div>
 
 
-</body></html>
+</body>
+</html>

@@ -1,14 +1,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org" class="wf-roboto-n4-active wf-active"><head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="app-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="format-detection" content="telephone=no">
+    <!--<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">-->
+    <!--<meta name="app-mobile-web-app-capable" content="yes">-->
     <title>垣象科技</title>
     <!--响应式框架-->
     <!--css-->
     <!--响应式框架-->
-
+    <link rel="stylesheet" th:href="@{/css/animate.css}">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
-    <!--<link rel="stylesheet" th:href="@{/css/animation.css}">-->
+    <link rel="stylesheet" th:href="@{/css/animation.css}">
     <link rel="stylesheet"  th:href="@{/css/footer.css}">
     <!--默认样式-->
     <link rel="stylesheet" th:href="@{/css/style.css}" >
@@ -17,7 +21,6 @@
     <link rel="stylesheet"  th:href="@{/css/swiper.min.css}">
     <link rel="stylesheet" th:href="@{/css/about.css}">
     <link rel="stylesheet" th:href="@{/css/public.css}">
-
 
     <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
     <script  th:src="@{/js/bootstrap.min.js}"></script>
@@ -92,8 +95,8 @@
 <!--banner-->
 <section class="nr-banner a-background" style="background-image: url(/images/yxkj/hxjs-banner.jpg);">
     <div class="width-1220">
-        <h1 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">核心技术</h1>
-        <p class="wow fadeInUpa" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUpa;">原创技术体系为根基，以深度学习平台为核心“大脑”，快速打通 AI 在各个垂直场景中的应用</p>
+        <h1 class="wow fadeInUpa" style=" animation: anim 2s;">核心技术</h1>
+        <p class="wow fadeInUpa" data-wow-delay=".2s" style="animation: anim 3s;">原创技术体系为根基，以深度学习平台为核心“大脑”，快速打通 AI 在各个垂直场景中的应用</p>
     </div>
 </section>
 
