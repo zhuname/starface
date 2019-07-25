@@ -1,922 +1,113 @@
-<html style="font-size: 50px;"  xmlns:th="http://www.thymeleaf.org">
-<head><style class="vjs-styles-defaults">
-    .video-js {
-        width: 300px;
-        height: 150px;
-    }
+<!DOCTYPE html>
+<html lang="zh-cn" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="utf-8"/>
+    <title>淘宝云硕科技测试站点</title>
+    <meta name="keywords" content="云硕科技" />
+    <meta name="description" content="" />
+    <link rel="shortcut icon" href="https://w7.yunshuokeji.com/attachment/images/global/WnZ33K1I3xn11gnX3P5nXN3n1G3pA3.png" />
+    <meta name="author" content="DeathGhost" />
+    <link rel="stylesheet" type="text/css" th:href="@{/ceshi/style.css}">
+    <link rel="stylesheet" type="text/css" href="../addons/mogucms_guanwang/template/loginstyle2/css/style.css" tppabs="../addons/mogucms_guanwang/template/loginstyle2/css/style.css" />
+    <style>
+        body{height:100%;background:#166fa0;overflow:hidden;}
+        canvas{z-index:-1;position:absolute;}
+    </style>
+<script th:src="@{/ceshi/jquery.js}"></script>
+    <script src="../addons/mogucms_guanwang/template/loginstyle2/js/jquery.js"></script>
+    <script th:src="@{/ceshi/Particleground.js}"></script>
+    <script src="../addons/mogucms_guanwang/template/loginstyle2/js/Particleground.js" tppabs="../addons/mogucms_guanwang/template/loginstyle2/js/Particleground.js"></script>
+    <script>
+        $(document).ready(function() {
+            //粒子背景特效
+            $('body').particleground({
+                dotColor: '#5c9bbd',
+                lineColor: '#5c9bbd'
+            });
 
-    .vjs-fluid {
-        padding-top: 56.25%
-    }
-</style>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="format-detection" content="telephone=no">
-    <title>客户案例</title>
-    <!--[if lte IE9]>
-    <script>window.location.href = 'http://cdn.dmeng.net/upgrade-your-browser.html?referrer=' + location.href;</script>
-    <![endif]-->
-    <script charset="utf-8" src="https://tag.baidu.com/vcard/v.js?siteid=9006593&amp;url=https%3A%2F%2Fwww.sensetime.com%2FCase%2Findex%2Fid%2F1.html&amp;source=&amp;rnd=1681972276&amp;hm=1"></script><script src="https://hm.baidu.com/hm.js?8ebb5ff06a2c44c46939dec8d61388ed"></script><script src="https://hm.baidu.com/hm.js?95e1c7f2af12086fc92e0742665b8268"></script><script>/*@cc_on window.location.href="http://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); @*/</script>
-    <link rel="stylesheet" href="/css/roll.css">
-    <link rel="stylesheet" href="/css/animation.css">
-    <link rel="stylesheet" href="/css/swiper.min.css">
-    <link rel="stylesheet" href="/js/bootstrap-3.3.7-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/public.css?v1.3">
-    <link rel="stylesheet" href="/css/index.css?v1.3">
-    <link rel="stylesheet" href="/css/erji.css">
-    <link rel="stylesheet" href="/css/iconfont.css">
-    <link href="/css/video-js.min.css" rel="stylesheet">
-    <script src="/js/video.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/swiper.min.js"></script>
-    <script type="text/javascript" src="/js/wow.js"></script>
-    <script type="text/javascript" src="/js/js.js"></script>
-    <script type="text/javascript" src="/js/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    <script type="text/javascript" src="/js/scrollBar.js"></script>
-    <link type="image/x-icon" rel="shortcut icon" href="/images/logo.ico">
-
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
-    <link rel="stylesheet"  th:href="@{/css/footer.css}">
-    <!--默认样式-->
-    <link rel="stylesheet" th:href="@{/css/style.css}" >
-    <!--图片和滚屏样式-->
-
-    <!--<link rel="stylesheet"  th:href="@{/css/iconfont.css}" media="all">-->
-
-    <!--<link rel="stylesheet"  th:href="@{/css/swiper.min.css}">-->
-    <!--<link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">-->
-    <link rel="stylesheet" th:href="@{/css/public.css}">
-    <!--<link rel="stylesheet" th:href="@{/css/about.css}">-->
-    <link rel="stylesheet"  th:href="@{/css/erji.css}" media="all">
-    <link rel="stylesheet" th:href="@{/css/roll.css}">
-
-
-    <script  th:src="@{/js/bootstrap.min.js}"></script>
-    <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
-
-    <!--<script  th:src="@{/js/swiper.min.js}"></script>-->
-    <!--<script  th:src="@{/js/index.js}"></script>-->
-
-
+            //测试提交，对接程序删除即可
+            $(".submit_btn").click(function(){
+                //location.href="javascrpt:;"
+            });
+        });
+    </script>
 </head>
 <body>
-<div class="wxopen">
-    <img src="/images/wxopen.png" alt="">
+<form method="post"  id="form1" class="we7-form">
+    <dl class="admin_login">
+        <dt>
+            <strong>站点后台管理系统</strong>
+            <em>Management System</em>
+        </dt>
+        <dd class="user_icon">
+            <input type="text" name="username" id="username"  placeholder="账号" class="login_txtbx"/>
+        </dd>
+        <dd class="pwd_icon">
+            <input name="password" id="password" type="password" placeholder="密码" class="login_txtbx"/>
+        </dd>
+        <dd class="val_icon">
+            <input type="checkbox" class="checkbox" id="rember" name="rember" value="true">记住用户名
+            <a href="/web/index.php?c=user&a=find-password">忘记密码？</a>
+        </dd>
+        <dd>
+            <input name="token" value="c26e1489" type="hidden" />
+            <input name="login_type" id="login_type" type="hidden" class="form-control " value="system">
+            <input type="button" value="立即登陆" class="submit_btn" onclick="return formcheck();" />
+        </dd>
+        <dd><a class="regbtn" href="/web/index.php?c=account&a=welcome&do=register">立即注册</a></dd>
+    </dl>
+</form>
 </div>
-<header class="index_header">
-    <a href="/" class="logo" id="logo1"><img src="/images/logo.png" class="logo1"><img src="/images/logo_white.png" class="logo2"></a>
-    <a href="/" class="logo" id="logo2"><img src="/images/logo.png"></a>
-    <ul class="nav" id="nav">
-        <li class="">
-            <a>核心技术</a>
-            <div class="menu-box" style="display: none;">
-                <div class="menu-1 width-1220">
-                    <div class="menu-4 menu-left">
-                        <a href="/Technology/face.html" class="menu-5">
-                            <div class="menu-6">
-                                <img src="/images/nav-hxjs-1.png">
-                                <img src="/images/nav-hxjs-1-h.png" class="img">
-                            </div>
-                            <p>人脸与人体分析技术</p>
-                        </a>
-                        <a href="/Technology/contrl.html" class="menu-5">
-                            <div class="menu-6">
-                                <img src="/images/nav-hxjs-2.png">
-                                <img src="/images/nav-hxjs-2-h.png" class="img">
-                            </div>
-                            <p>机器人控制与传感</p>
-                        </a>
-                    </div>
-                    <div class="menu-4">
-                        <a href="/Technology/ocr.html" class="menu-5">
-                            <div class="menu-6">
-                                <img src="/images/nav-hxjs-3.png">
-                                <img src="/images/nav-hxjs-3-h.png" class="img">
-                            </div>
-                            <p>通用与专业图像识别</p>
-                        </a>
-                        <a href="/Technology/autodrive.html" class="menu-5">
-                            <div class="menu-6">
-                                <img src="/images/nav-hxjs-4.png">
-                                <img src="/images/nav-hxjs-4-h.png" class="img">
-                            </div>
-                            <p>自动驾驶</p>
-                        </a>
-                    </div>
-                    <div class="menu-4">
-                        <a href="/Technology/video.html" class="menu-5">
-                            <div class="menu-6">
-                                <img src="/images/nav-hxjs-5.png">
-                                <img src="/images/nav-hxjs-5-h.png" class="img">
-                            </div>
-                            <p>海量视频理解与挖掘</p>
-                        </a>
-                        <a href="/Technology/study.html" class="menu-5">
-                            <div class="menu-6">
-                                <img src="/images/nav-hxjs-6.png">
-                                <img src="/images/nav-hxjs-6-h.png" class="img">
-                            </div>
-                            <p>深度学习平台</p>
-                        </a>
-                    </div>
-                    <div class="menu-4">
-                        <a href="/Technology/photo.html" class="menu-5">
-                            <div class="menu-6">
-                                <img src="/images/nav-hxjs-7.png">
-                                <img src="/images/nav-hxjs-7-h.png" class="img">
-                            </div>
-                            <p>图像视频处理增强</p>
-                        </a>
-                        <a href="/Technology/medical.html" class="menu-5">
-                            <div class="menu-6">
-                                <img src="/images/nav-hxjs-8.png">
-                                <img src="/images/nav-hxjs-8-h.png" class="img">
-                            </div>
-                            <p>医学图像分析</p>
-                        </a>
-                    </div>
-                    <div class="menu-4">
-                        <a href="/Technology/3d.html" class="menu-5">
-                            <div class="menu-6">
-                                <img src="/images/nav-hxjs-9.png">
-                                <img src="/images/nav-hxjs-9-h.png" class="img">
-                            </div>
-                            <p>SLAM与3D视觉</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="">
-            <a>产品服务</a>
-            <div class="menu-box menulistbox" style="display: none;">
-                <div class="menulist">
-                    <p class=" hover">智慧城市</p>
-                    <p>智能手机</p>
-                    <p>泛文化娱乐</p>
-                    <p>智能汽车</p>
-                    <p>智慧健康</p>
-                    <p>智慧商业与金融</p>
-                    <p>教育</p>
-                    <p>广告</p>
-                </div>
-
-                <!--智慧城市-->
-                <div class="menu-3 menu4" id="menu-zhcs" style="display:block;">
-                    <!--智慧安防-->
-                    <p class="menu-zhcs hover" style="padding-bottom: 0;"><span class="mui-icon mui-icon-arrowright"></span>智慧安防</p>
-                    <div class="menu-12" style="display: block;">
-                        <p><a href="/Service/Security_SenseFoundry.html">SenseFoundry 方舟视觉城市开放平台</a></p>
-                        <p><a href="/Service/Security_SensePortrait_D.html">SensePortrait-D 人脸动态对比服务器</a></p>
-                        <p><a href="/Service/Security_SensePortrait_S.html">SensePortrait-S 人脸静态对比服务器</a></p>
-                        <p><a href="/Service/Security_SenseVideo_A.html">SenseVideo-A 视频结构化解析服务器</a></p>
-                        <p><a href="/Service/Security_SenseTotem.html">SenseTotem 深度学习视图情报研判系统</a></p>
-                        <p><a href="/Service/Security_SenseFace.html">SenseFace 人脸大数据实战平台</a></p>
-                        <p><a href="/Service/Security_SenseDLC.html">SenseDLC 人脸抓拍摄像机</a></p>
-                    </div>
-
-                    <!--智慧交通-->
-                    <p class="menu-zhcs"><span class="mui-icon mui-icon-arrowright"></span>智慧交通</p>
-                    <div class="menu-12">
-                        <p><a href="/Service/Transportation.html">SenseCrowd 人群分析系统</a></p>
-                    </div>
-
-                    <!--智慧地产-->
-                    <p class="menu-zhcs"><span class="mui-icon mui-icon-arrowright"></span>智慧地产</p>
-                    <div class="menu-12">
-                        <p><a href="/Service/House.html">SenseRealty 智慧案场</a></p>
-                    </div>
-
-
-
-                    <!--运营商-->
-                    <p class="menu-zhcs"><span class="mui-icon mui-icon-arrowright"></span>运营商</p>
-                    <div class="menu-12">
-                        <p><a href="/Service/Operator.html">SenseID 身份验证服务</a></p>
-                    </div>
-
-                    <!--智能设备-->
-                    <p class="menu-zhcs"><span class="mui-icon mui-icon-arrowright"></span>智能设备</p>
-                    <div class="menu-12">
-                        <p><a href="/Service/Hardware_SmartDeviceSolution.html">智能设备产品方案</a></p>
-                        <p><a href="/Service/Hardware_SenseID.html">SenseID 身份验证一体机</a></p>
-                        <p><a href="/Service/Hardware_SensePass.html">SensePass 人脸识别一体机</a></p>
-                        <p><a href="/Service/Hardware_SenseKeeper.html">SenseKeeper 人脸识别机（闸机版）</a></p>
-                        <!--<p><a href="/Service/Hardware_SenseHello.html">SenseHello 智能前台</a></p>-->
-                        <p><a href="/Service/Hardware_SenseNebula_m.html">SenseNebula-M 智能边缘节点</a></p>
-                        <!--<p><a href="/Service/Hardware_SenseEye.html">SenseEye 智能门锁</a></p>-->
-                        <!--<p><a href="/Service/Hardware_SenseGuard.html">SenseGuard 智能安保一体化系统</a></p>-->
-                    </div>
-
-                    <!--遥感-->
-                    <p class="menu-zhcs"><span class="mui-icon mui-icon-arrowright"></span>遥感</p>
-                    <div class="menu-12">
-                        <p><a href="https://rs.sensetime.com/">SenseEarth 感知地球</a></p>
-                        <p><a href="/Service/RemoteSensing.html">SenseRemote 遥感影像智能解译解决方案</a></p>
-                    </div>
-
-                    <!--视频大数据-->
-                    <p class="menu-zhcs"><span class="mui-icon mui-icon-arrowright"></span>视频大数据</p>
-                    <div class="menu-12">
-                        <p><a href="/Service/Video_SenseMedia.html">SenseMedia 视频图像内容审核及解析平台</a></p>
-                        <p><a href="/Service/Video_SenseKitchen.html">SenseKitchen 智慧餐厨卫生预警系统</a></p>
-                        <p><a href="/Service/Video_SenseRadar.html#product">SenseRadar 互联网视图解析预警系统</a></p>
-                    </div>
-
-                </div>
-
-                <!--智能手机-->
-                <div class="menu-3 menu4">
-                    <p><a href="/Service/Phone_SenseMatrix.html">SenseMatrix 人脸3D重建方案</a></p>
-                    <p><a href="/Service/Phone_SensePhoto.html">SensePhoto 手机图像处理解决方案</a></p>
-                    <p><a href="/Service/Phone_SenseID.html">SenseID 手机人脸解锁方案</a></p>
-                    <p><a href="/Service/Phone_SenseMoji.html">SenseMoji 表情模拟方案</a></p>
-                    <p><a href="/Service/sensear_platform.html">SenseAR 平台</a></p>
-                </div>
-
-
-                <!--泛文化娱乐-->
-                <div class="menu-3 menu4">
-                    <p><a href="/Service/sensear_augmentreality.html">SenseAR 特效引擎</a></p>
-                    <!--
-                    <p><a href="/Service/sensear_shape.html">SenseAR 美体塑形</a></p>
-                    -->
-                    <p><a href="/Service/sensear_SenseInsight.html">SenseInsight 客群洞察</a></p>
-                    <p><a href="/Service/sensear_SensePosture.html">SensePosture 人体骨架检测</a></p>
-                </div>
-
-                <!--智能汽车-->
-                <div class="menu-3 menu4" id="menu-zncc">
-                    <!--智能汽车-->
-                    <p class="menu-zhcs hover" style="padding-bottom: 0;"><span class="mui-icon mui-icon-arrowright"></span>智能驾驶</p>
-                    <div class="menu-12" style="display: block;">
-                        <p><a href="/Service/Drive_SenseDrive.html">SenseDrive 高级驾驶辅助系统</a></p>
-                    </div>
-                    <!--智能车舱-->
-                    <p class="menu-zhcs"><span class="mui-icon mui-icon-arrowright"></span>智能车舱</p>
-                    <div class="menu-12">
-                        <p><a href="/Service/Car_FaceRecognition.html">SDK 类</a></p>
-                        <!--<p><a href="/Service/Car_FrontGesture.html">前装软硬件一体</a></p>-->
-                        <p><a href="/Service/Car_AfterDMS.html">后装软硬件一体</a></p>
-                        <p><a href="/Service/Car_CloudData.html">云端</a></p>
-                    </div>
-                </div>
-
-                <!--智慧健康-->
-                <div class="menu-3 menu4">
-                    <p><a href="/Service/Medical_diagnosis.html">SenseCare 智慧诊疗平台</a></p>
-                </div>
-
-
-                <!--智慧商业与金融-->
-                <div class="menu-3 menu4" id="menu-zhsy">
-                    <!--线上金融-->
-                    <p class="menu-zhcs hover" style="padding-bottom: 0;"><span class="mui-icon mui-icon-arrowright"></span>线上金融</p>
-                    <div class="menu-12" style="display: block;">
-                        <p><a href="/Service/Finance_SenseID.html">SenseID 云服务</a></p>
-                        <p><a href="/Service/Finance_SenseOCR.html">SenseOCR 文字识别云服务</a></p>
-                    </div>
-
-                    <!--线下金融-->
-                    <p class="menu-zhcs"><span class="mui-icon mui-icon-arrowright"></span>线下金融</p>
-                    <div class="menu-12">
-                        <p><a href="/Service/Finance_VIP.html">银行 VIP 会员识别 </a></p>
-                        <p><a href="/Service/Finance_Manage.html">财富管理运营助手 </a></p>
-                        <p><a href="/Service/Finance_Solution.html">线下金融解决方案</a></p>
-                        <p><a href="/Service/Finance_Network.html">线下运营智能网点 </a></p>
-                        <p><a href="/Service/Finance_SenseData.html">SenseData 金融大数据 </a></p>
-                    </div>
-
-                    <!--智慧零售-->
-                    <p class="menu-zhcs"><span class="mui-icon mui-icon-arrowright"></span>智慧零售</p>
-                    <div class="menu-12">
-                        <p><a href="/Service/business.html">SenseGo 智慧商业解决方案</a></p>
-                    </div>
-                </div>
-                <!--教育-->
-                <div class="menu-3 menu4">
-                    <p><a href="/Service/ai_class.html">AI 基础教育</a></p>
-                    <p><a href="/Service/ai_edu.html">智慧校园解决方案</a></p>
-                </div>
-
-                <!--广告-->
-                <div class="menu-3 menu4">
-                    <p><a href="/Service/Advertisement_SenseFocus.html">SenseFocus （聚睛）广告平台</a></p>
-                    <p><a href="/Service/Advertisement_SenseU.html">SenseU 互动广告机</a></p>
-                </div>
-
-
-
-                <!--申请试用-->
-                <div class="menu-3 menu5">
-                    <p><a href="/Public/form.html">申请试用</a><span class="mui-icon-extra mui-icon-extra-arrowright"></span></p>
-
-                </div>
-
-
-                <script>
-                    $(function() {
-                        //产品线切换
-                        $('.menulist>p').each(function(i) {
-                            $(this).mouseover(function() {
-                                if ($(this).hasClass('hover')) {
-                                } else {
-                                    $('.menulist>p').removeClass('hover');
-                                    $(this).addClass('hover');
-                                    $('.menu4').hide();
-                                    $('.menu4').eq(i).stop().fadeIn()
-                                }
-                            })
-                        })
-                        //智慧城市
-                        $('#menu-zhcs>.menu-zhcs').each(function(i){
-                            $(this).click(function(){
-                                if ($(this).hasClass('hover')) {
-                                    $(this).removeClass('hover');
-                                    $(this).next($('.menu-12')).slideUp()
-                                } else {
-                                    $('#menu-zhcs').find($('.menu-zhcs')).removeClass('hover');
-                                    $(this).addClass('hover');
-                                    $('#menu-zhcs').find($('.menu-12')).slideUp();
-                                    $(this).next($('.menu-12')).slideDown()
-                                }
-                            })
-                        })
-                        //智能车舱
-                        $('#menu-zncc>.menu-zhcs').each(function(i){
-                            $(this).click(function(){
-                                if ($(this).hasClass('hover')) {
-                                    $(this).removeClass('hover');
-                                    $(this).next($('.menu-12')).slideUp()
-                                } else {
-                                    $('#menu-zncc').find($('.menu-zhcs')).removeClass('hover');
-                                    $(this).addClass('hover');
-                                    $('#menu-zncc').find($('.menu-12')).slideUp();
-                                    $(this).next($('.menu-12')).slideDown()
-                                }
-                            })
-                        })
-                        //智慧商业
-                        $('#menu-zhsy>.menu-zhcs').each(function(i){
-                            $(this).click(function(){
-                                if ($(this).hasClass('hover')) {
-                                    $(this).removeClass('hover');
-                                    $(this).next($('.menu-12')).slideUp()
-                                } else {
-                                    $('#menu-zhsy').find($('.menu-zhcs')).removeClass('hover');
-                                    $(this).addClass('hover');
-                                    $('#menu-zhsy').find($('.menu-12')).slideUp();
-                                    $(this).next($('.menu-12')).slideDown()
-                                }
-                            })
-                        })
-                    })
-                </script>
-            </div>
-        </li>
-        <li class="">
-            <a>客户案例</a>
-            <div class="menu-box menu-anli">
-                <div class="scroll_main">
-                    <div class="scroll_wrap">
-                        <div class="scroll_cont">
-                            <div class="menu-15">
-                                <div class="menu-7" style="border: none;padding: 0;">
-                                    <a class="menu-8">
-                                        <p class="menu-13 ">
-                                            <span class="mui-icon mui-icon-arrowright"></span>
-                                            智慧城市													</p>
-                                    </a>
-                                    <div class="menu-14" style="display: block;">
-                                        <a href="/Case/index/id/1.html">智慧安防</a><a href="/Case/index/id/9.html">智慧交通</a><a href="/Case/index/id/13.html">智能设备</a><a href="/Case/index/id/8.html">运营商</a><a href="/Case/index/id/14.html">遥感</a><a href="/Case/index/id/17.html">视频大数据</a>													</div>
-                                    <a href="/Case/index/id/3.html" class="menu-8">
-                                        <p>智能手机</p>
-                                    </a>												<a href="/Case/index/id/2.html" class="menu-8">
-                                    <p>泛文化娱乐</p>
-                                </a><a class="menu-8">
-                                    <p class="menu-13 ">
-                                        <span class="mui-icon mui-icon-arrowright"></span>
-                                        智能汽车													</p>
-                                </a>
-                                    <div class="menu-14">
-                                        <a href="/Case/index/id/20.html">智能驾驶</a><a href="/Case/index/id/21.html">智能车舱</a>													</div>																								<a href="/Case/index/id/16.html" class="menu-8">
-                                    <p>智慧健康</p>
-                                </a><a class="menu-8">
-                                    <p class="menu-13 ">
-                                        <span class="mui-icon mui-icon-arrowright"></span>
-                                        智慧商业与金融													</p>
-                                </a>
-                                    <div class="menu-14">
-                                        <a href="/Case/index/id/22.html">线上金融</a><a href="/Case/index/id/23.html">线下金融</a><a href="/Case/index/id/5.html">智慧零售</a>													</div>																								<a href="/Case/index/id/7.html" class="menu-8">
-                                    <p>教育</p>
-                                </a>								</div>
-                            </div>
-                        </div>
-
-                        <div class="scroll_bar">
-                            <div class="scroll_slider"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <script>
-                //案例下拉菜单滚动条
-                new CusScrollBar({
-                    contentSelector: '.scroll_cont', //滚动内容区
-                    barSelector: '.scroll_bar', //滚动条
-                    sliderSelector: '.scroll_slider' //滚动滑块
-                });
-
-                /*案例下拉菜单*/
-
-                $('.menu-7 .menu-13').each(function(i){
-                    $(this).click(function(){
-                        if($(this).parent().next('.menu-14').is(":visible")){
-                            $(this).removeClass('hover');
-                            $('.menu-14').slideUp(300);
-                        }else{
-                            $('.menu-14').slideUp(300);
-                            $('.menu-13').removeClass('hover');
-                            $(this).addClass('hover');
-                            $(this).parent().next('.menu-14').slideDown(300);
-                        }
-
-                        setTimeout(function(){
-                            if($('.menu-15').outerHeight()-10<=$('.scroll_cont').outerHeight()){
-                                $('.scroll_bar').css('opacity',0)
-                            }else{
-                                $('.scroll_bar').css('opacity',1)
-                            }
-                        },400);
-
-                    })
-                })
-
-
-            </script>
-        </li>
-        <li class="">
-            <a href="/news.html">新闻中心</a>
-        </li>
-        <li class="">
-            <a>关于商汤</a>
-            <div class="menu-box menu-box-1" style="display: none;">
-                <div class="menu-9">
-                    <div class="menu-10">
-                        <a href="/about.html">商汤使命</a>
-                        <a href="/about.html#company" onclick="go_hash('company');">商汤介绍</a>
-                        <a href="/about.html#progress" onclick="go_hash('progress');">商汤之路</a>
-                        <a href="/about.html#culture" onclick="go_hash('culture');">联系我们</a>
-
-                    </div>
-                </div>
-            </div>
-        </li>
-        <li class="" style="position: relative;">
-            <a>加入我们</a>
-            <div class="menu-box menu-box-1 menu-box-jrwm">
-                <div class="menu-9">
-                    <div class="menu-10">
-                        <a href="https://joinus.sensetime.com/index.html#nrnav-box">走进商汤</a>
-                        <a href="https://joinus.sensetime.com/Index/news.html#nrnav-box">商汤视野</a>
-                        <a href="https://joinus.sensetime.com/Index/resume.html">简历投递</a>
-                    </div>
-                </div>
-            </div>
-        </li>
-    </ul>
-    <div class="lang hidden-xs">
-        <a class="hover">中</a>
-        <a href="https://www.sensetime.com/en">EN</a>
-    </div>
-    <button type="button" class="navbar-toggle" id="nav-btn">
-        <span class="sr-only">切换导航</span>
-        <span class="icon-bar bar-1"></span>
-        <span class="icon-bar bar-2"></span>
-        <span class="icon-bar bar-3"></span>
-    </button>
-</header>
-<!--手机导航-->
-<ul id="phone-nav" class="phone-nav">
-    <li><a>核心技术</a>
-        <div class="phone-nav-1">
-            <p class="fanhui"><span class="mui-icon mui-icon-arrowleft"></span>返回</p>
-            <a href="/Technology/face.html">人脸与人体分析技术</a>
-            <a href="/Technology/ocr.html">通用与专业图像识别</a>
-            <a href="/Technology/video.html">海量视频理解与挖掘</a>
-            <a href="/Technology/photo.html">图像视频处理增强</a>
-            <a href="/Technology/3d.html">SLAM与3D视觉</a>
-            <a href="/Technology/contrl.html">机器人控制与传感</a>
-            <a href="/Technology/autodrive.html">自动驾驶</a>
-            <a href="/Technology/study.html">深度学习平台</a>
-            <a href="/Technology/medical.html">医学图像分析</a>
-
-        </div>
-    </li>
-    <li><a>产品服务</a>
-        <div class="phone-nav-1">
-            <p class="fanhui"><span class="mui-icon mui-icon-arrowleft"></span>返回</p>
-            <a href="/Service/Security_SenseFoundry.html">智慧城市</a>
-            <a href="/Service/Phone_SenseMatrix.html">智能手机</a>
-            <a href="/Service/sensear_augmentreality.html">泛文化娱乐</a>
-            <a class="phone-nav-znqc">
-                智能汽车</a>
-            <div class="phone-nav-znqc-box">
-                <a href="/Service/Drive_SenseDrive.html">智能驾驶</a>
-                <a href="/Service/Car_FaceRecognition.html">智能车舱</a>
-            </div>
-            <div style="margin-left: 4.6%;border-bottom: 1px solid #e6e6e6;"></div>
-            <a href="/Service/Medical_diagnosis.html">智慧健康</a>
-            <a href="/Service/Finance_SenseID.html">智慧商业与金融</a>
-            <a href="/Service/ai_class.html">教育</a>
-            <a href="/Service/Advertisement_SenseFocus.html">广告</a>
-            <p style="
-	    position: absolute;
-	    display: block;
-	    bottom: 1rem;
-	    margin-left: 4.6%;
-	"><a href="/Public/form.html" style="color: #969696;">申请试用</a><span class="mui-icon-extra mui-icon-extra-arrowright"></span></p>
-        </div>
-    </li>
-    <script>
-        $(function(){
-            $('.phone-nav-znqc').click(function(){
-                if($(this).hasClass('hover')){
-                    $(this).removeClass('hover');
-                    $(this).next('.phone-nav-znqc-box').slideUp();
-                }else{
-                    $(this).addClass('hover');
-                    $(this).next('.phone-nav-znqc-box').slideDown();
-                }
-
-            })
-        })
-    </script>
-    <li><a>客户案例</a>
-        <div class="phone-nav-1">
-            <p class="fanhui"><span class="mui-icon mui-icon-arrowleft"></span>返回</p>
-
-
-            <a class="phone-nav-znqc">智慧城市</a>
-            <div class="phone-nav-znqc-box">
-                <a href="/Case/index/id/1.html">智慧安防</a><a href="/Case/index/id/9.html">智慧交通</a><a href="/Case/index/id/13.html">智能设备</a><a href="/Case/index/id/8.html">运营商</a><a href="/Case/index/id/14.html">遥感</a><a href="/Case/index/id/17.html">视频大数据</a>							</div>
-            <div style="margin-left: 4.6%;border-bottom: 1px solid #e6e6e6;"></div>
-            <a href="/Case/index/id/3.html">智能手机</a>						<a href="/Case/index/id/2.html">泛文化娱乐</a><a class="phone-nav-znqc">智能汽车</a>
-            <div class="phone-nav-znqc-box">
-                <a href="/Case/index/id/20.html">智能驾驶</a><a href="/Case/index/id/21.html">智能车舱</a>							</div>
-            <div style="margin-left: 4.6%;border-bottom: 1px solid #e6e6e6;"></div>												<a href="/Case/index/id/16.html">智慧健康</a><a class="phone-nav-znqc">智慧商业与金融</a>
-            <div class="phone-nav-znqc-box">
-                <a href="/Case/index/id/22.html">线上金融</a><a href="/Case/index/id/23.html">线下金融</a><a href="/Case/index/id/5.html">智慧零售</a>							</div>
-            <div style="margin-left: 4.6%;border-bottom: 1px solid #e6e6e6;"></div>												<a href="/Case/index/id/7.html">教育</a>		</div>
-    </li>
-    <li><a href="/news.html">新闻中心</a></li>
-    <li><a>关于商汤</a>
-        <div class="phone-nav-1">
-            <p class="fanhui"><span class="mui-icon mui-icon-arrowleft"></span>返回</p>
-            <a href="/about.html">商汤使命</a>
-            <a href="/about.html#company" onclick="go_hash('company');">商汤介绍</a>
-            <a href="/about.html#progress" onclick="go_hash('progress');">商汤之路</a>
-            <a href="/about.html#culture" onclick="go_hash('culture');">联系我们</a>
-
-        </div>
-    </li>
-    <li><a>加入我们</a>
-        <div class="phone-nav-1">
-            <p class="fanhui"><span class="mui-icon mui-icon-arrowleft"></span>返回</p>
-            <a href="https://joinus.sensetime.com/index.html#nrnav-box">走进商汤</a>
-            <a href="https://joinus.sensetime.com/Index/news.html#nrnav-box">商汤视野</a>
-            <a href="https://sensetime.m.zhiye.com/?from=singlemessage&amp;isappinstalled=0">简历投递</a>
-
-        </div>
-    </li>
-    <li style="height: 3rem;line-height: 3rem;border-bottom: none;"><a href="/en" style="background:none;">EN&nbsp;&nbsp;<span class="mui-icon-extra mui-icon-extra-arrowright"></span></a></li>
-</ul>
-<div id="headerHeight" style="height: 60px;"></div>
-
-
-<!--banner-->
-<section class="nr-banner a-background" style="background-image: url(/images/khal-banner.jpg);">
-    <div class="width-1220">
-        <h1 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">客户案例</h1>
-        <p class="wow fadeInUpa" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUpa;">专业的合作伙伴与客户，遍及互联网、手机、金融、遥感等多个领域</p>
-    </div>
-</section>
-
-<!--二级页面导航-->
-<section class="border-bottom nrnav-box" style="overflow: visible; top: 0px;" id="nrnav-box">
-    <div class="width-1220 nr-nav">
-        <!--<div class="nr-nav-left">智慧安防</div>-->
-        <div class="nr-crumbs">
-            <div class="khal-nr-nav active">
-                <span style="color: #707070;">客户案例</span>
-                <span class="mui-icon mui-icon-arrowdown"></span>
-                <span>智慧城市</span>
-                <span class="mui-icon mui-icon-arrowdown"></span>
-                <span>智慧安防</span>				</div>
-
-            <!--下拉菜单-->
-            <div class="hxjs-nav3 khal-nr-nav-box" style="display: block;">
-                <div class="box_Arrow"></div>
-                <a class="khal-nav-menu  active">智慧城市<span class="mui-icon mui-icon-arrowright"></span></a>
-                <div class="khal-nr-nav-box2" style="display: block;">
-                    <a href="/Case/index/id/1.html" class="red">智慧安防</a>
-                    <a href="/Case/index/id/9.html">智慧交通</a>													<a href="/Case/index/id/13.html">智能设备</a>													<a href="/Case/index/id/8.html">运营商</a>													<a href="/Case/index/id/14.html">遥感</a>													<a href="/Case/index/id/17.html">视频大数据</a>									</div>																<a class="khal-nav-menu" href="/Case/index/id/3.html">智能手机</a>
-                <a class="khal-nav-menu" href="/Case/index/id/2.html">泛文化娱乐</a>
-                <a class="khal-nav-menu">智能汽车<span class="mui-icon mui-icon-arrowright"></span></a>
-                <div class="khal-nr-nav-box2">
-                    <a href="/Case/index/id/20.html">智能驾驶</a>													<a href="/Case/index/id/21.html">智能车舱</a>									</div>								<a class="khal-nav-menu" href="/Case/index/id/16.html">智慧健康</a>
-                <a class="khal-nav-menu">智慧商业与金融<span class="mui-icon mui-icon-arrowright"></span></a>
-                <div class="khal-nr-nav-box2">
-                    <a href="/Case/index/id/22.html">线上金融</a>													<a href="/Case/index/id/23.html">线下金融</a>													<a href="/Case/index/id/5.html">智慧零售</a>									</div>								<a class="khal-nav-menu" href="/Case/index/id/7.html">教育</a>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-    </div>
-    <script>
-        //二级导航下拉
-        $(function(){
-            //一级
-            $('.khal-nr-nav').click(function(){
-                event.stopPropagation();
-                if($(this).hasClass('active')){
-                    $('.hxjs-nav3').slideUp();
-                    $(this).removeClass('active')
-                }else{
-                    $('.hxjs-nav3').slideDown()
-                    $(this).addClass('active')
-                }
-            });
-            //二级
-            $('.khal-nr-nav-box>.khal-nav-menu').click(function(){
-                event.stopPropagation();
-                if($(this).hasClass('active')){
-                    $(this).next('.khal-nr-nav-box2').slideUp();
-                    $(this).removeClass('active')
-                }else{
-                    $(this).next('.khal-nr-nav-box2').slideDown()
-                    $(this).addClass('active')
-                }
-            })
-            //点击空白处菜单收回
-            $('body').on('click',function(){
-                $('.khal-nr-nav').removeClass('active');
-                $('.hxjs-nav3').slideUp();
-            })
-
-        })
-    </script>
-</section>
-<div id="nrnav-box-height" style="height: 0px;"></div>
-
-<!--轮播图-->
-<section>
-    <div class="width-1220 cp-4">
-        <div class="cp-6 khal-1 swiper-container-horizontal" id="khal-menubox">
-            <div class="swiper-wrapper">
-                <div class="cp-addname hover swiper-slide active swiper-slide-active" style="width: 236px;">
-                    <a class="cp-5 m-center khal-menu ">
-                        <div><img src="/upfile/201902/5c75f6cec06a5.jpg"></div>
-                    </a>
-                    <p>上海西岸</p>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-button-prev swiper-button-disabled"></div>
-        <div class="swiper-button-next swiper-button-disabled"></div>
-    </div>
-    <div class="width-100 khal-2 swiper-container-horizontal swiper-container-autoheight" id="khal">
-        <div class="swiper-wrapper" style="height: 1380px;">
-            <!--1-->
-            <div class="swiper-slide swiper-slide-active" style="width: 1220px;">
-                <div class="khal-3 a-background" style="background-image: url('/upfile/201902/5c75f68ebc857.jpg');">
-                    <div class="width-1220 khal-8">
-                        <div class="khal-4">
-                            <!--notempty name="xo.pic2"><img src="/上海西岸" class="khal-img" /></notempty-->
-                            <p class="delay-2">上海西岸</p>
-                            <p class="delay-2 case_info">上海西岸位于徐汇滨江地区，岸线长约 11.4 公里，面积约达 9.4 平方公里，是上海中心城区内最具公共活力的滨水新城区。</p>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="width-1220 khal-7">
-                    <div class="khal-5">
-                        <div class="text">
-                            <h2 class="wow fadeInUpa" style="visibility: hidden; animation-name: none;">智慧公共空间管理平台</h2>
-                            <p class="wow fadeInUpa delay-2" style="visibility: hidden; animation-name: none;">城市公共空间管理是建设智慧城市的核心问题之一。依托全球领先的人脸识别、视频结构化分析、人群密度监测、以图搜图、轨迹分析等多项原创技术，商汤科技与上海西岸集团联手构建“智慧公共空间管理平台”，实现公共安全管理、智慧区域运营、提升生活体验，让市民享受到更安全、更便捷、更贴心的人性化服务。</p>
-                        </div>
-                        <div class="img"><img src="/upfile/201902/5c75f69a1c564.jpg"></div>
-                    </div>																																		</div>
-            </div>
-
-        </div>
-    </div>
-    <!--script>
-        var khal = new Swiper('#khal', {
-            noSwiping : true,
-            noSwipingClass : 'swiper-slide',
-            effect : 'fade',
-                            autoHeight: true, //高度随内容变化
-            fade: {
-                crossFade: true,
-            }
-        });
-        $('#khal-menubox>.cp-addname').each(function(i){
-            $(this).click(function(){
-                $('#khal-menubox').find('.cp-addname').removeClass('hover');
-                $(this).addClass('hover');
-                khal.slideTo(i, 500, false);
-            })
-        })
-    </script-->
-    <script>
-        var hxjsMenu = new Swiper('#khal-menubox', {
-            slideToClickedSlide:true,//设置为true则点击slide会过渡到这个slide。
-            prevButton:'.swiper-button-prev',
-            nextButton:'.swiper-button-next',
-            slidesPerView : 5,
-            slidesPerGroup :5,
-            //slidesPerView : 1,
-            //slidesPerGroup : 1,
-            breakpoints: {
-                //当宽度小于等于768
-                768: {
-                    slidesPerView: 4,
-                    slidesPerGroup :4,
-                    freeMode : true,
-                }
-            },
-        });
-        var hxjsCon = new Swiper('#khal', {
-            pagination : '.hxjs-page',
-            paginationType : 'fraction',
-            prevButton:'.hxjs-prev',
-            nextButton:'.hxjs-next',
-            autoHeight: true, //高度随内容变化
-            onSlideChangeStart: function(swiper){
-                hxjsMenu.slideTo(swiper.activeIndex, 500, false);
-                $('#khal-menubox').find('.swiper-slide').removeClass('hover');
-                $('#khal-menubox').find('.swiper-slide').eq(swiper.activeIndex).addClass('hover');
-
-            },
-            onSlideChangeEnd: function(swiper){
-                $('#khal').find('.swiper-slide').find('.wo').removeClass('zhixing');
-                $('#khal').find('.swiper-slide').eq(swiper.activeIndex).find('.wo').addClass('zhixing');
-            },
-        });
-        $('#khal-menubox').find('.swiper-slide').each(function(i){
-            $(this).click(function(){
-                $('#khal-menubox').find('.swiper-slide').removeClass('hover');
-                $(this).addClass('hover');
-                hxjsMenu.slideTo(i, 500, true);
-                hxjsCon.slideTo(i, 500, true);
-            })
-        });
-    </script>
-</section>
-
-
-<!--内容-->
-
-
-<!--二级导航固定-->
-<script>
-    $(function(){
-        var headerHeight= $('header').outerHeight();
-        var nrnavHeight = $('#nrnav-box').outerHeight();
-        var nrnavTop = $('#nrnav-box').offset().top;
-
-
-        $(window).scroll(function(){
-            if($(window).scrollTop()>nrnavTop-headerHeight){
-                $('header').addClass("headeractive")
-                $('#nrnav-box').addClass('active');
-                $('#nrnav-box').css('top',0)
-                $('#nrnav-box-height').height(nrnavHeight);
-            }else{
-                $('header').removeClass('headeractive');
-                $('#nrnav-box').removeClass('active');
-                $('#nrnav-box').css('top',0)
-                $('#nrnav-box-height').height(0);
-            };
-        })
-
-    })
-</script>
-
-
-
-
-<!--footer-->
-<footer class="bg-252526">
-    <div class="width-1220 footer-1">
-        <p class="footer-3">商业合作：<span>400 900 5986</span><i> ( 周一到周五 9:00-18:00 )</i>
-            <span class="pull-right">business@sensetime.com</span>
-        </p>
-        <div class="footer-2">
-            <a href="/logo.zip" id="logolink">商汤LOGO</a>
-            <a href="/learning.html">学术合作</a>
-            <a href="/cooperation.html">合作伙伴</a>
-            <a href="/statement.html">法律声明</a>
-            <a href="/clause.html">使用条款</a>
-            <a href="/en" class="visible-xs-inline">ENGLISH</a>
-        </div>
-        <div class="footer-4">
-            <div class="footer-logo"><img src="/images/footer-logo.png"></div>
-            <a class="footer-6" id="wxbox2">
-                <img src="/images/footer-wx.png">
-                <div class="wxbox" style="display:none;">
-                    <img src="/images/erwm.png" alt="">
-                </div>
-            </a>
-            <a class="footer-6 " id="wxbox"><img src="/images/footer-weibo.png">
-                <div class="wxbox" style="display:none;">
-                    <img src="/images/erwm1.png" alt="">
-                </div>
-            </a>
-
-            <a href="https://www.linkedin.com/company/sensetime-group-limited/" class="footer-5" target="_blank" style="margin-right: 0;">
-                <img src="/images/footer-linkedin.png">
-            </a>
-        </div>
-    </div>
-    <div class="width-1220 footer-ba">
-        <p>
-            <span>京 ICP 备 15000892 号-1 京 ICP 备 15000892 号-2</span>
-            <span class="hidden-xs">|</span>
-            <span class="footer-ba1">京公网安备 11010802026791 号</span>
-            <span>© 2014-2019  SenseTime. All Rights Reserved. 北京市商汤科技开发有限公司</span>
-        </p>
-    </div>
-</footer>
-
-
-
-
-<script type="text/javascript">
-    var is_weixin = (function(){return navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1})();
-    if(is_weixin){
-        $(function(){
-            document.getElementById('logolink').onclick = function(ev){
-                ev.preventDefault();
-                $(".wxopen").show();
-            }
-
-            $(".wxopen,.wxopen>img").click(function(){
-                $(".wxopen").hide();
-            });
-        });
-    }else{
-        $(function(){
-            return false;
-        });
+<div class="container-fluid footer text-center" role="footer">
+    <div class="friend-link">
+        人人商城|禾匠小程序商城|柚子社区团购|狮子鱼社区团购|志汇外卖|志汇外卖同城|码上点餐|微擎框架					</div>
+    <div class="copyright">以上模块<a href="https://yscms.taobao.com">云硕科技均可提供点击跳转淘宝店</a></div>
+</div>
+</div>
+
+<script type="text/javascript" src="https://w7.yunshuokeji.com/web/index.php?c=utility&a=visit&do=showjs&type=system"></script>
+
+</body>
+</html><script>
+    document.onkeydown = function(e){
+        if(e.keyCode === 13){
+            formcheck();
+        }
     }
-
-    $(document).ready(function() {
-        $("#wxbox").hover(function(){
-            $(this).addClass("footer-6_hover");
-            $(this).children(".wxbox").show();
-        },function(){
-            $(this).removeClass("footer-6_hover");
-            $(this).children(".wxbox").hide();
+    function formcheck(){
+        var username = $("#username").val();
+        var str = /^[1][3,4,5,7,8][0-9]{9}$///手机
+        if(username == ''){
+            alert("请输入帐号")
+            return false
+        }
+        /*if(str.test(username)){
+         $("#login_type").val("mobile");
+         }else{
+         $("#login_type").val("system");
+         }*/
+        $.ajax({
+            url:"/web/index.php?c=user&a=login",
+            type:"POST",
+            dataType:'json',
+            data:$('#form1').serialize(),
+            success: function(data){
+                var url = data.redirect;
+                if(url){
+                    if(url.indexOf("user") != -1){
+                        alert(data.message);
+                        $("#imgcode").attr("src","/web/index.php?c=utility&a=code&" + Math.random());
+                    }else{
+                        url = url.replace(".","");
+                        window.location.href="/web"+url;
+                    }
+                }else{
+                    alert(data.message);
+                }
+            }
         });
-        $("#wxbox2").hover(function(){
-            $(this).addClass("footer-6_hover");
-            $(this).children(".wxbox").show();
-        },function(){
-            $(this).removeClass("footer-6_hover");
-            $(this).children(".wxbox").hide();
-        });
-    });
-
-
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?95e1c7f2af12086fc92e0742665b8268";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-
-
-    //2019-6-11增加百度代码
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?8ebb5ff06a2c44c46939dec8d61388ed";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
+        return false;
+    }
 </script>
-
-
-
-
-<!--返回顶部按钮-->
-<div class="to-top" id="to-top" style="display: none;">
-    <div class="m-center"><img src="/images/jt-5.png"></div>
-</div>
-
-
-</body></html>
+</body>
+</html>

@@ -426,6 +426,12 @@
 .index-22 .btn-ljgd{margin-top: 1rem;}
 /*.index-1-icon img{width:57px;}*/
 
+
+@keyframes anim{
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 width-1220{
 
 }

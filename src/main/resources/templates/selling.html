@@ -1,15 +1,6 @@
 <html  xmlns:th="http://www.thymeleaf.org" style="font-size: 50px;">
 <head>
-    <!--<style class="vjs-styles-defaults">-->
-    <!--.video-js {-->
-    <!--width: 300px;-->
-    <!--height: 150px;-->
-    <!--}-->
 
-    <!--.vjs-fluid {-->
-    <!--padding-top: 56.25%-->
-    <!--}-->
-    <!--</style>-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="app-mobile-web-app-capable" content="yes">
@@ -17,14 +8,13 @@
     <!--响应式框架-->
     <!--css-->
     <!--响应式框架-->
+    <link rel="stylesheet"  th:href="@{/css/topcontrol.css}">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
     <link rel="stylesheet"  th:href="@{/css/footer.css}">
     <!--默认样式-->
     <link rel="stylesheet" th:href="@{/css/style.css}" >
     <!--图片和滚屏样式-->
     <link rel="stylesheet"  th:href="@{/css/erji.css}" media="all">
-    <!--<link rel="stylesheet"  th:href="@{/css/iconfont.css}" media="all">-->
-
     <link rel="stylesheet" th:href="@{/css/about.css}">
     <link rel="stylesheet"  th:href="@{/css/swiper.min.css}">
     <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
@@ -98,6 +88,14 @@
     </div>
 </nav>
 
+<!--微信公众号图标-->
+<div class="toolbar hidden-xs">
+    <a class="toolbar-item toolbar-item-weixin" data-toggle="modal" data-target="#myModal">
+        <span class="toolbar-layer"></span>
+    </a>
+    <a href="javascript:scroll(0,0)" class="toolbar-item toolbar-item-top"></a>
+</div>
+
 
 <!--banner-->
 <section class="nr-banner a-background" style="background-image: url(/images/yxkj/security/yxal-banner.jpg);">
@@ -164,9 +162,6 @@
     </script>
 </section>
 
-
-
-
 <section>
     <div class="width-1220 cp-4">
         <div class="cp-6 khal-1 swiper-container-horizontal" id="khal-menubox">
@@ -191,71 +186,25 @@
             <div class="width-1220 khal-7">
                 <div class="khal-5">
                     <div class="text">
-                        <h2 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;"></h2>
+                        <h2 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;text-align: center;" >菜品智能识别</h2>
                         <p class="wow fadeInUpa delay-2" style="visibility: visible; animation-name: fadeInUpa;">垣象科技自主研发菜品识别系统,解决当下快餐、饭堂吃饭排队，人工结算慢、容易出错的问题。解放收银员，减少客户开支；未来从食品原材料抓起，解决食品健康问题，为人类健康提供多一层保障</p>
                     </div>
                     <div class="img">
-                        <video  style="width:100%;height:100%;"controls preload="auto">
-                          <source th:src="@{/images/yxkj/mp4/hello.mp4}" type="video/mp4">
+                        <video  style=""controls preload="auto">
+                          <source th:src="@{/images/yxkj/mp4/cpsb1.mp4}" type="video/mp4">
                         </video>
+
                     </div>
                 </div>
             </div>
         </div>
 
-    <script>
-        var hxjsMenu = new Swiper('#khal-menubox', {
-            slideToClickedSlide:true,//设置为true则点击slide会过渡到这个slide。
-            prevButton:'.swiper-button-prev',
-            nextButton:'.swiper-button-next',
-            slidesPerView : 5,
-            slidesPerGroup :5,
-            //slidesPerView : 3,
-            //slidesPerGroup : 3,
-            breakpoints: {
-                //当宽度小于等于768
-                768: {
-                    slidesPerView: 4,
-                    slidesPerGroup :4,
-                    freeMode : true,
-                }
-            },
-        });
-        var hxjsCon = new Swiper('#khal', {
-            pagination : '.hxjs-page',
-            paginationType : 'fraction',
-            prevButton:'.hxjs-prev',
-            nextButton:'.hxjs-next',
-            autoHeight: true, //高度随内容变化
-            onSlideChangeStart: function(swiper){
-                hxjsMenu.slideTo(swiper.activeIndex, 500, false);
-                $('#khal-menubox').find('.swiper-slide').removeClass('hover');
-                $('#khal-menubox').find('.swiper-slide').eq(swiper.activeIndex).addClass('hover');
-
-            },
-            onSlideChangeEnd: function(swiper){
-                $('#khal').find('.swiper-slide').find('.wo').removeClass('zhixing');
-                $('#khal').find('.swiper-slide').eq(swiper.activeIndex).find('.wo').addClass('zhixing');
-            },
-        });
-        $('#khal-menubox').find('.swiper-slide').each(function(i){
-            $(this).click(function(){
-                $('#khal-menubox').find('.swiper-slide').removeClass('hover');
-                $(this).addClass('hover');
-                hxjsMenu.slideTo(i, 500, true);
-                hxjsCon.slideTo(i, 500, true);
-            })
-        });
-    </script>
 </section>
 
 
 
 
 <!--&lt;!&ndash;返回顶部按钮&ndash;&gt;-->
-<!--<div class="to-top" id="to-top" style="display: none;">-->
-<!--<div class="m-center"><img src="/images/jt-5.png"></div>-->
-<!--</div>-->
 <div   style="width:100%; background:#f0f0f0 !important;padding-bottom: 35px;">
     <div id="foot" >
         <div class="lf" style="width:280px;">

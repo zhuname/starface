@@ -17,20 +17,17 @@
     <!--响应式框架-->
     <!--css-->
     <!--响应式框架-->
+    <link rel="stylesheet"  th:href="@{/css/topcontrol.css}">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
     <link rel="stylesheet"  th:href="@{/css/footer.css}">
     <!--默认样式-->
     <link rel="stylesheet" th:href="@{/css/style.css}" >
     <!--图片和滚屏样式-->
     <link rel="stylesheet"  th:href="@{/css/erji.css}" media="all">
-    <!--<link rel="stylesheet"  th:href="@{/css/iconfont.css}" media="all">-->
-
     <link rel="stylesheet" th:href="@{/css/about.css}">
     <link rel="stylesheet"  th:href="@{/css/swiper.min.css}">
     <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
     <link rel="stylesheet" th:href="@{/css/public.css}">
-    <link rel="stylesheet" th:href="@{/css/animation.css}">
-
     <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
     <script  th:src="@{/js/bootstrap.min.js}"></script>
     <script  th:src="@{/js/swiper.min.js}"></script>
@@ -100,7 +97,13 @@
     </div>
 </nav>
 
-
+<!--微信公众号二维码-->
+<div class="toolbar hidden-xs">
+    <a class="toolbar-item toolbar-item-weixin" data-toggle="modal" data-target="#myModal">
+        <span class="toolbar-layer"></span>
+    </a>
+    <a href="javascript:scroll(0,0)" class="toolbar-item toolbar-item-top"></a>
+</div>
 
 <!--banner-->
 <section class="nr-banner a-background" style="background-image: url(/images/yxkj/security/yxal-banner.jpg);">
@@ -193,155 +196,27 @@
 
     <div data-v-63ef68d9="" class="tit_box mar_b_50" style="margin-top:30px;">
         <span data-v-63ef68d9="" class="line"></span>
-        <span data-v-63ef68d9="" class="tit_text" style="font-size:18px;"> 识别动态人脸，实现高精度 1:N 人脸查找</span>
+        <span data-v-63ef68d9="" class="tit_text" style=";">动态人脸识别</span>
         <span data-v-63ef68d9="" class="line"></span>
     </div>
 
+    <div data-v-63ef68d9="" class="core_cont">
+        &nbsp; &nbsp; 杭州垣象科技有限公司是全球专业的智能软硬件解决方案提供商,具有十几年在机器视觉、人工智能、大规模网络服务、高性能数据库系统等方面的技术和完全自主知识产权
+        产品积累,同时依托庞大的资深研发团队与良好的政府、供应商、国内外知名企业、国内外知名院校等的合作关系,帮助政府和客户解决智能化相关的问题。
+        识别动态人脸，实现高精度 1:N 人脸查找，精确度高达99.93%。
+    </div>
+    <div style=" width: 800px;height:500px;" >
 
-    <div style=" width: 300px;height:300px;background-color: aliceblue;" >
-        <video  style="width:100%;height:100%;"controls preload="auto">
-            <source th:src="@{/images/yxkj/mp4/hello.mp4}" type="video/mp4">
-        </video>
+        <img th:src="@{/images/yxkj/security/n_1.png}">
+        <!--<video  style="width:100%;height:100%;"controls preload="auto">-->
+            <!--<source th:src="@{/images/yxkj/mp4/hello.mp4}" type="video/mp4">-->
+        <!--</video>-->
     </div>
 
 </div>
 
 
 <div id="nrnav-box-height" style="height: 0px;"></div>
-
-
-<!--&lt;!&ndash;内容&ndash;&gt;-->
-
-
-<!--&lt;!&ndash;二级导航固定&ndash;&gt;-->
-<script>
-    $(function(){
-        var headerHeight= $('header').outerHeight();
-        var nrnavHeight = $('#nrnav-box').outerHeight();
-        var nrnavTop = $('#nrnav-box').offset().top;
-
-
-        $(window).scroll(function(){
-            if($(window).scrollTop()>nrnavTop-headerHeight){
-                $('header').addClass("headeractive")
-                $('#nrnav-box').addClass('active');
-                $('#nrnav-box').css('top',0)
-                $('#nrnav-box-height').height(nrnavHeight);
-            }else{
-                $('header').removeClass('headeractive');
-                $('#nrnav-box').removeClass('active');
-                $('#nrnav-box').css('top',0)
-                $('#nrnav-box-height').height(0);
-            };
-        })
-
-    })
-</script>
-
-
-
-
-<!--&lt;!&ndash;footer&ndash;&gt;-->
-<!--<footer class="bg-252526">-->
-    <!--<div class="width-1220 footer-1">-->
-        <!--<p class="footer-3">商业合作：<span>400 900 5986</span><i> ( 周一到周五 9:00-18:00 )</i>-->
-            <!--<span class="pull-right">business@sensetime.com</span>-->
-        <!--</p>-->
-        <!--<div class="footer-2">-->
-            <!--<a href="/logo.zip" id="logolink">商汤LOGO</a>-->
-            <!--<a href="/learning.html">学术合作</a>-->
-            <!--<a href="/cooperation.html">合作伙伴</a>-->
-            <!--<a href="/statement.html">法律声明</a>-->
-            <!--<a href="/clause.html">使用条款</a>-->
-            <!--<a href="/en" class="visible-xs-inline">ENGLISH</a>-->
-        <!--</div>-->
-        <!--<div class="footer-4">-->
-            <!--<div class="footer-logo"><img src="/images/footer-logo.png"></div>-->
-            <!--<a class="footer-6" id="wxbox2">-->
-                <!--<img src="/images/footer-wx.png">-->
-                <!--<div class="wxbox" style="display:none;">-->
-                    <!--<img src="/images/erwm.png" alt="">-->
-                <!--</div>-->
-            <!--</a>-->
-            <!--<a class="footer-6 " id="wxbox"><img src="/images/footer-weibo.png">-->
-                <!--<div class="wxbox" style="display:none;">-->
-                    <!--<img src="/images/erwm1.png" alt="">-->
-                <!--</div>-->
-            <!--</a>-->
-
-            <!--<a href="https://www.linkedin.com/company/sensetime-group-limited/" class="footer-5" target="_blank" style="margin-right: 0;">-->
-                <!--<img src="/images/footer-linkedin.png">-->
-            <!--</a>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="width-1220 footer-ba">-->
-        <!--<p>-->
-            <!--<span>京 ICP 备 15000892 号-1 京 ICP 备 15000892 号-2</span>-->
-            <!--<span class="hidden-xs">|</span>-->
-            <!--<span class="footer-ba1">京公网安备 11010802026791 号</span>-->
-            <!--<span>© 2014-2019  SenseTime. All Rights Reserved. 北京市商汤科技开发有限公司</span>-->
-        <!--</p>-->
-    <!--</div>-->
-<!--</footer>-->
-
-
-
-
-<!--<script type="text/javascript">-->
-    <!--var is_weixin = (function(){return navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1})();-->
-    <!--if(is_weixin){-->
-        <!--$(function(){-->
-            <!--document.getElementById('logolink').onclick = function(ev){-->
-                <!--ev.preventDefault();-->
-                <!--$(".wxopen").show();-->
-            <!--}-->
-
-            <!--$(".wxopen,.wxopen>img").click(function(){-->
-                <!--$(".wxopen").hide();-->
-            <!--});-->
-        <!--});-->
-    <!--}else{-->
-        <!--$(function(){-->
-            <!--return false;-->
-        <!--});-->
-    <!--}-->
-
-    <!--$(document).ready(function() {-->
-        <!--$("#wxbox").hover(function(){-->
-            <!--$(this).addClass("footer-6_hover");-->
-            <!--$(this).children(".wxbox").show();-->
-        <!--},function(){-->
-            <!--$(this).removeClass("footer-6_hover");-->
-            <!--$(this).children(".wxbox").hide();-->
-        <!--});-->
-        <!--$("#wxbox2").hover(function(){-->
-            <!--$(this).addClass("footer-6_hover");-->
-            <!--$(this).children(".wxbox").show();-->
-        <!--},function(){-->
-            <!--$(this).removeClass("footer-6_hover");-->
-            <!--$(this).children(".wxbox").hide();-->
-        <!--});-->
-    <!--});-->
-
-
-    <!--var _hmt = _hmt || [];-->
-    <!--(function() {-->
-        <!--var hm = document.createElement("script");-->
-        <!--hm.src = "https://hm.baidu.com/hm.js?95e1c7f2af12086fc92e0742665b8268";-->
-        <!--var s = document.getElementsByTagName("script")[0];-->
-        <!--s.parentNode.insertBefore(hm, s);-->
-    <!--})();-->
-
-
-    <!--//2019-6-11增加百度代码-->
-    <!--var _hmt = _hmt || [];-->
-    <!--(function() {-->
-        <!--var hm = document.createElement("script");-->
-        <!--hm.src = "https://hm.baidu.com/hm.js?8ebb5ff06a2c44c46939dec8d61388ed";-->
-        <!--var s = document.getElementsByTagName("script")[0];-->
-        <!--s.parentNode.insertBefore(hm, s);-->
-    <!--})();-->
-<!--</script>-->
 
 
 
