@@ -1,15 +1,5 @@
-<html  xmlns:th="http://www.thymeleaf.org" style="font-size: 50px;">
+<html  xmlns:th="http://www.thymeleaf.org" >
 <head>
-    <!--<style class="vjs-styles-defaults">-->
-    <!--.video-js {-->
-        <!--width: 300px;-->
-        <!--height: 150px;-->
-    <!--}-->
-
-    <!--.vjs-fluid {-->
-        <!--padding-top: 56.25%-->
-    <!--}-->
-<!--</style>-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="app-mobile-web-app-capable" content="yes">
@@ -19,18 +9,17 @@
     <!--响应式框架-->
     <link rel="stylesheet"  th:href="@{/css/topcontrol.css}">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
-    <link rel="stylesheet"  th:href="@{/css/footer.css}">
     <!--默认样式-->
     <link rel="stylesheet" th:href="@{/css/style.css}" >
     <!--图片和滚屏样式-->
     <link rel="stylesheet"  th:href="@{/css/erji.css}" media="all">
     <link rel="stylesheet" th:href="@{/css/about.css}">
-    <link rel="stylesheet"  th:href="@{/css/swiper.min.css}">
-    <link rel="stylesheet" th:href="@{/css/font-awesome.min.css}">
+    <link rel="stylesheet" th:href="@{/css/font-awesome.css}">
     <link rel="stylesheet" th:href="@{/css/public.css}">
+    <link rel="stylesheet"  th:href="@{/css/common.css}">
+
     <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
     <script  th:src="@{/js/bootstrap.min.js}"></script>
-    <script  th:src="@{/js/swiper.min.js}"></script>
 </head>
 <body>
 
@@ -117,13 +106,11 @@
 <!--二级页面导航-->
 <section class="border-bottom nrnav-box" style="overflow: visible; top: 0px;" id="nrnav-box">
     <div class="width-1220 nr-nav">
-        <!--<div class="nr-nav-left">智慧交通</div>-->
         <div class="nr-crumbs">
             <div class="khal-nr-nav" style="font-size:18px;">
                 <span style="color: #707070;font-size: 18px;">客户案例</span>
                 <span style="color:black;display: inline-block ;margin-left: 5px;margin-right:5px;" class="fa fa-angle-down"></span>
                 <span>安防领域</span>
-
             <!--下拉菜单-->
             <div class="hxjs-nav3 khal-nr-nav-box" style="">
                 <div class="box_Arrow"></div>
@@ -134,9 +121,9 @@
 
             </div>
         </div>
-        <!--<div class="clearfix"></div>-->
     </div>
     </div>
+
     <script>
         //二级导航下拉
         $(function(){
@@ -185,14 +172,12 @@
             <img style="width:200px;height: 180px;"  src="/images/yxkj/security/one.png" alt="">
             <img style="width:200px;height: 180px;"  src="/images/yxkj/security/two.png" alt="">
             <img style="width:200px;height: 180px;"  src="/images/yxkj/security/three.png" alt="">
-
         </div>
         <div class="clearfix"></div>
     </div>
 
 
-
-<div style=" border-top:1px solid #e9e9e9; border-bottom:0px; margin-top: 5%;"  class="item_box core pad_t_80 pad_b_80">
+<div style=" border-top:1px solid #e9e9e9; border-bottom:1px solid #e9e9e9; margin-top: 5%;"  class="item_box core pad_t_80 pad_b_80">
 
     <div data-v-63ef68d9="" class="tit_box mar_b_50" style="margin-top:30px;">
         <span data-v-63ef68d9="" class="line"></span>
@@ -205,39 +190,85 @@
         产品积累,同时依托庞大的资深研发团队与良好的政府、供应商、国内外知名企业、国内外知名院校等的合作关系,帮助政府和客户解决智能化相关的问题。
         识别动态人脸，实现高精度 1:N 人脸查找，精确度高达99.93%。
     </div>
-    <div style=" width: 800px;height:500px;" >
-
+    <div style=" width: 800px;height:400px;" >
         <img th:src="@{/images/yxkj/security/n_1.png}">
-        <!--<video  style="width:100%;height:100%;"controls preload="auto">-->
-            <!--<source th:src="@{/images/yxkj/mp4/hello.mp4}" type="video/mp4">-->
-        <!--</video>-->
     </div>
-
 </div>
 
 
-<div id="nrnav-box-height" style="height: 0px;"></div>
+<section>
+    <div class="width-1220 cp-4">
+        <div class="width-1220 khal-7">
+            <div class="khal-5">
+                <div class="text">
+                    <h2 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;text-align: center;" >动态追踪</h2>
+                    <p class="wow fadeInUpa delay-2" style="visibility: visible; animation-name: fadeInUpa;">垣象科技与火车东站合作，在火车东站西广场天城路出入口测试目标人物动态查找追踪，完美通过。</p>
+                </div>
 
-
-
-
-<!--&lt;!&ndash;返回顶部按钮&ndash;&gt;-->
-<!--<div class="to-top" id="to-top" style="display: none;">-->
-    <!--<div class="m-center"><img src="/images/jt-5.png"></div>-->
-<!--</div>-->
-<div   style="width:100%; background:#f0f0f0 !important;padding-bottom: 35px;">
-    <div id="foot" >
-        <div class="lf" style="width:280px;">
-            <p class="footer1"><a th:href="@{/}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>
+                <div class="img" style="width:600px;height: 400px;">
+                    <video  style="width:100%;" controls preload="auto">
+                        <source th:src="@{/images/yxkj/mp4/security.mp4}" type="video/mp4">
+                    </video>
+                </div>
+            </div>
         </div>
-        <div class="foot_left lf" style="margin-left:25px;  " >
+    </div>
+</section>
 
-            <p  class="foot=li"><a href="/about" style="font-size: 18px;">关于垣象</a></p>
-            <p  class="foot=li"><a href="/technology" style="font-size: 18px; ">核心技术</a></p>
-            <p  class="foot=li"><a href="/product" style="font-size: 18px; ">解决方案</a></p>
-            <p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系我们</a></p>
+
+<!--页面底部-->
+<div class="footer">
+    <div class="footer-inner">
+        <div class="summary-info">
+            <a style="width: 120px" class="logo-outer" href="/">
+                <img th:src="@{/images/logo/contact_ceshi.png}" >
+            </a>
+            <div class="summary-desc">让每个企业享受智慧服务带来的改变</div>
+            <ul class="summary-list">
+                <li>
+                    <i class="tel"></i>
+                    <a href="tel://4008-690-981">4008-690-981</a>
+                </li>
+                <li>
+                    <i class="weixin">
+                        <div class="qrcode-outer">
+                            <div class="text">请扫描二维码</div>
+                            <img th:src="@{/images/yxkj/qrcode.jpg}"  alt="垣象科技,智能Ai专家">
+                        </div>
+                    </i>关注垣象科技，了解更多垣象资讯</li>
+            </ul>
         </div>
-        <div class="record">
+
+        <ul class="super-nav">
+            <li>
+                <h4>服务支持</h4>
+                <ul>
+                    <li><a href="/technology">核心技术</a></li>
+                    <li><a href="/about">公司介绍</a></li>
+                    <li><a href="/contact">联系我们</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h4>行业解决方案</h4>
+                <ul>
+                    <li class="js-case">
+                        <a href="/security">安防领域</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/banking">金融领域</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/city">城市管理</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/selling">销售领域</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="summary-info" style="color: white;margin-top: 50px;width: 100%;text-align: center;">
             ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
         </div>
     </div>
@@ -245,4 +276,5 @@
 </div>
 
 
-</body></html>
+</body>
+</html>

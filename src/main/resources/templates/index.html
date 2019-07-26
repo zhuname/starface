@@ -5,36 +5,19 @@
     <title>垣象科技</title>
     <!--css-->
 
-    <!--<link rel="stylesheet" href="/js/bootstrap-3.3.7-dist/css/bootstrap.css" th:href="@{/css/bootstrap.css}">-->
-
-    <!--<link rel="stylesheet"  th:href="@{/css/footer.css}">-->
-    <!--<link href="../css/slide.css" th:href="@{/css/yxkj/slide.css}" rel="stylesheet">-->
-
-
-
-
-
     <!--响应式框架-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
-
-    <!--<link rel="stylesheet"  th:href="@{/css/footer.css}">-->
-
-    <!--css3动画库-->
-    <!--<link rel="stylesheet" href="css/animate.css" th:href="@{/css/xingkong/animate.css}">-->
-
     <!--默认样式-->
     <link  th:href="@{/css/style.css}" rel="stylesheet">
     <!--banner大图基础样式-->
-    <link rel="stylesheet" href="css/slick.css" th:href="@{/css/xingkong/slick.css}">
+    <link rel="stylesheet" href="css/slick.css" th:href="@{/css/slick.css}">
     <link rel="stylesheet" th:href="@{/css/public.css}">
-    <link rel="stylesheet" th:href="@{/css/footer.css}">
-
-
-
     <!--页面滚动基础样式-->
-    <link rel="stylesheet" href="css/jquery.fullPage.css" th:href="@{/css/xingkong/jquery.fullPage.css}" />
+    <link rel="stylesheet" th:href="@{/css/jquery.fullPage.css}" />
     <!--图片和滚屏样式-->
-    <link rel="stylesheet" href="css/index.css" th:href="@{/css/xingkong/index.css}">
+    <link rel="stylesheet"  th:href="@{/css/index.css}">
+<!--页面底部css-->
+    <link rel="stylesheet"  th:href="@{/css/common.css}">
 
     <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
 </head>
@@ -112,11 +95,11 @@
     <div class="section section1">
         <div class="index_banner">
             <div class="item">
-                <div class="items scaleBg" style="background-image: url(/images/yxkj/lunbo/two.png);"></div>
+                <div class="items scaleBg" style="background-image: url(/images/yxkj/lunbo/one.jpg);"></div>
                 <div class="inner">
                     <div class="block_txt">
                         <!--<h4> Goodliness,to be continued</h4>-->
-                        <h2>让<span>美好持续</span>发生</h2>
+                        <h2>让<span>美好</span>发生</h2>
                         <h3>
                             <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
 
@@ -126,7 +109,7 @@
                 </div>
             </div>
             <div class="item">
-                <div class="items scaleBg" style="background-image: url(/images/xingkong/banner1.jpg);"></div>
+                <div class="items scaleBg" style="background-image: url(/images/yxkj/lunbo/two.jpg);"></div>
                 <div class="inner">
                     <div class="block_txt">
                         <!--<h4> Goodliness,to be continued</h4>-->
@@ -136,32 +119,32 @@
                 </div>
             </div>
             <div class="item">
-                <div class="items scaleBg" style="background-image: url(/images/xingkong/banner2.jpg);"></div>
+                <div class="items scaleBg" style="background-image: url(/images/yxkj/lunbo/three.jpg);"></div>
                 <div class="inner">
                     <div class="block_txt">
                         <h4> </h4>
-                        <h2><span>0-12岁</span><br>可持续发展教育体系</h2>
-                        <h3>0-3岁早教  |  3-6岁幼儿园  |  5-12岁成长衔接  |  6-12岁小学</h3>
+                        <h2><span></span><br>携手Ai一路前行</h2>
+                        <h3>静态人脸识别  |  动态人脸识别  |  动态行为追踪  |  菜品识别</h3>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <div class="items scaleBg" style="background-image: url(/images/xingkong/banner3.jpg);"></div>
+                <div class="items scaleBg" style="background-image: url(/images/yxkj/lunbo/four.jpg);"></div>
                 <div class="inner">
                     <div class="block_txt">
                         <h4> </h4>
-                        <h2>幼儿园园所整体解决方案</h2>
+                        <h2>带你在Ai的世界遨游</h2>
                         <h3>全程支持  |  个性服务</h3>
                     </div>
                 </div>
             </div>
             <div class="item">
-                <div class="items scaleBg" style="background-image: url(/images/xingkong/banner4.jpg);"></div>
+                <div class="items scaleBg" style="background-image: url(/images/yxkj/lunbo/five.jpg);"></div>
                 <div class="inner">
                     <div class="block_txt">
                         <h4>  </h4>
-                        <h2>成长管理发展测评</h2>
-                        <h3>科学量表  |  全面评估  |  教育指导</h3>
+                        <h2>让智能托起地球</h2>
+                        <h3>全面评估  |  智慧分析  |  让您微笑</h3>
                     </div>
                 </div>
             </div>
@@ -185,31 +168,66 @@
 </div>
 
 <!--页面底部-->
-    <div   style="width:100%; background:#f0f0f0 !important;padding-bottom: 35px;">
-        <div id="foot" >
-            <div class="lf" style="width:280px;">
-                <p class="footer1"><a th:href="@{/}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>
-            </div>
-            <div class="foot_left lf" style="margin-left:25px;  " >
+<div class="footer" style="background-color:#0577a2;">
+    <div class="footer-inner">
+        <div class="summary-info">
+            <a style="width: 120px" class="logo-outer" href="/">
+                <img th:src="@{/images/logo/contact_ceshi.png}" >
+            </a>
+            <div class="summary-desc">让每个企业享受智慧服务带来的改变</div>
+            <ul class="summary-list">
+                <li>
+                    <i class="tel"></i>
+                    <a href="tel://4008-690-981">4008-690-981</a>
+                </li>
+                <li>
+                    <i class="weixin">
+                        <div class="qrcode-outer">
+                            <div class="text">请扫描二维码</div>
+                            <img th:src="@{/images/yxkj/qrcode.jpg}"  alt="垣象科技,智能Ai专家">
+                        </div>
+                    </i>关注垣象科技，了解更多垣象资讯</li>
+            </ul>
+        </div>
 
-                <p  class="foot=li"><a href="/about" style="font-size: 18px;">关于垣象</a></p>
-                <p  class="foot=li"><a href="/technology" style="font-size: 18px; ">核心技术</a></p>
-                <p  class="foot=li"><a href="/product" style="font-size: 18px; ">解决方案</a></p>
-                <p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系我们</a></p>
-            </div>
-            <div class="record">
-                ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
-            </div>
+        <ul class="super-nav">
+            <li>
+                <h4>服务支持</h4>
+                <ul>
+                    <li><a href="/technology">核心技术</a></li>
+                    <li><a href="/about">公司介绍</a></li>
+                    <li><a href="/contact">联系我们</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h4>行业解决方案</h4>
+                <ul>
+                    <li class="js-case">
+                        <a href="/security">安防领域</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/banking">金融领域</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/city">城市管理</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/selling">销售领域</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="summary-info" style="color: white;margin-top: 50px;width: 100%;text-align: center;">
+            ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
         </div>
     </div>
 
+</div>
 
-    <!--<script src="js/jquery.min.js" th:src="@{/js/xingkong/jquery.min.js}"></script>-->
-    <!--<script src="js/jquery.fullPage.min.js" th:src="@{/js/xingkong/jquery.fullPage.min.js}" ></script>-->
-    <script src="js/index_slick.js" th:src="@{/js/xingkong/index_slick.js}" ></script>
-    <script src="js/index.js" th:src="@{/js/xingkong/index.js}"></script>
-
-
+    <script src="js/index_slick.js" th:src="@{/js/index_slick.js}" ></script>
+    <script src="js/index.js" th:src="@{/js/index.js}"></script>
 
 </body>
 </html>

@@ -10,10 +10,9 @@
     <!--响应式框架-->
     <!--css-->
     <!--响应式框架-->
+    <link rel="stylesheet"  th:href="@{/css/topcontrol.css}">
     <link rel="stylesheet" th:href="@{/css/animate.css}">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
-    <link rel="stylesheet" th:href="@{/css/animation.css}">
-    <link rel="stylesheet"  th:href="@{/css/footer.css}">
     <!--默认样式-->
     <link rel="stylesheet" th:href="@{/css/style.css}" >
     <!--图片和滚屏样式-->
@@ -21,6 +20,7 @@
     <link rel="stylesheet"  th:href="@{/css/swiper.min.css}">
     <link rel="stylesheet" th:href="@{/css/about.css}">
     <link rel="stylesheet" th:href="@{/css/public.css}">
+    <link rel="stylesheet"  th:href="@{/css/common.css}">
 
     <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
     <script  th:src="@{/js/bootstrap.min.js}"></script>
@@ -92,8 +92,18 @@
         </div>
 </nav>
 
+
+
+<!--微信公众号二维码-->
+<div class="toolbar hidden-xs">
+    <a class="toolbar-item toolbar-item-weixin" data-toggle="modal" data-target="#myModal">
+        <span class="toolbar-layer"></span>
+    </a>
+    <a href="javascript:scroll(0,0)" class="toolbar-item toolbar-item-top"></a>
+</div>
+
 <!--banner-->
-<section class="nr-banner a-background" style="background-image: url(/images/yxkj/hxjs-banner.jpg);">
+<section class="nr-banner a-background" style="background-image: url(/images/yxkj/technology_background.jpg);">
     <div class="width-1220">
         <h1 class="wow fadeInUpa" style=" animation: anim 2s;">核心技术</h1>
         <p class="wow fadeInUpa" data-wow-delay=".2s" style="animation: anim 3s;">原创技术体系为根基，以深度学习平台为核心“大脑”，快速打通 AI 在各个垂直场景中的应用</p>
@@ -112,8 +122,6 @@
         <img data-v-330f6879="" src="/static/img/hxjs_1@3x.jpg" th:src="@{/images/yxkj/middle_one.png}" alt="" class="bg_img">
     </div>
 </div>
-
-
 
 <div data-v-330f6879="" class="item_box algorithm pad_t_80 pad_b_80">
     <div data-v-330f6879="" class="tit_box ">
@@ -271,19 +279,58 @@
 </section>
 
 <!--页面底部-->
-<div    style="width:100%; margin-top: 10px; background:#f0f0f0 !important;padding-bottom: 35px;">
-    <div id="foot" >
-        <div class="lf" style="width:280px;">
-            <p class="footer1"><a th:href="@{/}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>
+<div class="footer">
+    <div class="footer-inner">
+        <div class="summary-info">
+            <a style="width: 120px" class="logo-outer" href="/">
+                <img th:src="@{/images/logo/contact_ceshi.png}" >
+            </a>
+            <div class="summary-desc">让每个企业享受智慧服务带来的改变</div>
+            <ul class="summary-list">
+                <li>
+                    <i class="tel"></i>
+                    <a href="tel://4008-690-981">4008-690-981</a>
+                </li>
+                <li>
+                    <i class="weixin">
+                        <div class="qrcode-outer">
+                            <div class="text">请扫描二维码</div>
+                            <img th:src="@{/images/yxkj/qrcode.jpg}"  alt="垣象科技,智能Ai专家">
+                        </div>
+                    </i>关注垣象科技，了解更多垣象资讯</li>
+            </ul>
         </div>
-        <div class="foot_left lf" style="margin-left:25px;  " >
 
-            <p  class="foot=li"><a href="/about" style="font-size: 18px;">关于垣象</a></p>
-            <p  class="foot=li"><a href="/technology" style="font-size: 18px; ">核心技术</a></p>
-            <p  class="foot=li"><a href="/product" style="font-size: 18px; ">解决方案</a></p>
-            <p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系我们</a></p>
-        </div>
-        <div class="record">
+        <ul class="super-nav">
+            <li>
+                <h4>服务支持</h4>
+                <ul>
+                    <li><a href="/technology">核心技术</a></li>
+                    <li><a href="/about">公司介绍</a></li>
+                    <li><a href="/contact">联系我们</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h4>行业解决方案</h4>
+                <ul>
+                    <li class="js-case">
+                        <a href="/security">安防领域</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/banking">金融领域</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/city">城市管理</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/selling">销售领域</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="summary-info" style="color: white;margin-top: 50px;width: 100%;text-align: center;">
             ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
         </div>
     </div>
@@ -291,133 +338,13 @@
 </div>
 
 
-<script type="text/javascript">
-    var is_weixin = (function(){return navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1})();
-    if(is_weixin){
-        $(function(){
-            document.getElementById('logolink').onclick = function(ev){
-                ev.preventDefault();
-                $(".wxopen").show();
-            }
-
-            $(".wxopen,.wxopen>img").click(function(){
-                $(".wxopen").hide();
-            });
-        });
-    }else{
-        $(function(){
-            return false;
-        });
-    }
-
-    $(document).ready(function() {
-        $("#wxbox").hover(function(){
-            $(this).addClass("footer-6_hover");
-            $(this).children(".wxbox").show();
-        },function(){
-            $(this).removeClass("footer-6_hover");
-            $(this).children(".wxbox").hide();
-        });
-        $("#wxbox2").hover(function(){
-            $(this).addClass("footer-6_hover");
-            $(this).children(".wxbox").show();
-        },function(){
-            $(this).removeClass("footer-6_hover");
-            $(this).children(".wxbox").hide();
-        });
-    });
-
-
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?95e1c7f2af12086fc92e0742665b8268";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-
-
-    //2019-6-11增加百度代码
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?8ebb5ff06a2c44c46939dec8d61388ed";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
 
 
 
 
-<!--返回顶部按钮-->
-<!--<div class="to-top" id="to-top" style="display: block;">-->
-    <!--<div class="m-center"><img src="/images/jt-5.png"></div>-->
-<!--</div>-->
 
-<script>
-    $(function(){
-        //二级导航下拉
-        $('.hxjs-nav1').click(function(){
-            event.stopPropagation();
-            if($(this).hasClass('active')){
-                $(this).find('.hxjs-nav3').slideUp();
-                $(this).removeClass('active')
-            }else{
-                $(this).find('.hxjs-nav3').slideDown()
-                $(this).addClass('active')
-            }
-        });
-        $('body').on('click',function(){
-            $('.hxjs-nav1').removeClass('active');
-            $('.hxjs-nav1').find('.hxjs-nav3').slideUp();
-        })
-        //固定下拉菜单
-        var headerHeight= $('header').outerHeight();//获得header高度外部高度
-
-        var nrnavHeight = $('#nrnav-box').outerHeight();//获得nrnav-boxr高度外部高度
-        var nrnavTop = $('#nrnav-box').offset().top;//获得nrnav-boxr高度上部高度
-        $(window).scroll(function(){
-            if($(window).scrollTop()> nrnavTop){
-                $('header').addClass("headeractive")
-            } else {
-                $('header').removeClass('headeractive');
-            }
-            if($(window).scrollTop()>nrnavTop){
-                $('#nrnav-box').addClass('hxjs-nav_active');
-                $('#nrnav-box').css('top',0)
-            }else{
-                $('#nrnav-box').removeClass('hxjs-nav_active');
-                $('#nrnav-box').css('top',0)
-            };
-        })
-        //
-    })
-</script>
-
-<script>
-    //二级分类向上滚动
-    var _hash_a = location.hash.substring(1);
-    go_hash(_hash_a);
-
-
-    function go_hash(_hash) {
-        //console.log(_hash);
-        var headerHeight = $('header').outerHeight();
-        var nrnavHeight = $('.nr-banner').outerHeight();
-        if (_hash == "product") {
-            roll = nrnavHeight;
-            $('html , body').animate({
-                scrollTop: roll
-            }, 0.01);
-        }
-    }
-</script>
-
-
-</body></html>
-
-
-
-
+</body>
 </html>
+
+
+

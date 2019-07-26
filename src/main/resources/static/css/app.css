@@ -13985,8 +13985,8 @@ a {
 div,
 input,
 span {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  /*-webkit-box-sizing: border-box;*/
+          /*box-sizing: border-box;*/
 }
 input {
   outline: none;

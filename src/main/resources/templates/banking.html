@@ -1,15 +1,6 @@
 <html  xmlns:th="http://www.thymeleaf.org" style="font-size: 50px;">
 <head>
-    <!--<style class="vjs-styles-defaults">-->
-    <!--.video-js {-->
-    <!--width: 300px;-->
-    <!--height: 150px;-->
-    <!--}-->
 
-    <!--.vjs-fluid {-->
-    <!--padding-top: 56.25%-->
-    <!--}-->
-    <!--</style>-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="app-mobile-web-app-capable" content="yes">
@@ -18,8 +9,8 @@
     <!--css-->
     <!--响应式框架-->
     <link rel="stylesheet"  th:href="@{/css/topcontrol.css}">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
-    <link rel="stylesheet"  th:href="@{/css/footer.css}">
+    <link rel="stylesheet"  th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet"  th:href="@{/css/common.css}">
     <!--默认样式-->
     <link rel="stylesheet" th:href="@{/css/style.css}" >
     <!--图片和滚屏样式-->
@@ -30,7 +21,6 @@
     <link rel="stylesheet" th:href="@{/css/public.css}">
     <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
     <script  th:src="@{/js/bootstrap.min.js}"></script>
-    <script  th:src="@{/js/swiper.min.js}"></script>
 </head>
 <body>
 
@@ -96,14 +86,6 @@
     </div>
 </nav>
 
-<!--banner-->
-<section class="nr-banner a-background" style="background-image: url(/images/yxkj/security/yxal-banner.jpg);">
-    <div class="width-1220">
-        <h1 class="wow fadeInUpa" style="animation: anim 2s;">客户案例</h1>
-        <p class="wow fadeInUpa" data-wow-delay=".2s" style="animation: anim 3s;">
-            专业的合作伙伴与客户，遍及安防、城市管理、金融、销售等多个领域</p>
-    </div>
-</section>
 
 
 <!--微信公众号二维码-->
@@ -113,6 +95,16 @@
     </a>
     <a href="javascript:scroll(0,0)" class="toolbar-item toolbar-item-top"></a>
 </div>
+
+<!--banner-->
+<section class="nr-banner a-background" style="background-image: url(/images/yxkj/security/yxal-banner.jpg);">
+    <div class="width-1220">
+        <h1 class="wow fadeInUpa" style="animation: anim 2s;">客户案例</h1>
+        <p class="wow fadeInUpa" data-wow-delay=".2s" style="animation: anim 3s;">
+            专业的合作伙伴与客户，遍及安防、城市管理、金融、销售等多个领域</p>
+    </div>
+</section>
+
 
 <!--二级页面导航-->
 <section class="border-bottom nrnav-box" style="overflow: visible; top: 0px;" id="nrnav-box">
@@ -210,26 +202,67 @@
             </div>
         </div>
     </div>
-
 </section>
 
-<div   style="width:100%; background:#f0f0f0 !important;padding-bottom: 35px;">
-    <div id="foot" >
-        <div class="lf" style="width:280px;">
-            <p class="footer1"><a th:href="@{/}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>
+<!--页面底部-->
+<div class="footer">
+    <div class="footer-inner">
+        <div class="summary-info">
+            <a style="width: 120px" class="logo-outer" href="/">
+                <img th:src="@{/images/logo/contact_ceshi.png}" >
+            </a>
+            <div class="summary-desc">让每个企业享受智慧服务带来的改变</div>
+            <ul class="summary-list">
+                <li>
+                    <i class="tel"></i>
+                    <a href="tel://4008-690-981">4008-690-981</a>
+                </li>
+                <li>
+                    <i class="weixin">
+                        <div class="qrcode-outer">
+                            <div class="text">请扫描二维码</div>
+                            <img th:src="@{/images/yxkj/qrcode.jpg}"  alt="垣象科技,智能Ai专家">
+                        </div>
+                    </i>关注垣象科技，了解更多垣象资讯</li>
+            </ul>
         </div>
-        <div class="foot_left lf" style="margin-left:25px;  " >
 
-            <p  class="foot=li"><a href="/about" style="font-size: 18px;">关于垣象</a></p>
-            <p  class="foot=li"><a href="/technology" style="font-size: 18px; ">核心技术</a></p>
-            <p  class="foot=li"><a href="/product" style="font-size: 18px; ">解决方案</a></p>
-            <p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系我们</a></p>
-        </div>
-        <div class="record">
+        <ul class="super-nav">
+            <li>
+                <h4>服务支持</h4>
+                <ul>
+                    <li><a href="/technology">核心技术</a></li>
+                    <li><a href="/about">公司介绍</a></li>
+                    <li><a href="/contact">联系我们</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h4>行业解决方案</h4>
+                <ul>
+                    <li class="js-case">
+                        <a href="/security">安防领域</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/banking">金融领域</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/city">城市管理</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/selling">销售领域</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="summary-info" style="color: white;margin-top: 50px;width: 100%;text-align: center;">
             ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
         </div>
     </div>
 
 </div>
+
+
 </body>
 </html>

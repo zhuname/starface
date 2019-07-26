@@ -310,7 +310,6 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  /*background-image: url("/xingkong/xk.png");*/
   background-size: cover;
   background-position: center;
 }
@@ -432,6 +431,3 @@
   100% {opacity: 1;}
 }
 
-width-1220{
-
-}

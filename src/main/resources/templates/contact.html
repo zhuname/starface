@@ -6,12 +6,13 @@
     <!--css-->
 
     <link rel="stylesheet"  th:href="@{/css/topcontrol.css}">
-    <link rel="stylesheet" href="/js/bootstrap-3.3.7-dist/css/bootstrap.css" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.css}">
     <link th:href="@{/css/style.css}" rel="stylesheet">
-    <link rel="stylesheet" th:href="@{/css/lxks.css}" type="text/css" >
     <link rel="stylesheet" th:href="@{/css/public.css}">
     <link  th:href="@{/css/about.css}" rel="stylesheet">
-    <link rel="stylesheet"  th:href="@{/css/footer.css}">
+    <link rel="stylesheet"  th:href="@{/css/contact.css}">
+    <link rel="stylesheet"  th:href="@{/css/common.css}">
+
     <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
 </head>
 <body>
@@ -104,7 +105,6 @@
 
     <div id="lxksbotlift">
         <h3>垣象科技· 中国总部</h3>
-        <h3>Questyle Audio Technology Co., Ltd</h3>
         <p>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 址：中国广东省深圳市福田区车公庙泰然八路云松大厦13楼A<br>
             总&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 机： +86-755-82835670<br>
             传&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 真： +86-755-82842083<br>
@@ -120,72 +120,71 @@
             国际销售部 | International Sales Department<br>
             座 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   机：+86-755-8837&nbsp;7814<br><br>
         </p>
-        <h3>客户服务中心 | Service Center</h3>
+        <h3>服务中心 | Service Center</h3>
         <p>售后电话： 4009-623-833<br>
             邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 箱： info@questyleaudio.com<br><br></p>
-
-        <!--
-                <h3>Questyle North America Inc.</h3>
-                <p>Add&nbsp;&nbsp;&nbsp;&nbsp; ： 7848 West Sahara Ave. Las Vegas,&nbsp; NV 89117 , USA<br>
-        Tel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ： +1-702-751 9978<br>
-        Phone： +1-818-284-9678 <br>
-        Fax&nbsp;&nbsp;&nbsp;&nbsp; ： +1-818-697-9068 &nbsp;<br>
-        E-mail： usa@questyleaudio.com<br>
-        <br></p>
-        -->
     </div>
+</div>
 
 
-    <div id="lxkstop">
-        <h1>关注我们</h1>
-        <h2>密切关注我们在社交网站上的最新动态</h2>
+<!--页面底部-->
+<div class="footer">
+    <div class="footer-inner">
+        <div class="summary-info">
+            <a style="width: 120px" class="logo-outer" href="/">
+                 <img th:src="@{/images/logo/contact_ceshi.png}" >
+            </a>
+            <div class="summary-desc">让每个企业享受智慧服务带来的改变</div>
+            <ul class="summary-list">
+                <li>
+                    <i class="tel"></i>
+                    <a href="tel://4008-690-981">4008-690-981</a>
+                </li>
+                <li>
+                    <i class="weixin">
+                        <div class="qrcode-outer">
+                            <div class="text">请扫描二维码</div>
+                            <img th:src="@{/images/yxkj/qrcode.jpg}"  alt="垣象科技,智能Ai专家">
+                        </div>
+                    </i>关注垣象科技，了解更多垣象资讯</li>
+            </ul>
+        </div>
 
-        <div id="topimg">
-            <div id="img1">
-                <img src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/lxks/weixin.png">
-                <p style="line-height: 0px">微信号</p>
-                <p>Questyleaudio</p>
-            </div>
+        <ul class="super-nav">
+            <li>
+                <h4>服务支持</h4>
+                <ul>
+                    <li><a href="/technology">核心技术</a></li>
+                    <li><a href="/about">公司介绍</a></li>
+                    <li><a href="/contact">联系我们</a></li>
+               </ul>
+            </li>
 
-            <div id="img2">
-                <img src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/lxks/instagram.png">
-                <p style="line-height: 0px">Instagram</p>
-                <p>Questyleaudio</p>
-            </div>
+            <li>
+                <h4>行业解决方案</h4>
+                <ul>
+                    <li class="js-case">
+                        <a href="/security">安防领域</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/banking">金融领域</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/city">城市管理</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/selling">销售领域</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
 
-            <div id="img3">
-                <img src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/lxks/tweeter.png">
-                <p style="line-height: 0px">Twitter</p>
-                <p>Questyleaudio</p>
-            </div>
-
-            <div id="img4">
-                <img src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/lxks/facebook.png">
-                <p style="line-height: 0px">Facebook</p>
-                <p>Questyleaudio</p>
-            </div>
+        <div class="summary-info" style="color: white;margin-top: 50px;width: 100%;text-align: center;">
+            ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
         </div>
     </div>
+
 </div>
 
-﻿<!--footer-->
-<!--底部导航-->
-<div id="foot" style="background-color: #F6F6F6;width:100%;" >
-    <div class="lf" style="width:280px;">
-        <p class="footer1"><a th:href="@{/}">
-            <img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" style=" margin-top:5px;
-    padding-left: 150px;" class=" footLogo"></a></p>
-    </div>
-    <div class="foot_left lf" style="margin-left:150px;  " >
-
-        <p  class="foot=li"><a href="/about" style="font-size: 18px;">关于垣象</a></p>
-        <p  class="foot=li"><a href="/technology" style="font-size: 18px; ">核心技术</a></p>
-        <p  class="foot=li"><a href="/product" style="font-size: 18px; ">解决方案</a></p>
-        <p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系我们</a></p>
-    </div>
-    <div class="record">
-        ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
-    </div>
-</div>
-
-</body></html>
+</body>
+</html>

@@ -4,20 +4,23 @@
     <meta name="app-mobile-web-app-capable" content="yes">
     <title>垣象科技</title>
     <!--css-->
+    <link rel="stylesheet"  th:href="@{/css/app.css}">
 
+    <link rel="stylesheet"  th:href="@{/css/topcontrol.css}">
     <!--响应式框架-->
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
-
+    <link rel="stylesheet"  th:href="@{/css/bootstrap.css}">
     <!--底部样式-->
-    <link rel="stylesheet"  th:href="@{/css/footer.css}">
-    <link rel="stylesheet"  th:href="@{/css/animation.css}">
+    <link rel="stylesheet"  th:href="@{/css/common.css}">
+    <!--<link rel="stylesheet"  th:href="@{/css/animation.css}">-->
 
     <!--默认样式-->
     <link  th:href="@{/css/style.css}" rel="stylesheet">
     <!--页面样式-->
     <link rel="stylesheet" th:href="@{/css/public.css}">
 
-    <link  th:href="@{/css/about.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/about.css}" >
+
+
 
     <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
 </head>
@@ -27,16 +30,15 @@
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid container-top">
         <div style="margin-left: 2%" class="col-md-12 col-sm-12 col-sm-offset-0  col-xs-12 col-xs-offset-0 padding-0">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed btn-white" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="c-icon">
-                                    <i class="fa fa-reorder"></i>
-                                </span>
+                    <span class="c-icon">
+                        <i class="fa fa-reorder"></i>
+                    </span>
                 </button>
                 <div class="navbar-brand page-scroll">
                     <a href="/">
-                        <img class="logo_style" th:src="@{/images/logo/blacklogo.png}" src="https://www.questyle.com/wp-content/themes/kuanshi_cn_online/img/index/logob.png" alt="旷世科技" >
+                        <img style="width:150px;height:50px;" class="logo_style" th:src="@{/images/logo/blacklogo.png}"  alt="垣象科技" >
                     </a>
                 </div>
             </div>
@@ -87,7 +89,16 @@
     </div>
 </nav>
 
-<div   class="banner_box">
+
+<!--微信公众号二维码-->
+<div class="toolbar hidden-xs">
+    <a class="toolbar-item toolbar-item-weixin" data-toggle="modal" data-target="#myModal">
+        <span class="toolbar-layer"></span>
+    </a>
+    <a href="javascript:scroll(0,0)" class="toolbar-item toolbar-item-top"></a>
+</div>
+
+<div   class="banner_box" style="height: 500px;background-image: url(/images/yxkj/about_background.png)">
     <div style="animation: anim 2s;" class="text">关于垣象</div>
 </div>
 <!---->
@@ -134,84 +145,166 @@
 </div>
 
 
+<div data-v-55ffface="" class="item_box partner">
+    <div data-v-55ffface="" class="tit_box">
+        <span data-v-55ffface="" class="line"></span>
+        <span data-v-55ffface="" class="tit_text">合作伙伴</span>
+        <span data-v-55ffface="" class="line"></span>
+    </div>
+    <div data-v-55ffface="" class="partner_box type_page">
+        <div data-v-55ffface="" class="ele_line">
+            <div data-v-55ffface="" class="ele">
+                <img data-v-55ffface=""  th:src="@{/images/logo/zyzh.png}" alt=""></div>
+            <div data-v-55ffface="" class="ele">
+                <img data-v-55ffface="" th:src="@{/images/logo/icbc.jpg}" alt="">
+            </div> <div data-v-55ffface="" class="ele">
+            <img data-v-55ffface="" th:src="@{/images/logo/shunwang.jpg}"  alt=""></div>
+            <div data-v-55ffface="" class="ele">
+                <img data-v-55ffface="" th:src="@{/images/logo/wdw.jpg}"  alt=""></div>
+            <div data-v-55ffface="" class="ele">
+                <img data-v-55ffface="" th:src="@{/images/logo/weier.jpg}" alt=""></div>
+        </div>
+        <div data-v-55ffface="" class="ele_line">
+            <div data-v-55ffface="" class="ele">
+                <img data-v-55ffface="" th:src="@{/images/logo/yizhijia.jpg}"  alt=""></div>
+            <div data-v-55ffface="" class="ele">
+                <img data-v-55ffface="" src="/static/img/15@3x.png" alt=""></div>
+            <div data-v-55ffface="" class="ele">
+                <img data-v-55ffface="" src="/static/img/8@3x.png" alt=""></div>
+            <div data-v-55ffface="" class="ele">
+                <img data-v-55ffface="" src="/static/img/9@3x.png" alt=""></div>
+            <div data-v-55ffface="" class="ele">
+                <img data-v-55ffface="" src="/static/img/10@3x.png" alt=""></div>
+        </div>
+        <!--<div data-v-55ffface="" class="ele_line">-->
+            <!--<div data-v-55ffface="" class="ele">-->
+                <!--<img data-v-55ffface="" src="/static/img/3.@3x.png" alt=""></div>-->
+            <!--<div data-v-55ffface="" class="ele">-->
+                <!--<img data-v-55ffface="" src="/static/img/20@3x.png" alt=""></div>-->
+            <!--<div data-v-55ffface="" class="ele">-->
+                <!--<img data-v-55ffface="" src="/static/img/13@3x.png" alt=""></div>-->
+            <!--<div data-v-55ffface="" class="ele">-->
+                <!--<img data-v-55ffface="" src="/static/img/14@3x.png" alt=""></div>-->
+            <!--<div data-v-55ffface="" class="ele">-->
+                <!--<img data-v-55ffface="" src="/static/img/24@3x.jpg" alt=""></div>-->
+        <!--</div>-->
+        <!--<div data-v-55ffface="" class="ele_line">-->
+            <!--<div data-v-55ffface="" class="ele">-->
+                <!--<img data-v-55ffface="" src="/static/img/16@3x.png" alt=""></div>-->
+            <!--<div data-v-55ffface="" class="ele">-->
+                <!--<img data-v-55ffface="" src="/static/img/17@3x.png" alt=""></div>-->
+            <!--<div data-v-55ffface="" class="ele">-->
+                <!--<img data-v-55ffface="" src="/static/img/18@3x.png" alt=""></div>-->
+            <!--<div data-v-55ffface="" class="ele">-->
+                <!--<img data-v-55ffface="" src="/static/img/23@3x.jpg" alt=""></div>-->
+            <!--<div data-v-55ffface="" class="ele">-->
+                <!--<img data-v-55ffface="" src="/static/img/25@3x.jpg" alt=""></div>-->
+        <!--</div>-->
+    </div>
+</div>
 
-                <div class="width-1220 ">
+<!--<div class="width-1220 ">-->
 
-                    <div class="index-20">
-                        <div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
-                            <div class="img-box">
-                                <div class="m-center"><img src="/images/hblogo1.jpg" th:src="@{/images/logo/zyzh.png}"></div>
-                            </div>
-                        </div><div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
-                        <div class="img-box">
-                            <div class="m-center"><img src="/images/hblogo3.jpg" th:src="@{/images/logo/wdw.png}" ></div>
-                        </div>
-                    </div>
-                        <div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
-                        <div class="img-box">
-                            <div class="m-center"><img src="/upfile/201905/5cf0e73c66d50.jpg"  th:src="@{/images/logo/hblogo1.jpg}"></div>
-                        </div>
-                    </div><div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
-                        <div class="img-box">
-                            <div class="m-center"><img src="/images/hblogo6.jpg" th:src="@{/images/logo/hblogo1.jpg}"></div>
-                        </div>
-                    </div><div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
-                        <div class="img-box">
-                            <div class="m-center"><img src="/images/hblogo8.jpg" th:src="@{/images/logo/hblogo1.jpg}"></div>
-                        </div>
-                    </div>
-                        <div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">
-                            <div class="img-box">
-                                <div class="m-center"><img src="/images/hblogo2.jpg" th:src="@{/images/logo/hblogo1.jpg}"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="index-22">
-                        <h1 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">合作伙伴及客户</h1>
-                        <p class="wow fadeInUpa" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUpa;">700+ 战略合作伙伴及客户</p>
-                        <!--<a href="/cooperation.html" class="btn-ljgd btn-ljgd4 wow fadeInUpa" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUpa;">了解更多<span></span></a>-->
-                    </div>
-
-                </div>
+    <!--<div class="index-20">-->
+        <!--<div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">-->
+            <!--<div class="img-box">-->
+                <!--<div class="m-center"><img src="/images/hblogo1.jpg" th:src="@{/images/logo/zyzh.png}"></div>-->
             <!--</div>-->
-
-
-
-
+        <!--</div><div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">-->
+        <!--<div class="img-box">-->
+            <!--<div class="m-center"><img src="/images/hblogo3.jpg" th:src="@{/images/logo/icbc.jpg}" ></div>-->
         <!--</div>-->
     <!--</div>-->
+        <!--<div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">-->
+            <!--<div class="img-box">-->
+                <!--<div class="m-center"><img style="width:450px;" th:src="@{/images/logo/shunwang.jpg}"></div>-->
+            <!--</div>-->
+        <!--</div><div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">-->
+        <!--<div class="img-box">-->
+            <!--<div class="m-center"><img src="/images/hblogo6.jpg" th:src="@{/images/logo/wdw.jpg}"></div>-->
+        <!--</div>-->
+    <!--</div><div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">-->
+        <!--<div class="img-box">-->
+            <!--<div class="m-center"><img src="/images/hblogo8.jpg" th:src="@{/images/logo/we.jpg}"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+        <!--<div class="index-21 wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">-->
+            <!--<div class="img-box">-->
+                <!--<div class="m-center"><img src="/images/hblogo2.jpg" th:src="@{/images/logo/yizhijia.jpg}"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="index-22">-->
+        <!--<h1 class="wow fadeInUpa" style="visibility: visible; animation-name: fadeInUpa;">合作伙伴及客户</h1>-->
+    <!--</div>-->
+
+<!--</div>-->
+
 
 
 
 ﻿<!--footer-->
 <!--底部导航-->
-<div id="foot">
-    <div class="lf" style="width:280px;">
-        <p class="footer1"><a th:href="@{/}"><img src="../images/footer/logo.png" th:src="@{/images/logo/logo.png}" alt="垣象科技" class=" footLogo"></a></p>
-    </div>
-    <div class="foot_left lf" style="margin-left:25px;  " >
+<!--页面底部-->
+<div class="footer">
+    <div class="footer-inner">
+        <div class="summary-info">
+            <a style="width: 120px" class="logo-outer" href="/">
+                <img th:src="@{/images/logo/contact_ceshi.png}" >
+            </a>
+            <div class="summary-desc">让每个企业享受智慧服务带来的改变</div>
+            <ul class="summary-list">
+                <li>
+                    <i class="tel"></i>
+                    <a href="tel://4008-690-981">4008-690-981</a>
+                </li>
+                <li>
+                    <i class="weixin">
+                        <div class="qrcode-outer">
+                            <div class="text">请扫描二维码</div>
+                            <img th:src="@{/images/yxkj/qrcode.jpg}"  alt="垣象科技,智能Ai专家">
+                        </div>
+                    </i>关注垣象科技，了解更多垣象资讯</li>
+            </ul>
+        </div>
 
-        <p  class="foot=li"><a href="/about" style="font-size: 18px;">关于垣象</a></p>
-        <p  class="foot=li"><a href="/technology" style="font-size: 18px; ">核心技术</a></p>
-        <p  class="foot=li"><a href="/product" style="font-size: 18px; ">解决方案</a></p>
-        <p  class="foot=li"><a href="/contact" style="font-size: 18px;">联系我们</a></p>
+        <ul class="super-nav">
+            <li>
+                <h4>服务支持</h4>
+                <ul>
+                    <li><a href="/technology">核心技术</a></li>
+                    <li><a href="/about">公司介绍</a></li>
+                    <li><a href="/contact">联系我们</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h4>行业解决方案</h4>
+                <ul>
+                    <li class="js-case">
+                        <a href="/security">安防领域</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/banking">金融领域</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/city">城市管理</a>
+                    </li>
+                    <li class="js-case">
+                        <a href="/selling">销售领域</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="summary-info" style="color: white;margin-top: 50px;width: 100%;text-align: center;">
+            ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
+        </div>
     </div>
-    <div class="record">
-        ©2018 垣象科技有限公司 版权所有 京ICP证xxxxxxxxxxx
-    </div>
+
 </div>
 
 
-
-<!--图片延迟加载-->
-<!--<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>-->
-<!--<script src="https://cdn.bootcss.com/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>-->
-<!--<script type="text/javascript" charset="utf-8">-->
-    <!--if($(window).width() < 768){-->
-        <!--$("#gyks").empty();-->
-    <!--}-->
-    <!--$("img").lazyload({threshold :80});-->
-<!--</script>-->
-
-</body></html>
+</body>
+</html>
