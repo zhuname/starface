@@ -4,7 +4,8 @@
     <meta name="app-mobile-web-app-capable" content="yes">
     <title>垣象科技</title>
     <!--css-->
-
+    <link rel="stylesheet"  th:href="@{/css/home.css}">
+    <link rel="stylesheet"  th:href="@{/css/topcontrol.css}">
     <!--响应式框架-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" th:href="@{/css/bootstrap.css}">
     <!--默认样式-->
@@ -16,8 +17,9 @@
     <link rel="stylesheet" th:href="@{/css/jquery.fullPage.css}" />
     <!--图片和滚屏样式-->
     <link rel="stylesheet"  th:href="@{/css/index.css}">
-<!--页面底部css-->
+    <!--页面底部css-->
     <link rel="stylesheet"  th:href="@{/css/common.css}">
+
 
     <script  th:src="@{/js/jquery-3.1.1.min.js}"></script>
 </head>
@@ -90,6 +92,17 @@
     </div>
 </nav>
 
+
+
+<!--微信公众号二维码-->
+<div class="toolbar hidden-xs">
+    <a class="toolbar-item toolbar-item-weixin" data-toggle="modal" data-target="#myModal">
+        <span class="toolbar-layer"></span>
+    </a>
+    <a href="javascript:scroll(0,0)" class="toolbar-item toolbar-item-top"></a>
+</div>
+
+<div style="height: 57px"></div>
 
 <div id="index_main" class="index_main">
     <div class="section section1">
@@ -167,8 +180,42 @@
     </div>
 </div>
 
+
+<div style="width:100%;">
+    <div class="service-title" style="width:100%;">核心技术</div>
+    <div class="service-intro"></div>
+
+    <ul class="service-list clearfix wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+        <li>
+            <a href="technology">
+                <div class="icon"><img th:src="@{/images/yxkj/index/index_01.png}"></div>
+                <div class="item-name ">人脸识别</div>
+            </a>
+            <!--<div class="item-info">提供人脸检测、人脸比对、人脸分析、人脸搜索、活体检测、人证比对等技术</div>-->
+        </li>
+        <li>
+            <a href="technology">
+                <div class="icon"><img th:src="@{/images/yxkj/index/index_02.png}" src="images/iconfont/index_02.png"></div>
+                <div class="item-name">OCR识别</div>
+            </a>
+            <!--<div class="item-info">提供印刷文字检测识别、各种证卡版面文字识别、票据凭证文字识别等技术</div>-->
+        </li>
+        <li>
+            <a href="technology">
+                <div class="icon"><img th:src="@{/images/yxkj/index/cp.png}" src="images/iconfont/index_03.png"></div>
+                <div class="item-name">菜品识别</div>
+            </a>
+            <!--<div class="item-info">提供PDF417、DM、QR、code39、code128、UPC等条码的编解码技术</div>-->
+        </li>
+
+    </ul>
+
+
+
+</div>
+
 <!--页面底部-->
-<div class="footer" style="background-color:#0577a2;">
+<div class="footer" style="background-color:#0577a2;margin-top:50px;">
     <div class="footer-inner">
         <div class="summary-info">
             <a style="width: 120px" class="logo-outer" href="/">
